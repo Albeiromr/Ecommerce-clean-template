@@ -1,0 +1,21 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .header {
+    width: 100%;
+    min-width: 320px;
+    height: 23.787vw;
+    min-height: 76.119px;
+    background: darkolivegreen;
+    position: relative;
+
+    &__contact-bar {
+      width: 100%;
+      height: 33.509%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: dimgrey;
+    }
+  }
+}
