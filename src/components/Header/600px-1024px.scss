@@ -32,19 +32,19 @@
 
     &__green-text {
       font-family: $secundary-font;
-      color: $c2-a;
+      color: $c2-A;
       font-weight: $regular;
       margin: 0;
-      font-size: 1.640vw;
+      font-size: 1.64vw;
       margin-right: clamp(12.958px, 2.158vw, 22.106px);
     }
 
     &__black-text {
       font-family: $secundary-font;
-      color: $c1-a;
+      color: $c1-A;
       font-weight: $regular;
       margin: 0;
-      font-size: 1.640vw;
+      font-size: 1.64vw;
       margin: 0 clamp(12.958px, 2.158vw, 22.106px);
     }
 
@@ -60,20 +60,20 @@
 
     &__green-link {
       font-family: $secundary-font;
-      color: $c2-a;
+      color: $c2-A;
       font-weight: $regular;
       margin: 0;
-      font-size: 1.640vw;
+      font-size: 1.64vw;
       cursor: pointer;
     }
 
     &__line {
       width: 88.932%;
       height: 2.083%;
-      background: $c1-e;
+      background: $c1-E;
       position: absolute;
       bottom: 0;
-      left:5.533%;
+      left: 5.533%;
     }
 
     &__logo-bar {
