@@ -10,7 +10,18 @@ const Header = () => {
     return (
         <header className='header'>
 
-            <div className='header__contact-bar'></div>
+            <div className='header__contact-bar'>
+
+                <div className='header__contact-data'>
+                    
+                </div>
+
+                <div className='header__contact-links'>
+                    
+                </div>
+
+            </div>
+
             <div className='header__logo-bar'></div>
 
         </header>

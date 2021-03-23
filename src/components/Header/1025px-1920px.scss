@@ -16,6 +16,21 @@
       top: 0;
       left: 3.571%;
       background: dimgrey;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__contact-data {
+      width: 40%;
+      height: 33.407%;
+      background: #ffffff;
+    }
+
+    &__contact-links {
+      width: 40%;
+      height: 33.407%;
+      background: #ffffff;
     }
 
     &__logo-bar {
