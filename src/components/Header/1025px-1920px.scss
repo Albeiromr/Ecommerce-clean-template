@@ -11,13 +11,20 @@
 
     &__contact-bar {
       width: 92.856%;
-      max-width: 1532.14px;
       height: 26.966%;
-      max-height: 62.86px;
       position: absolute;
       top: 0;
       left: 3.571%;
       background: dimgrey;
+    }
+
+    &__logo-bar {
+      width: 92.848%;
+      height: 73.033%;
+      position: absolute;
+      top: 26.966%;
+      left: 3.571%;
+      background: darkorange;
     }
   }
 }
