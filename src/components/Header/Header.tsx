@@ -13,10 +13,19 @@ const Header = () => {
             <div className='header__contact-bar'>
 
                 <div className='header__contact-data'>
+
+                    <p className='header__green-text'>Contact us</p>
+                    <p className='header__black-text'>+420 336 775 664</p>
+                    <p className='header__black-text'>info@freshnesecom.com</p>
+                    <div className='header__line'></div>
                     
                 </div>
 
                 <div className='header__contact-links'>
+
+                    <p className='header__green-link'>Blog</p>
+                    <p className='header__green-link'>About Us</p>
+                    <p className='header__green-link'>Shipping Policy</p>
                     
                 </div>
 
