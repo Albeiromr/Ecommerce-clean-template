@@ -3,6 +3,7 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import logo from '../../assets/logo/brand.png';
+import SearchBar from '../Search bar/SearchBar';
 
 const Header = () => {
   return (
@@ -26,7 +27,9 @@ const Header = () => {
           <div className="header__logo-container">
               <img className="header__logo-image" src={logo} alt="logo"/>
           </div>
-          <div className="header__search-container"></div>
+          <div className="header__search-container">
+            <SearchBar />
+          </div>
           <div className="header__icon-container"></div>
       </div>
     </header>
