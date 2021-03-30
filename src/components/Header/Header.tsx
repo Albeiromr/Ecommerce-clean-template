@@ -26,6 +26,8 @@ const Header = () => {
           <div className="header__logo-container">
               <img className="header__logo-image" src={logo} alt="logo"/>
           </div>
+          <div className="header__search-container"></div>
+          <div className="header__icon-container"></div>
       </div>
     </header>
   );
