@@ -4,7 +4,6 @@
   .header {
     width: 100%;
     height: 14.843vw;
-    background: darkolivegreen;
     position: relative;
 
     &__contact-bar {
@@ -14,7 +13,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: dimgrey;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -23,7 +21,6 @@
     &__contact-data {
       width: auto;
       height: 33.407%;
-      background: #ffffff;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -51,7 +48,6 @@
     &__contact-links {
       width: clamp(186.726px, 31.121vw, 318.66px);
       height: 33.407%;
-      background: #ffffff;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -82,7 +78,6 @@
       position: absolute;
       top: 42.105%;
       left: 0;
-      background: darkorange;
       display: flex;
       align-items: center;
       justify-content: center;

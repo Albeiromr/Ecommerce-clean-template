@@ -7,7 +7,6 @@
     height: 14.127vw;
     max-height: 233.1px;
     position: relative;
-    background: darkslategray;
 
     &__contact-bar {
       width: 92.856%;
@@ -18,13 +17,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: cadetblue;
     }
 
     &__contact-data {
       width: auto;
       height: 33.407%;
-      background: #ffffff;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -52,7 +49,6 @@
     &__contact-links {
       width: clamp(260px, 18.848vw, 311.52px);
       height: 33.407%;
-      background: #ffffff;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -83,7 +79,6 @@
       position: absolute;
       top: 26.966%;
       left: 3.571%;
-      background: darkorange;
       position: relative;
     }
 
@@ -104,7 +99,6 @@
     &__search-container {
       width: 42.734%;
       height: 32.307%;
-      background: wheat;
       position: absolute;
       top: 33.846%;
       left: 28.632%;
@@ -113,7 +107,6 @@
     &__icon-container {
       width: 7.521%;
       height: 24.095%;
-      background: wheat;
       position: absolute;
       top: 36.924%;
       right: 0%;
@@ -124,7 +117,6 @@
     &__icon-subcontainer {
       width: 27.273%;
       height: 100%;
-      background: darkslategray;
       position: relative;
       cursor: pointer;
     }
