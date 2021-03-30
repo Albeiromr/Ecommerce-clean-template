@@ -3,7 +3,10 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import logo from '../../assets/logo/brand.png';
+import basket from '../../assets/icons/basket.svg';
+import user from '../../assets/icons/user.svg';
 import SearchBar from '../Search bar/SearchBar';
+
 
 const Header = () => {
   return (
@@ -30,7 +33,17 @@ const Header = () => {
           <div className="header__search-container">
             <SearchBar />
           </div>
-          <div className="header__icon-container"></div>
+          <div className="header__icon-container">
+            <div className="header__icon-subcontainer">
+              <img className="header__icon" src={user} alt="user icon"/>
+            </div>
+            <div className="header__icon-subcontainer">
+              <img className="header__icon" src={basket} alt="basket icon"/>
+            </div>
+            <div className="header__basket-counter">
+                <p className="header__basket-text">8</p>
+            </div>
+          </div>
       </div>
     </header>
   );

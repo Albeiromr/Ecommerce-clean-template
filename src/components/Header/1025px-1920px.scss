@@ -117,6 +117,47 @@
       position: absolute;
       top: 36.924%;
       right: 0%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__icon-subcontainer {
+      width: 27.273%;
+      height: 100%;
+      background: darkslategray;
+      position: relative;
+      cursor: pointer;
+    }
+
+    &__icon {
+      width: 100%;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+    }
+
+    &__basket-counter {
+      width: auto;
+      min-width: 18.179%;
+      height: 51.072%;
+      padding: 0 5%;
+      background: $c4-A;
+      position: absolute;
+      top: 43.998%;
+      right: 15.905%;
+      border-radius: clamp(1px, 0.8vw, 15.71px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__basket-text {
+      margin: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(1px, 0.952vw, 15.71px);
+      color: $c1-J;
     }
   }
 }
