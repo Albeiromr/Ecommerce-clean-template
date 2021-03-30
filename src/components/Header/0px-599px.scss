@@ -69,6 +69,20 @@
       top: 33.509%;
       left: 0;
       background: darkorange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__logo-container {
+      width: 55.797%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    &__logo-image {
+      width: 100%;
+      height: 100%;
     }
   }
 }
