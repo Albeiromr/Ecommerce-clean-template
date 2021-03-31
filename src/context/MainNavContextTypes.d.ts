@@ -1,5 +1,7 @@
+import optionType from "../utils/productOptionsTypes";
+
 export type defaultValue = {
-  productOptions: string[]
+  productOptions: optionType[];
   optionSelected: string;
   setOptionSelected: (value: string) => void;
 };

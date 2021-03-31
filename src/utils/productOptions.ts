@@ -1,3 +1,11 @@
-export const productOptions:string[] = [
-    "Home", "Fruits", "Vegetables", "Meat & Porc", "Fish & Seafood", "Bakery", "Our Blog"
+import { optionType } from "./productOptionsTypes";
+
+export const productOptions: optionType[] = [
+  { name: "Home" },
+  { name: "Fruits" },
+  { name: "Vegetables" },
+  { name: "Meat & Porc" },
+  { name: "Fish & Seafood" },
+  { name: "Bakery" },
+  { name: "Our Blog" },
 ];

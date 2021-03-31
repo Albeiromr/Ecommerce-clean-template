@@ -1,30 +1,24 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {MainNavContext} from '../../context/MainNavContext';
-import MainNavButton from '../Main nav button/MainNavButton';
+import { MainNavContext } from "../../context/MainNavContext";
+import MainNavButton from "../Main nav button/MainNavButton";
 
 const MainNav = () => {
+  const { productOptions } = useContext(MainNavContext);
 
-    const {productOptions} = useContext(MainNavContext);
+  return (
+    <nav className="main-nav">
+      <ul className=" main-nav__subcontainer">
 
-    return (
-
-        <nav className="main-nav">
-            <ul className=" main-nav__subcontainer">
-
-                <MainNavButton name={productOptions[0]}/>
-                <MainNavButton name={productOptions[1]}/>
-                <MainNavButton name={productOptions[2]}/>
-                <MainNavButton name={productOptions[3]}/>
-                <MainNavButton name={productOptions[4]}/>
-                <MainNavButton name={productOptions[5]}/>
-                <MainNavButton name={productOptions[6]}/>
-                
-            </ul>
-        </nav>
-    )
+        {productOptions.map((option) => (
+          <MainNavButton name={option.name} />
+        ))}
+        
+      </ul>
+    </nav>
+  );
 };
 
 export default MainNav;
