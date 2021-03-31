@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import MainContainer from './routes/MainContainer/MainContainer';
-import MainNavContextProvider from './context/MainNav';
+import MainNavContextProvider from './context/MainNavContext';
 
 function App() {
   return (

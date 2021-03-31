@@ -1,4 +1,5 @@
 export type defaultValue = {
+  productOptions: string[]
   optionSelected: string;
   setOptionSelected: (value: string) => void;
 };

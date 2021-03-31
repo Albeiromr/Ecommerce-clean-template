@@ -1,12 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {productOptions} from '../../utils/productOptions';
+import {MainNavContext} from '../../context/MainNavContext';
 import MainNavButton from '../Main nav button/MainNavButton';
 
 const MainNav = () => {
 
+    const {productOptions} = useContext(MainNavContext);
 
     return (
 

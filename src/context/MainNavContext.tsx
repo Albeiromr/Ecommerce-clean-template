@@ -1,7 +1,9 @@
 import React, { createContext, useState } from "react";
-import {defaultValue, Props} from './MainNavTypes';
+import {productOptions} from '../utils/productOptions';
+import {defaultValue, Props} from './MainNavContextTypes';
 
 export const MainNavContext = createContext<defaultValue>({
+  productOptions: [],
   optionSelected: "",
   setOptionSelected: () => {},
 });
@@ -13,6 +15,7 @@ const MainNavContextProvider = ({ children }: Props) => {
   return (
     <MainNavContext.Provider
       value={{
+        productOptions,
         optionSelected,
         setOptionSelected,
       }}
