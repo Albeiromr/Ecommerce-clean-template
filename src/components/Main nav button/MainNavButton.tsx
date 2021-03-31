@@ -2,8 +2,8 @@ import React, { Fragment, useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {props} from './MainNavButtonTypes';
-import {MainNavContext} from "../../context/MainNavContext";
+import {props} from './types';
+import {MainNavContext} from "../../context/Main nav context/MainNavContext";
 
 
 const MainNavButton = ({name}: props) => {

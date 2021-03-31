@@ -1,4 +1,4 @@
-import optionType from "../utils/productOptionsTypes";
+import {optionType} from "../../utils/Product options/types";
 
 export type defaultValue = {
   productOptions: optionType[];

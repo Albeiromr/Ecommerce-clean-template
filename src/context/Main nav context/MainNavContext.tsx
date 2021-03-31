@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
-import {productOptions} from '../utils/productOptions';
-import {defaultValue, Props} from './MainNavContextTypes';
+import {productOptions} from '../../utils/Product options/productOptions';
+import {defaultValue, Props} from './types';
 
 export const MainNavContext = createContext<defaultValue>({
   productOptions: [],

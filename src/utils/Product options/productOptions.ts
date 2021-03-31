@@ -1,4 +1,4 @@
-import { optionType } from "./productOptionsTypes";
+import { optionType } from "./types";
 
 export const productOptions: optionType[] = [
   { name: "Home" },
