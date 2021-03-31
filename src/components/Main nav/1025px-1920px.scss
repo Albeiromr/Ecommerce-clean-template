@@ -6,7 +6,7 @@
     max-width: 1650px;
     height: 4.207vw;
     max-height: 69.43px;
-    background: burlywood;
+    background: $c1-H;
     padding: 0 10.545%;
     display: flex;
     align-items: center;
@@ -16,7 +16,6 @@
       padding: 0%;
       width: 100%;
       height: 41.826%;
-      background: darkslategray;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -27,7 +26,6 @@
       padding: 0;
       width: auto;
       height: 100%;
-      background: darkcyan;
       cursor: pointer;
       display: flex;
       align-items: center;
