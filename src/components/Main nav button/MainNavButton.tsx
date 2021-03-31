@@ -1,7 +1,8 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState , useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import {MainNavContext} from "../../context/MainNavContext";
 
 type props = {
     name: string;
@@ -9,7 +10,7 @@ type props = {
 
 const MainNavButton = ({name}: props) => {
 
-    const [optionSelected, setOptionSelected] = useState("Home");
+    const {setOptionSelected, optionSelected} = useContext(MainNavContext);
 
     const handleClick = () => {
         if (optionSelected !== name) setOptionSelected(name);
