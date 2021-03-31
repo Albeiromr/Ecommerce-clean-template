@@ -1,13 +1,5 @@
 import React, { createContext, useState } from "react";
-
-type defaultValue = {
-  optionSelected: string;
-  setOptionSelected: (value: string) => void;
-};
-
-type Props = {
-  children: React.ReactNode;
-};
+import {defaultValue, Props} from './MainNavTypes';
 
 export const MainNavContext = createContext<defaultValue>({
   optionSelected: "",
@@ -15,8 +7,7 @@ export const MainNavContext = createContext<defaultValue>({
 });
 
 const MainNavContextProvider = ({ children }: Props) => {
-
-    //this state is for highlighting the type of products selected on the main nav
+  //this state is for highlighting the type of products selected on the main nav
   const [optionSelected, setOptionSelected] = useState("Home");
 
   return (

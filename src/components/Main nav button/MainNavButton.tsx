@@ -2,7 +2,7 @@ import React, { Fragment, useState , useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {MainNavContext} from "../../context/MainNavContext";
+import {MainNavContext} from "../../context/MainNav";
 
 type props = {
     name: string;
