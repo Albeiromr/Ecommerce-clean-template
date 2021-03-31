@@ -7,7 +7,6 @@ import MainNavButton from '../Main nav button/MainNavButton';
 
 const MainNav = () => {
 
-    console.log(productOptions)
 
     return (
 

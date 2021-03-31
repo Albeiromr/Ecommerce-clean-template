@@ -2,7 +2,6 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .main-nav {
-    
     &__subcontainer {
       margin: 0;
       padding: 0 5.533%;
@@ -27,11 +26,34 @@
       justify-content: center;
     }
 
+    &__option--selected {
+      margin: 0;
+      padding: 0 2.47%;
+      width: auto;
+      height: 57.928%;
+      background: $c2-A;
+      border-radius: 1.562vw;
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s ease-in;
+    }
+
     &__option-text {
       margin: 0;
       font-family: $primary-font;
       font-weight: 500;
       color: $c1-A;
+      font-size: clamp(15px, 1.953vw, 22px);
+    }
+
+    &__option-text--selected {
+      margin: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      color: $c1-J;
       font-size: clamp(15px, 1.953vw, 22px);
     }
 

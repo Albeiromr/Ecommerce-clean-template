@@ -1,4 +1,4 @@
-import React, { Fragment, useState , useContext} from "react";
+import React, { Fragment, useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -22,7 +22,7 @@ const MainNavButton = ({name}: props) => {
       <li className={optionSelected === name ? "main-nav__option--selected" : "main-nav__option"} onClick={handleClick}>
         <p className={optionSelected === name ? "main-nav__option-text--selected":"main-nav__option-text" }>{name}</p>
       </li>
-      <div className="main-nav__line"></div>
+      <div className={name !== "Our Blog" ? "main-nav__line" : "main-nav__line--hidden" }></div>
     </Fragment>
   );
 };
