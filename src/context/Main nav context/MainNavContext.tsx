@@ -1,8 +1,8 @@
 import React, { createContext, useState, FC } from "react";
 import {productOptions} from '../../utils/Product options/productOptions';
-import {defaultValue, contextProps} from './types';
+import {contextValue, contextProps} from './types';
 
-export const MainNavContext = createContext<defaultValue>({
+export const MainNavContext = createContext<contextValue>({
   productOptions: [],
   optionSelected: "",
   setOptionSelected: () => {},
