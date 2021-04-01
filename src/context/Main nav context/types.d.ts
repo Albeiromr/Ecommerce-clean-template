@@ -6,6 +6,6 @@ export type defaultValue = {
   setOptionSelected: (value: string) => void;
 };
 
-export type Props = {
+export type contextProps = {
   children: React.ReactNode;
 };

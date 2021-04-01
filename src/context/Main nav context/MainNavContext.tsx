@@ -1,6 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, FC } from "react";
 import {productOptions} from '../../utils/Product options/productOptions';
-import {defaultValue, Props} from './types';
+import {defaultValue, contextProps} from './types';
 
 export const MainNavContext = createContext<defaultValue>({
   productOptions: [],
@@ -8,7 +8,7 @@ export const MainNavContext = createContext<defaultValue>({
   setOptionSelected: () => {},
 });
 
-const MainNavContextProvider = ({ children }: Props) => {
+const MainNavContextProvider:FC<contextProps> = (props) => {
   //this state is for highlighting the type of products selected on the main nav
   const [optionSelected, setOptionSelected] = useState("Home");
 
@@ -20,7 +20,7 @@ const MainNavContextProvider = ({ children }: Props) => {
         setOptionSelected,
       }}
     >
-      {children}
+      {props.children}
     </MainNavContext.Provider>
   );
 };
