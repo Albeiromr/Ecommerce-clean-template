@@ -1,17 +1,17 @@
-import React, { Fragment, useContext} from "react";
+import React, { Fragment, useContext, FC} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {props} from './types';
+import {componentProps} from './types';
 import {MainNavContext} from "../../context/Main nav context/MainNavContext";
 
 
-const MainNavButton = ({name}: props) => {
+const MainNavButton:FC<componentProps> = (props) => {
 
     const {setOptionSelected, optionSelected, productOptions} = useContext(MainNavContext);
 
     const handleClick = () => {
-        if (optionSelected !== name) setOptionSelected(name);
+        if (optionSelected !== props.name) setOptionSelected(props.name);
         else return
     };
 
@@ -19,10 +19,10 @@ const MainNavButton = ({name}: props) => {
 
   return (
     <Fragment>
-      <li className={optionSelected === name ? "main-nav__option--selected" : "main-nav__option"} onClick={handleClick}>
-        <p className={optionSelected === name ? "main-nav__option-text--selected":"main-nav__option-text" }>{name}</p>
+      <li className={optionSelected === props.name ? "main-nav__option--selected" : "main-nav__option"} onClick={handleClick}>
+        <p className={optionSelected === props.name ? "main-nav__option-text--selected":"main-nav__option-text" }>{props.name}</p>
       </li>
-      <div className={name !== productOptions[productsLength].name ? "main-nav__line" : "main-nav__line--hidden" }></div>
+      <div className={props.name !== productOptions[productsLength].name ? "main-nav__line" : "main-nav__line--hidden" }></div>
     </Fragment>
   );
 };

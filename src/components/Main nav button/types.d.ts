@@ -1,3 +1,3 @@
-export type props = {
+export type componentProps = {
   name: string;
 };
