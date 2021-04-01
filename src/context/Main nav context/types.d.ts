@@ -1,4 +1,4 @@
-import {optionType} from "../../utils/Product options/types";
+import {optionType} from "../../utils/Product options/productOptionTypes";
 
 export type contextValue = {
   productOptions: optionType[];
