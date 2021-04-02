@@ -22,7 +22,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: $c2-B clamp(0.001px, 0.25vw, 4px) solid;
       transition: all .1s ease-in;
     }
 
@@ -38,7 +37,7 @@
       margin: 0;
       font-family: $primary-font;
       font-weight: 600;
-      color: $c2-B;
+      color: $c4-A;
       font-size: clamp(5px, 1.147vw, 18.94px);
     }
 
