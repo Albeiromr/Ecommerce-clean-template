@@ -9,3 +9,5 @@ export type contextValue = {
 export type contextProps = {
   children: React.ReactNode;
 };
+
+export type optionSelectedType = string
