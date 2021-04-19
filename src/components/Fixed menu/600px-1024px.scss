@@ -28,7 +28,7 @@
       border: 2px $c1-D solid;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
     }
 
     &__middle-block {
@@ -37,6 +37,9 @@
       background: darkorchid;
       border-radius: 1.562vw;
       border: 2px $c1-D solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__right-block {
@@ -47,13 +50,31 @@
       border: 2px $c1-D solid;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
     }
 
     &__line {
       width: 2.3%;
       height: 59.016%;
       background: $c1-E;
+    }
+
+    &__icon-container {
+      width: 22.222%;
+      height: 49.180%;
+      background: darkred;
+    }
+
+    &__icon-container-bascket {
+      width: 28.503%;
+      height: 65.573%;
+      background: darkred;
+    }
+
+    &__icon-middle {
+      width: 54.054%;
+      height: 65.573%;
+      background: darkred;
     }
   }
 }

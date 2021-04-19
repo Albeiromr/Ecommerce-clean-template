@@ -13,15 +13,25 @@ const FixedMenu = () => {
 
                 <div className='fixed-menu__left-block'>
 
+                    <div className='fixed-menu__icon-container'></div>
+
                     <div className='fixed-menu__line'></div>
+
+                    <div className='fixed-menu__icon-container'></div>
 
                 </div>
                 <div className='fixed-menu__middle-block'>
 
+                    <div className='fixed-menu__icon-middle'></div>
+
                 </div>
                 <div className='fixed-menu__right-block'>
 
+                    <div className='fixed-menu__icon-container'></div>
+
                     <div className='fixed-menu__line'></div>
+
+                    <div className='fixed-menu__icon-container-bascket'></div>
 
                 </div>
 
