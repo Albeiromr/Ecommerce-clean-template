@@ -20,9 +20,8 @@ const Header = () => {
         </div>
 
         <div className="header__contact-links">
-          <p className="header__green-link">Blog</p>
-          <p className="header__green-link">About Us</p>
-          <p className="header__green-link">Shipping Policy</p>
+          <p className="header__green-link">Sign Up</p>
+          <p className="header__green-link">My Account</p>
         </div>
       </div>
 
