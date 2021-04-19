@@ -4,6 +4,7 @@ import './600px-1024px.scss';
 import './1025px-1920px.scss';
 import Header from '../../components/Header/Header';
 import MainNav from '../../components/Main nav/MainNav';
+import FixedMenu from '../../components/Fixed menu/FixedMenu';
 
 
 const MainContainer = () => {
@@ -13,6 +14,9 @@ const MainContainer = () => {
 
             <Header />
             <MainNav />
+
+            <FixedMenu/>
+
 
         </div>
     )
