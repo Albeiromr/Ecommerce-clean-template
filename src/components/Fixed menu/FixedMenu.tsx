@@ -2,6 +2,11 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import filters from '../../assets/icons/filters.svg';
+import search from '../../assets/icons/search.svg';
+import user from '../../assets/icons/user.svg'
+import basket from '../../assets/icons/basket.svg'
+import arrowUp from '../../assets/icons/arrowUp.svg'
 
 
 const FixedMenu = () => {
@@ -13,25 +18,35 @@ const FixedMenu = () => {
 
                 <div className='fixed-menu__left-block'>
 
-                    <div className='fixed-menu__icon-container'></div>
+                    <div className='fixed-menu__icon-container'>
+                        <img className='fixed-menu__icon' src={filters} alt="filter icon"/>
+                    </div>
 
                     <div className='fixed-menu__line'></div>
 
-                    <div className='fixed-menu__icon-container'></div>
+                    <div className='fixed-menu__icon-container'>
+                        <img className='fixed-menu__icon' src={search} alt="filter icon"/>
+                    </div>
 
                 </div>
                 <div className='fixed-menu__middle-block'>
 
-                    <div className='fixed-menu__icon-middle'></div>
+                    <div className='fixed-menu__icon-middle-container'>
+                        <img className='fixed-menu__icon' src={arrowUp} alt="filter icon"/>
+                    </div>
 
                 </div>
                 <div className='fixed-menu__right-block'>
 
-                    <div className='fixed-menu__icon-container'></div>
+                    <div className='fixed-menu__icon-container'>
+                        <img className='fixed-menu__icon' src={user} alt="filter icon"/>
+                    </div>
 
                     <div className='fixed-menu__line'></div>
 
-                    <div className='fixed-menu__icon-container-bascket'></div>
+                    <div className='fixed-menu__icon-container-basket'>
+                        <img className='fixed-menu__icon' src={basket} alt="filter icon"/>
+                    </div>
 
                 </div>
 
