@@ -45,7 +45,7 @@ const FixedMenu = () => {
                     <div className='fixed-menu__line'></div>
 
                     <div className='fixed-menu__icon-container-basket'>
-                        <img className='fixed-menu__icon' src={basket} alt="filter icon"/>
+                        <img className='fixed-menu__icon-basket' src={basket} alt="filter icon"/>
                     </div>
 
                 </div>

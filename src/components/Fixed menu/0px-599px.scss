@@ -6,9 +6,9 @@
     min-width: 320px;
     height: 18.599vw;
     min-height: 59.516px;
-    background: darkcyan;
+    background: $c1-F;
     position: fixed;
-    bottom: 40%;
+    bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,6 @@
     &__subcontainer {
       width: 90.338%;
       height: 79.22%;
-      background: darkgray;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -25,34 +24,34 @@
     &__left-block {
       width: 36.096%;
       height: 100%;
-      background: darkorchid;
       border-radius: clamp(9.275px, 2.898vw, 40px);
       border: 2px $c1-D solid;
       display: flex;
       align-items: center;
       justify-content: space-around;
+      background: $c1-H;
     }
 
     &__middle-block {
       width: 19.786%;
       height: 100%;
-      background: darkorchid;
       border-radius: clamp(9.275px, 2.898vw, 40px);
       border: 2px $c1-D solid;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: $c1-H;
     }
 
     &__right-block {
       width: 36.096%;
       height: 100%;
-      background: darkorchid;
       border-radius: clamp(9.275px, 2.898vw, 40px);
       border: 2px $c1-D solid;
       display: flex;
       align-items: center;
       justify-content: space-around;
+      background: $c1-H;
     }
 
     &__line {
@@ -62,26 +61,36 @@
     }
 
     &__icon-container {
-      width: 22.222%;
-      height: 49.18%;
-      background: darkred;
+      width: 26.222%;
+      height: 53.18%;
+      margin: 0 4vw;
     }
 
     &__icon-container-basket {
       width: 28.503%;
       height: 65.573%;
-      background: darkred;
+      margin: 0 4vw;
+      position: relative;
+
+      
     }
 
     &__icon-middle-container {
-      width: 54.054%;
-      height: 65.573%;
-      background: darkred;
+      width: 58.054%;
+      height: 69.573%;
     }
 
     &__icon {
       width: 100%;
       height: 100%;
+    }
+
+    &__icon-basket {
+      width: 80.015;
+      height: 76.6%;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 }

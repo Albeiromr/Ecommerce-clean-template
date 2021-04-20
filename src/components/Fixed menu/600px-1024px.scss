@@ -4,7 +4,7 @@
   .fixed-menu {
     width: 100%;
     height: 12.109vw;
-    background: darkcyan;
+    background: $c1-F;
     position: fixed;
     bottom: 55%;
     display: flex;
@@ -14,7 +14,6 @@
     &__subcontainer {
       width: 94.14%;
       height: 65.591%;
-      background: darkgray;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -23,7 +22,7 @@
     &__left-block {
       width: 18.672%;
       height: 100%;
-      background: darkorchid;
+      background: $c1-H;
       border-radius: 1.562vw;
       border: 2px $c1-D solid;
       display: flex;
@@ -34,7 +33,7 @@
     &__middle-block {
       width: 10.235%;
       height: 100%;
-      background: darkorchid;
+      background: $c1-H;
       border-radius: 1.562vw;
       border: 2px $c1-D solid;
       display: flex;
@@ -45,7 +44,7 @@
     &__right-block {
       width: 18.672%;
       height: 100%;
-      background: darkorchid;
+      background: $c1-H;
       border-radius: 1.562vw;
       border: 2px $c1-D solid;
       display: flex;
@@ -60,26 +59,35 @@
     }
 
     &__icon-container {
-      width: 22.222%;
-      height: 49.180%;
-      background: darkred;
+      width: 26.222%;
+      height: 53.180%;
+      margin: 0 2vw;
     }
 
     &__icon-container-basket {
       width: 28.503%;
       height: 65.573%;
-      background: darkred;
+      margin: 0 2vw;
+      position: relative;
     }
 
     &__icon-middle-container {
-      width: 54.054%;
-      height: 65.573%;
-      background: darkred;
+      width: 58.054%;
+      height: 69.573%;
     }
 
     &__icon {
       width: 100%;
       height: 100%;
+    }
+
+    &__icon-basket {
+      width: 80.015;
+      height: 76.6%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      
     }
   }
 }
