@@ -57,7 +57,7 @@ const FixedMenu = () => {
               />
 
               <div className="fixed-menu__basket-counter">
-                <p className="fixed-menu__basket-text">43</p>
+                <p className="fixed-menu__basket-text">0</p>
               </div>
             </div>
           </div>

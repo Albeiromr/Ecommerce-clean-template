@@ -11,11 +11,9 @@ const MainNav = () => {
   return (
     <nav className="main-nav">
       <ul className=" main-nav__subcontainer">
-
         {productOptions.map((option) => (
           <MainNavButton name={option.name} />
         ))}
-        
       </ul>
     </nav>
   );

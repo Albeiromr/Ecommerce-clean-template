@@ -26,23 +26,23 @@ const Header = () => {
       </div>
 
       <div className="header__logo-bar">
-          <div className="header__logo-container">
-              <img className="header__logo-image" src={logo} alt="logo"/>
+        <div className="header__logo-container">
+          <img className="header__logo-image" src={logo} alt="logo" />
+        </div>
+        <div className="header__search-container">
+          <SearchBar />
+        </div>
+        <div className="header__icon-container">
+          <div className="header__icon-subcontainer">
+            <img className="header__icon" src={user} alt="user icon" />
           </div>
-          <div className="header__search-container">
-            <SearchBar />
+          <div className="header__icon-subcontainer">
+            <img className="header__icon" src={basket} alt="basket icon" />
           </div>
-          <div className="header__icon-container">
-            <div className="header__icon-subcontainer">
-              <img className="header__icon" src={user} alt="user icon"/>
-            </div>
-            <div className="header__icon-subcontainer">
-              <img className="header__icon" src={basket} alt="basket icon"/>
-            </div>
-            <div className="header__basket-counter">
-                <p className="header__basket-text">8</p>
-            </div>
+          <div className="header__basket-counter">
+            <p className="header__basket-text">8</p>
           </div>
+        </div>
       </div>
     </header>
   );

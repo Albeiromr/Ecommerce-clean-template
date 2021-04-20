@@ -22,7 +22,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: clamp(3px, 0.2vw, 4px) $c1-D solid;
       transition: all .1s ease-in;
     }
 

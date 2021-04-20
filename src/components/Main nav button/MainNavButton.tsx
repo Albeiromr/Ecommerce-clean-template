@@ -19,10 +19,31 @@ const MainNavButton:FC<componentProps> = (props) => {
 
   return (
     <Fragment>
-      <li className={optionSelected === props.name ? "main-nav__option--selected" : "main-nav__option"} onClick={handleClick}>
-        <p className={optionSelected === props.name ? "main-nav__option-text--selected":"main-nav__option-text" }>{props.name}</p>
+      <li
+        className={
+          optionSelected === props.name
+            ? "main-nav__option--selected"
+            : "main-nav__option"
+        }
+        onClick={handleClick}
+      >
+        <p
+          className={
+            optionSelected === props.name
+              ? "main-nav__option-text--selected"
+              : "main-nav__option-text"
+          }
+        >
+          {props.name}
+        </p>
       </li>
-      <div className={props.name !== productOptions[productsLength].name ? "main-nav__line" : "main-nav__line--hidden" }></div>
+      <div
+        className={
+          props.name !== productOptions[productsLength].name
+            ? "main-nav__line"
+            : "main-nav__line--hidden"
+        }
+      ></div>
     </Fragment>
   );
 };

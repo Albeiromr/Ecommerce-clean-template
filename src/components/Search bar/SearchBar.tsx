@@ -7,18 +7,22 @@ import searchIcon from '../../assets/icons/search.svg'
 const SearchBar = () => {
   
     return (
-    <form className="search-bar">
-      <input
-        className="search-bar__input"
-        type="text"
-        name="search"
-        placeholder="Seach Products..."
-      />
-      <div className="search-bar__icon-container">
-          <img className="search-bar__icon" src={searchIcon} alt="search icon"/>
-      </div>
-    </form>
-  );
+      <form className="search-bar">
+        <input
+          className="search-bar__input"
+          type="text"
+          name="search"
+          placeholder="Seach Products..."
+        />
+        <div className="search-bar__icon-container">
+          <img
+            className="search-bar__icon"
+            src={searchIcon}
+            alt="search icon"
+          />
+        </div>
+      </form>
+    );
 
 };
 
