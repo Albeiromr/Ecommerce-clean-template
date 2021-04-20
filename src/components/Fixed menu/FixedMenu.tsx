@@ -11,49 +11,59 @@ import arrowUp from '../../assets/icons/arrowUp.svg'
 
 const FixedMenu = () => {
 
-    return(
-        <div className='fixed-menu'>
-
-            <div className='fixed-menu__subcontainer'>
-
-                <div className='fixed-menu__left-block'>
-
-                    <div className='fixed-menu__icon-container'>
-                        <img className='fixed-menu__icon' src={filters} alt="filter icon"/>
-                    </div>
-
-                    <div className='fixed-menu__line'></div>
-
-                    <div className='fixed-menu__icon-container'>
-                        <img className='fixed-menu__icon' src={search} alt="filter icon"/>
-                    </div>
-
-                </div>
-                <div className='fixed-menu__middle-block'>
-
-                    <div className='fixed-menu__icon-middle-container'>
-                        <img className='fixed-menu__icon' src={arrowUp} alt="filter icon"/>
-                    </div>
-
-                </div>
-                <div className='fixed-menu__right-block'>
-
-                    <div className='fixed-menu__icon-container'>
-                        <img className='fixed-menu__icon' src={user} alt="filter icon"/>
-                    </div>
-
-                    <div className='fixed-menu__line'></div>
-
-                    <div className='fixed-menu__icon-container-basket'>
-                        <img className='fixed-menu__icon-basket' src={basket} alt="filter icon"/>
-                    </div>
-
-                </div>
-
+    return (
+      <div className="fixed-menu">
+        <div className="fixed-menu__subcontainer">
+          <div className="fixed-menu__left-block">
+            <div className="fixed-menu__icon-container">
+              <img
+                className="fixed-menu__icon"
+                src={filters}
+                alt="filter icon"
+              />
             </div>
 
+            <div className="fixed-menu__line"></div>
+
+            <div className="fixed-menu__icon-container">
+              <img
+                className="fixed-menu__icon"
+                src={search}
+                alt="filter icon"
+              />
+            </div>
+          </div>
+          <div className="fixed-menu__middle-block">
+            <div className="fixed-menu__icon-middle-container">
+              <img
+                className="fixed-menu__icon"
+                src={arrowUp}
+                alt="filter icon"
+              />
+            </div>
+          </div>
+          <div className="fixed-menu__right-block">
+            <div className="fixed-menu__icon-container">
+              <img className="fixed-menu__icon" src={user} alt="filter icon" />
+            </div>
+
+            <div className="fixed-menu__line"></div>
+
+            <div className="fixed-menu__icon-container-basket">
+              <img
+                className="fixed-menu__icon-basket"
+                src={basket}
+                alt="filter icon"
+              />
+
+              <div className="fixed-menu__basket-counter">
+                <p className="fixed-menu__basket-text">43</p>
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    );
 };
 
 export default FixedMenu;
