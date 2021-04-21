@@ -11,6 +11,7 @@ import visa from '../../assets/icons/visa.svg';
 import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
+import logo from '../../assets/logo/brand.png'
 
 const Footer = () => {
   return (
@@ -26,12 +27,10 @@ const Footer = () => {
                 <p className="footer__article-button-text">View Products</p>
               </div>
             </div>
-            
           </div>
           <div className="footer__image-container">
             <img className="footer__image" src={personFooter} alt="happy person"/>
           </div>
-          
         </article>
         <div className="footer__social">
           <div className="footer__social-network-container">
@@ -55,7 +54,10 @@ const Footer = () => {
             <img className="footer__social-card" src={discover} alt="credit card icon"/>
           </div>
         </div>
-        <div className="footer__copyright"></div>
+        <div className="footer__copyright">
+          <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
+          <p className="footer__copyright-text">© Copyright 2020.  Albeiro Marín</p>
+        </div>
       </div>
     </footer>
   );

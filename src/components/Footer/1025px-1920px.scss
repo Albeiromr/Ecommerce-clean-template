@@ -210,5 +210,24 @@
       bottom: 0;
       left: 0;
     }
+
+    &__copyright-brand {
+      width: 61.253%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__copyright-text {
+      margin: 0;
+      padding: 0;
+      color: $c1-A;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(15px, 0.969vw, 16px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
