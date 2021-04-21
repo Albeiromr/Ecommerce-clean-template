@@ -6,16 +6,28 @@ import Header from "../../components/Header/Header";
 import MainNav from "../../components/Main nav/MainNav";
 import FixedMenu from "../../components/Fixed menu/FixedMenu";
 import Footer from "../../components/Footer/Footer";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Home from '../Home/Home';
 
 const MainContainer = () => {
   return (
+    <Router >
     <div className="main-container">
+      
       <Header />
       <MainNav />
+      <Switch>
 
+        <Route path="/">
+          <Home />
+        </Route>
+
+      </Switch>
       <Footer />
       <FixedMenu />
+      
     </div>
+    </Router>
   );
 };
 
