@@ -5,12 +5,10 @@
     width: 100%;
     height: 116.869vw;
     position: relative;
-    background: darkcyan;
 
     &__subcontainer {
       width: 95.833%;
       height: 63.79%;
-      background: darkgrey;
       position: absolute;
       top: 13.48%;
       left: 2.075%;
@@ -122,7 +120,6 @@
     &__social {
       width: 100%;
       height: 6.385%;
-      background: darksalmon;
       position: absolute;
       top: 62.002%;
       left: 0%;
@@ -134,7 +131,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: green;
       display: flex;
       justify-content: space-between;
     }
@@ -190,7 +186,6 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-color: green;
       display: flex;
       justify-content: space-between;
     }
@@ -203,7 +198,6 @@
     &__copyright {
       width: 47.682%;
       height: 17.864%;
-      background: darksalmon;
       position: absolute;
       bottom: 0%;
       left: 0%;

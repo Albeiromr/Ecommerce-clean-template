@@ -7,12 +7,10 @@
     height: 247.572vw;
     min-height: 792.231px;
     position: relative;
-    background: darkcyan;
 
     &__subcontainer {
       width: 93.961%;
       height: 82.669%;
-      background: darkgrey;
       position: absolute;
       top: 6.891%;
       left: 3.019%;
@@ -124,7 +122,6 @@
     &__social {
       width: 51.413%;
       height: 13.69%;
-      background: darksalmon;
       position: absolute;
       top: 68.488%;
       left: 24.293%;
@@ -136,7 +133,6 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: green;
       display: flex;
       justify-content: space-between;
     }
@@ -192,7 +188,6 @@
       position: absolute;
       top: 0;
       left: 1.75%;
-      background-color: green;
       display: flex;
       justify-content: space-between;
     }
@@ -205,7 +200,6 @@
     &__copyright {
       width: 90.231%;
       height: 12.155%;
-      background: darksalmon;
       position: absolute;
       bottom: 0%;
       left: 4.884%;
