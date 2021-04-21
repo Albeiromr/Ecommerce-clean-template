@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className="footer__copyright">
           <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
-          <p className="footer__copyright-text">© Copyright 2020.  Albeiro Marín</p>
+          <p className="footer__copyright-text">© Copyright 2021.  Albeiro Marín</p>
         </div>
       </div>
     </footer>
