@@ -3,6 +3,10 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import personFooter from '../../assets/images/personFooter.png';
+import facebook from '../../assets/icons/facebook.svg';
+import twitter from '../../assets/icons/twitter.svg';
+import linkedin from '../../assets/icons/linkedin.svg';
+import instagram from '../../assets/icons/instagram.svg';
 
 const Footer = () => {
   return (
@@ -25,7 +29,22 @@ const Footer = () => {
           </div>
           
         </article>
-        <div className="footer__social"></div>
+        <div className="footer__social">
+          <div className="footer__social-network-container">
+            <div className="footer__social-facebook-container">
+              <img className="footer__social-icon" src={facebook} alt="facebook icon"/>
+            </div>
+            <div className="footer__social-twitter-container">
+              <img className="footer__social-icon" src={twitter} alt="twitter icon"/>
+            </div>
+            <div className="footer__social-linkedin-container">
+              <img className="footer__social-icon" src={linkedin} alt="linkedin icon"/>
+            </div>
+            <div className="footer__social-instagram-container">
+              <img className="footer__social-icon" src={instagram} alt="instagram icon"/>
+            </div>
+          </div>
+        </div>
         <div className="footer__copyright"></div>
       </div>
     </footer>
