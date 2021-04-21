@@ -47,10 +47,6 @@
       position: absolute;
       top: 16.155%;
       left: 6.831%;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      justify-content: space-between;
     }
 
     &__article-title {
@@ -60,6 +56,9 @@
       font-family: $primary-font;
       font-weight: 500;
       font-size: clamp(18px, 1.151vw, 19px);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     &__article-subtitle {
@@ -69,6 +68,9 @@
       font-family: $primary-font;
       font-weight: 500;
       font-size: clamp(30px, 2.869vw, 49px);
+      position: absolute;
+      top: 15%;
+      left: 0;
     }
 
     &__article-paragraph {
@@ -78,15 +80,25 @@
       font-family: $primary-font;
       font-weight: 400;
       font-size: clamp(15px, calc(0.85em + 0.1vw), 17px);
+      line-height: 28px;
+      position: absolute;
+      top: 42%;
+      left: 0;
     }
 
     &__article-button {
-      width: 43.886%;
+      width: 48.886%;
       height: 19.062%;
       background: forestgreen;
       border-radius: clamp(10px, 0.952vw, 18px);
       border: 2px #ffffff solid;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
     &__article-button-text {
@@ -96,6 +108,20 @@
       font-family: $primary-font;
       font-weight: 500;
       font-size: clamp(14px, 0.969vw, 16px);
+    }
+
+    &__image-container {
+      width: 47.481%;
+      height: 88.368%;
+      background: gray;
+      position: absolute;
+      bottom: 0;
+      left: 48.074%;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
     }
 
     &__social {
