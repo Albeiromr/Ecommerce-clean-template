@@ -7,6 +7,10 @@ import facebook from '../../assets/icons/facebook.svg';
 import twitter from '../../assets/icons/twitter.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import instagram from '../../assets/icons/instagram.svg';
+import visa from '../../assets/icons/visa.svg';
+import mastercard from '../../assets/icons/mastercard.svg';
+import amex from '../../assets/icons/amex.svg';
+import discover from '../../assets/icons/discover.svg';
 
 const Footer = () => {
   return (
@@ -43,6 +47,12 @@ const Footer = () => {
             <div className="footer__social-instagram-container">
               <img className="footer__social-icon" src={instagram} alt="instagram icon"/>
             </div>
+          </div>
+          <div className="footer__social-card-container">
+            <img className="footer__social-card" src={visa} alt="credit card icon"/>
+            <img className="footer__social-card" src={mastercard} alt="credit card icon"/>
+            <img className="footer__social-card" src={amex} alt="credit card icon"/>
+            <img className="footer__social-card" src={discover} alt="credit card icon"/>
           </div>
         </div>
         <div className="footer__copyright"></div>

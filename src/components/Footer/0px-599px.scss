@@ -184,7 +184,23 @@
     &__social-icon {
       width: 43.75%;
       height: 43.75%;
-    } 
+    }
+
+    &__social-card-container {
+      width: 96.5%;
+      height: 30.655%;
+      position: absolute;
+      top: 0;
+      left: 1.75%;
+      background-color: green;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-card {
+      width: 20.725%;
+      height: 100%;
+    }
 
     &__copyright {
       width: 90.231%;
