@@ -1,0 +1,108 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .slide {
+    width: 100%;
+    max-width: 1650px;
+    height: 43.047vw;
+    max-height: 710.28px;
+    background: darkcyan;
+    position: relative;
+
+    &__subcontainer {
+      width: 82.173%;
+      height: 81.447%;
+      background: darkolivegreen;
+      position: absolute;
+      top: 12.957%;
+      left: 8.909%;
+    }
+
+    &__column-left {
+      width: 5.636%;
+      height: 60.985%;
+      background: $c1-E;
+      border-radius: 0 clamp(20px, 2.422vw, 40px) clamp(20px, 2.422vw, 40px) 0;
+      position: absolute;
+      top: 19.859%;
+      left: 0;
+    }
+
+    &__column-right {
+      width: 5.636%;
+      height: 60.985%;
+      background: $c1-E;
+      border-radius: clamp(20px, 2.422vw, 40px) 0 0 clamp(20px, 2.422vw, 40px);
+      position: absolute;
+      top: 19.859%;
+      right: 0;
+    }
+
+    &__article {
+      width: 100%;
+      height: 91.751%;
+      background: rgb(173, 118, 51);
+      border-radius: clamp(20px, 2.422vw, 40px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__article-text-container {
+      width: 37.761%;
+      height: 71.553%;
+      background: rgb(68, 145, 100);
+      position: absolute;
+      top: 12.241%;
+      left: 6.49%;
+    }
+
+    &__article-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      color: $c1-C;
+      font-size: clamp(16px, 1.696vw, 28px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__article-subtitle {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      line-height: 130%;
+      color: $c1-A;
+      font-size: clamp(30px, 3.393vw, 56px);
+      position: absolute;
+      top: 25%;
+      left: 0;
+    }
+
+    &__article-button {
+      width: 39.228%;
+      height: 17.62%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(8px, 0.952vw, 15.71px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__article-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: clamp(16px, 1.212vw, 20px);
+    }
+  }
+}
