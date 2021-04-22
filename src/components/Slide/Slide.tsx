@@ -17,6 +17,12 @@ const Slide = () => {
                   </div>
               </div>
           </article>
+
+          <div className="slide__circle-container">
+              <div className="slide__circle"></div>
+              <div className="slide__circle--selected"></div>
+              <div className="slide__circle"></div>
+          </div>
       </div>
       <div className="slide__column-right"></div>
     </section>

@@ -90,5 +90,30 @@
       color: #ffffff;
       font-size: clamp(15px, 1.953vw, 25px);
     }
+
+    &__circle-container {
+      width: 17.537%;
+      height: 6.839%;
+      background: darkslategray;
+      position: absolute;
+      bottom: 0;
+      left: 41.23%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__circle {
+      width: 17.437%;
+      height: 100%;
+      border-radius: 81px;
+      background: #c4c4c4;
+    }
+
+    &__circle--selected {
+      width: 37.694%;
+      height: 100%;
+      border-radius: 81px;
+      background: $c2-A;
+    }
   }
 }

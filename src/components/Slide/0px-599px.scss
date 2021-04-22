@@ -84,5 +84,30 @@
       color: #ffffff;
       font-size: clamp(14px, 3.381vw, 25px);
     }
+
+    &__circle-container {
+      width: 26.18%;
+      height: 9.779%;
+      background: darkslategray;
+      position: absolute;
+      bottom: 0;
+      left: 36.838%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__circle {
+      width: 17.438%;
+      height: 100%;
+      border-radius: 81px;
+      background: #c4c4c4;
+    }
+
+    &__circle--selected {
+      width: 37.694%;
+      height: 100%;
+      border-radius: 81px;
+      background: $c2-A;
+    }
   }
 }
