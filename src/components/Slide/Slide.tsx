@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -15,13 +15,37 @@ const Slide = () => {
     const [slideImg, setSlideImg] = useState<slideImgType>(slide1);
 
 
+    useEffect(() => {
+      setTimeout(() => {
+        switch (backgroundImg) {
+          case slide1:
+            setBackgroundIMG(slide2);
+            break;
+          case slide2:
+            setBackgroundIMG(slide3);
+            break;
+          case slide3:
+            setBackgroundIMG(slide1);
+            break;
+          default:
+        }
+      }, 8000);
+    }, [backgroundImg]);
+
+
   return (
     <section className="slide">
       <div className="slide__column-left"></div>
       <div className="slide__subcontainer">
           <article className="slide__article" style={{backgroundImage: `url(${backgroundImg})`}}>
 
-              <img className="slide__article-image" src={slideImg} alt="slide image"/>
+              <div className="slide__articul-images-preload">
+                  <img className="slide__image-preloaded" src={slide1} alt="slide"/>
+                  <img className="slide__image-preloaded" src={slide2} alt="slide"/>
+                  <img className="slide__image-preloaded" src={slide3} alt="slide"/>
+              </div>
+
+              {/* <img className="slide__article-image" src={slideImg} alt="slide"/> */}
 
               <div className="slide__article-text-container">
                   <p className="slide__article-title">HOT PRODUCTS</p>
