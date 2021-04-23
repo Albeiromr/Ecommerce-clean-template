@@ -52,7 +52,7 @@
     &__card {
       width: 48.489%;
       height: 100%;
-      background: dimgrey;
+      background: #ffffff;
       border-radius: clamp(9px, 1.677vw, 18px);
       border: 2px $c1-D solid;
       position: relative;
@@ -61,7 +61,6 @@
     &__card-text-container {
       width: 45.758%;
       height: 72.523%;
-      background: gainsboro;
       position: absolute;
       top: 8.901%;
       left: 4.621%;
@@ -72,7 +71,7 @@
       padding: 0;
       font-family: $primary-font;
       font-weight: 500;
-      color: $c1-A;
+      color: $strongText;
       font-size: clamp(16px, 3.097vw, 30px);
       position: absolute;
       top: 0;
@@ -84,8 +83,8 @@
       padding: 0;
       font-family: $primary-font;
       font-weight: 400;
-      color: black;
-      font-size: clamp(15px, calc(.4em + 1.36vw), 17px);
+      color: $lightText;
+      font-size: clamp(15px, calc(0.4em + 1.36vw), 17px);
       line-height: 200%;
       position: absolute;
       top: 20%;
@@ -95,7 +94,7 @@
     &__card-button {
       width: 66.556%;
       height: 19.521%;
-      background: $c1-F;
+      background: $c1-E;
       border-radius: clamp(9px, 1.677vw, 18px);
       position: absolute;
       bottom: 0;
@@ -118,10 +117,25 @@
     &__card-image-container {
       width: 39.393%;
       height: 83.029%;
-      background: lightseagreen;
       position: absolute;
       top: 3.028%;
       left: 55.833%;
+    }
+
+    &__card-image-background {
+      width: 88.080%;
+      height: 86.469%;
+      background: #EDEDED;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__card-image {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }

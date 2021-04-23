@@ -2,6 +2,8 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import youngMan from '../../assets/images/youngMan.png';
+import adultMan from '../../assets/images/adultMan.png';
 
 
 
@@ -21,7 +23,10 @@ const DiscoverSection = () => {
                                     <p className="discover-section__card-button-text">All Shirts</p>
                                 </div>
                             </div>
-                            <div className="discover-section__card-image-container"></div>
+                            <div className="discover-section__card-image-container">
+                                <div className="discover-section__card-image-background"></div>
+                                <img className="discover-section__card-image" src={youngMan} alt="man"/>
+                            </div>
                         </article>
                     </div>
                 </div>
