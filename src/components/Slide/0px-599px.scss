@@ -34,6 +34,12 @@
       left: 0;
     }
 
+    &__article-image {
+      width: 100%;
+      height: 100%;
+      border-radius: clamp(10px, 2.76vw, 30px);
+    }
+
     &__article-text-container {
       width: 43.616%;
       height: 82.432%;

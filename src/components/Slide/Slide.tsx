@@ -19,7 +19,10 @@ const Slide = () => {
     <section className="slide">
       <div className="slide__column-left"></div>
       <div className="slide__subcontainer">
-          <article className="slide__article">
+          <article className="slide__article" style={{backgroundImage: `url(${backgroundImg})`}}>
+
+              <img className="slide__article-image" src={slideImg} alt="slide image"/>
+
               <div className="slide__article-text-container">
                   <p className="slide__article-title">HOT PRODUCTS</p>
                   <h2 className="slide__article-subtitle">Fill your desk full of technology</h2>
@@ -27,6 +30,7 @@ const Slide = () => {
                       <p className="slide__article-button-text">View More</p>
                   </div>
               </div>
+
           </article>
 
           <div className="slide__circle-container">
