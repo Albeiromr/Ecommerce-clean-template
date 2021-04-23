@@ -1,0 +1,60 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .discover-section {
+    width: 100%;
+    height: 68.619vw;
+    background: darkcyan;
+    position: relative;
+
+    &__brand-container {
+      width: 100%;
+      height: 49.335%;
+      background: rgb(0, 139, 81);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__brand-subcontainer {
+      width: 57.031%;
+      height: 17.93%;
+      background: darkorange;
+      position: absolute;
+      top: 60.769%;
+      left: 21.549%;
+    }
+
+    &__card-container {
+      width: 100%;
+      height: 66.719%;
+      background: darksalmon;
+      position: absolute;
+      top: 7.153%;
+      left: 0;
+      z-index: 10;
+      overflow-x: scroll;
+    }
+
+    &__card-subcontainer {
+      width: 174.683%;
+      height: 100%;
+      background: rgb(127, 93, 141);
+    }
+
+    &__card-flex-container {
+      width: 83.154%;
+      height: 100%;
+      background: deeppink;
+      margin: 0 auto;
+    }
+
+    &__card {
+      width: 48.489%;
+      height: 100%;
+      background: dimgrey;
+      border-radius: clamp(9px, 1.677vw, 18px);
+      border: 2px $c1-D solid;
+    }
+  }
+}
