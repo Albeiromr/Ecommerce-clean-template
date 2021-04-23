@@ -19,7 +19,8 @@
     &__column-left {
       width: 5.636%;
       height: 60.985%;
-      background: $c1-E;
+      background: rgb(132,173,154);
+      background: linear-gradient(180deg, rgba(132,173,154,1) 0%, rgba(44,223,139,0.5032212714187237) 50%);
       border-radius: 0 clamp(20px, 2.422vw, 40px) clamp(20px, 2.422vw, 40px) 0;
       position: absolute;
       top: 19.859%;
@@ -29,7 +30,8 @@
     &__column-right {
       width: 5.636%;
       height: 60.985%;
-      background: $c1-E;
+      background: rgb(132,173,154);
+      background: linear-gradient(180deg, rgba(132,173,154,1) 0%, rgba(44,223,139,0.5032212714187237) 50%);
       border-radius: clamp(20px, 2.422vw, 40px) 0 0 clamp(20px, 2.422vw, 40px);
       position: absolute;
       top: 19.859%;
