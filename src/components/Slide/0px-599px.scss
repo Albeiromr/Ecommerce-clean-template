@@ -39,6 +39,7 @@
       width: 1px;
       height: 1px;
       visibility: hidden;
+      position: absolute;
     }
 
     &__image-preloaded {
@@ -49,6 +50,15 @@
       width: 100%;
       height: 100%;
       border-radius: clamp(10px, 2.76vw, 30px);
+      object-fit: cover;
+      object-position: top;
+      border-radius: clamp(20px, 2.422vw, 40px);
+      animation-name: slideImage;
+      animation-delay: 0;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-direction: normal;
+      animation-duration: 3s;
     }
 
     &__article-text-container {
@@ -121,6 +131,16 @@
       height: 100%;
       border-radius: 81px;
       background: $c2-A;
+    }
+  }
+
+  @keyframes slideImage {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
     }
   }
 }
