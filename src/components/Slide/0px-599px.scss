@@ -33,6 +33,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      cursor: pointer;
     }
 
     &__articul-images-preload {
@@ -97,7 +98,15 @@
     }
 
     &__article-title {
-      display: none;
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      color: $c1-C;
+      font-size: clamp(14px, 2vw, 30px);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     &__article-subtitle {
@@ -107,25 +116,14 @@
       font-weight: 600;
       line-height: 130%;
       color: $c1-A;
-      font-size: clamp(15px, 3.864vw, 30px);
+      font-size: clamp(18px, 5.264vw, 50px);
       position: absolute;
-      top: 10%;
+      bottom: 10%;
       left: 0;
     }
 
     &__article-button {
-      width: 80.189%;
-      height: 32%;
-      background: $c2-A;
-      border: 2px $c2-B solid;
-      border-radius: clamp(5px, 2.026vw, 20px);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+      display: none;
     }
 
     &__article-button-text {
