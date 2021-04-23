@@ -27,8 +27,9 @@
     &__article {
       width: 100%;
       height: 81.434%;
-      background: $c1-E;
+      //background: $c1-E;
       border-radius: clamp(10px, 2.76vw, 30px);
+      background-size: cover;
       position: absolute;
       top: 0;
       left: 0;
