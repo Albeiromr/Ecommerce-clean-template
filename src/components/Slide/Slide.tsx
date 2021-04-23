@@ -29,26 +29,25 @@ const Slide = () => {
             break;
           default:
         }
-      }, 8000);
-
+      }, 9000);
     }, [backgroundImg]);
 
     useEffect(() => {
-        setTimeout(() => {
-            switch (slideImg) {
-              case slide1:
-                setBackgroundIMG(slide2);
-                break;
-              case slide2:
-                setBackgroundIMG(slide3);
-                break;
-              case slide3:
-                setBackgroundIMG(slide1);
-                break;
-              default:
-            }
-          }, 1000);
-    },[slideImg])
+      setTimeout(() => {
+        switch (slideImg) {
+          case slide1:
+            setSlideImg(slide2);
+            break;
+          case slide2:
+            setSlideImg(slide3);
+            break;
+          case slide3:
+            setSlideImg(slide1);
+            break;
+          default:
+        }
+      }, 8000);
+    }, [slideImg]);
 
 
   return (
@@ -63,7 +62,7 @@ const Slide = () => {
                   <img className="slide__image-preloaded" src={slide3} alt="slide"/>
               </div>
 
-              <img className="slide__article-image" src={slideImg} alt="slide"/>
+               <img className="slide__article-image" src={slideImg} alt="slide"/> 
 
               <div className="slide__article-text-container">
                   <p className="slide__article-title">HOT PRODUCTS</p>

@@ -65,11 +65,11 @@
       object-position: top;
       border-radius: clamp(20px, 2.422vw, 40px);
       animation-name: slideImage;
-      animation-delay: 0;
+      animation-delay: none;
       animation-iteration-count: 1;
       animation-timing-function: ease;
       animation-direction: normal;
-      animation-duration: 3s;
+      animation-duration: 1s;
     }
 
     &__article-text-container {
