@@ -15,6 +15,7 @@ const DiscoverSection = () => {
             <div className="discover-section__card-container">
                 <div className="discover-section__card-subcontainer">
                     <div className="discover-section__card-flex-container">
+
                         <article className="discover-section__card">
                             <div className="discover-section__card-text-container">
                                 <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
@@ -28,6 +29,21 @@ const DiscoverSection = () => {
                                 <img className="discover-section__card-image" src={youngMan} alt="man"/>
                             </div>
                         </article>
+
+                        <article className="discover-section__card">
+                            <div className="discover-section__card-text-container">
+                                <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
+                                <p className="discover-section__card-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler</p>
+                                <div className="discover-section__card-button">
+                                    <p className="discover-section__card-button-text">All Shirts</p>
+                                </div>
+                            </div>
+                            <div className="discover-section__card-image-container">
+                                <div className="discover-section__card-image-background"></div>
+                                <img className="discover-section__card-image" src={adultMan} alt="man"/>
+                            </div>
+                        </article>
+
                     </div>
                 </div>
             </div>
