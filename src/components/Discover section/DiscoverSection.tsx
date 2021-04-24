@@ -4,6 +4,9 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import youngMan from '../../assets/images/youngMan.png';
 import adultMan from '../../assets/images/adultMan.png';
+import adidas from '../../assets/icons/adidas.svg';
+import puma from '../../assets/icons/puma.svg';
+import hm from '../../assets/icons/hm.svg';
 
 
 
@@ -49,7 +52,11 @@ const DiscoverSection = () => {
             </div>
 
             <div className="discover-section__brand-container">
-                <div className="discover-section__brand-subcontainer"></div>
+                <div className="discover-section__brand-subcontainer">
+                    <img className="discover-section__brand" src={adidas} alt="brand"/>
+                    <img className="discover-section__brand" src={puma} alt="brand"/>
+                    <img className="discover-section__brand" src={hm} alt="brand"/>
+                </div>
             </div>
 
         </section>
