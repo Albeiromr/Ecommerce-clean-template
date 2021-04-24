@@ -18,7 +18,7 @@
 
     &__column-left {
       width: 12.848%;
-      height: 90.950%;
+      height: 90.95%;
       border-radius: 0 clamp(20px, 2.422vw, 40px) clamp(20px, 2.422vw, 40px) 0;
       position: absolute;
       top: 5%;
@@ -27,7 +27,7 @@
 
     &__column-right {
       width: 12.848%;
-      height: 90.950%;
+      height: 90.95%;
       border-radius: clamp(20px, 2.422vw, 40px) 0 0 clamp(20px, 2.422vw, 40px);
       position: absolute;
       top: 5%;
@@ -176,7 +176,7 @@
       height: 100%;
       border-radius: 81px;
       background: #c4c4c4;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
     }
 
@@ -185,7 +185,7 @@
       height: 100%;
       border-radius: 81px;
       background: $c2-A;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
     }
   }
