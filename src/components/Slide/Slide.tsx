@@ -3,9 +3,12 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import {backgroundImgType, counterType} from './types';
+import leftColumn from '../../assets/images/leftColumn.png';
+import rightColumn from '../../assets/images/rightColumn.png';
 import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide2.jpg';
 import slide3 from '../../assets/images/slide3.jpg';
+
 
 const Slide = () => {
 
@@ -52,7 +55,9 @@ const Slide = () => {
 
   return (
     <section className="slide">
-      <div className="slide__column-left"></div>
+      <div className="slide__column-left">
+        <img className="slide__column-left-image" src={leftColumn} alt="points texture"/>
+      </div>
       <div className="slide__subcontainer">
           <article className="slide__article" style={{backgroundImage: `url(${backgroundImg})`}}>
 
@@ -84,7 +89,9 @@ const Slide = () => {
               <div className={counter === 3 ? "slide__circle--selected" : "slide__circle"}></div>
           </div>
       </div>
-      <div className="slide__column-right"></div>
+      <div className="slide__column-right">
+        <img className="slide__column-left-image" src={rightColumn} alt="points texture"/>
+      </div>
     </section>
   );
 };
