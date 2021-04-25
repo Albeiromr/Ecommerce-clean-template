@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 1025px) {
   .product-card {
-    width: 200px;
+    width: calc(90vw - var(--proportion));
     height: 200px;
     background: rgb(206, 173, 89);
   }

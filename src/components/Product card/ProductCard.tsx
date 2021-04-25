@@ -1,51 +1,19 @@
-import React, {useState} from 'react';
+import React from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import {proportionType, cssVariables} from './types';
+import { cssVariables } from "./types";
+import useScrollbarSize from "react-scrollbar-size";
 
 const ProductCard = () => {
 
-    const [proportion, setProportion] = useState<proportionType>(0)
+  const {width} = useScrollbarSize();
 
-    //these two functions let us know the scroll width every time the page loads or resize
-    //and update the state PROPORTION to know what proportion discount in the peoductCard component width
-    // due to the space that the scroll use in the user screen
-    window.addEventListener("load", (): void => {
-      const windowWidth: number = window.innerWidth;
-      const windowLessScroll: number = document.body.clientWidth;
-      const scrollWidth: number = windowWidth - windowLessScroll;
-      if (scrollWidth > 0) {
-        setProportion(scrollWidth / 3);
-      } else {
-        setProportion(0);
-      };
+  return (
+    <article style={{ "--proportion": `${width.toString()}px` } as cssVariables} className="product-card">
       
-    });
-
-    window.addEventListener("resize", (): void => {
-        const windowWidth: number = window.innerWidth;
-        const windowLessScroll: number = document.body.clientWidth;
-        const scrollWidth: number = windowWidth - windowLessScroll;
-        if (scrollWidth > 0) {
-          setProportion(scrollWidth / 3);
-        } else {
-          setProportion(0);
-        };
-        
-      });
-
-   
-
-    
-    
-    
-
-    return (
-        <article style={{proportion: `${proportion.toString()}px`} as cssVariables} className="product-card">
-            
-        </article>
-    )
+    </article>
+  );
 };
 
 export default ProductCard;
