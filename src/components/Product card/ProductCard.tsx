@@ -4,6 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import { cssVariables, productCardProps } from "./types";
 import useScrollbarSize from "react-scrollbar-size";
+import fiveStars from '../../assets/images/fiveStars.png';
 
 const ProductCard:FC<productCardProps> = (props) => {
 
@@ -16,6 +17,8 @@ const ProductCard:FC<productCardProps> = (props) => {
     <article style={{ "--proportion": `${scrollBarWidth.toString()}px` } as cssVariables} className="product-card">
       <div className="product-card__subcontainer">
         <div className="product-card__image-container"></div>
+        <h2 className="product-card__title">Product Title</h2>
+        <img className="product-card__stars" src={fiveStars} alt="rate"/>
       </div>
     </article>
   );
