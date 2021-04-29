@@ -7,12 +7,16 @@ import useScrollbarSize from "react-scrollbar-size";
 
 const ProductCard:FC<productCardProps> = (props) => {
 
+  //this useScrollBarSize is a costum hook to get the browswer scroll bar width
+  // this is necessary due to give the individual product cart the right width to fit in its parent container
   const {width} = useScrollbarSize();
-  const proportion:number = width / props.fractionToDivide
+  const scrollBarWidth:number = width / props.fractionToDivide
 
   return (
-    <article style={{ "--proportion": `${proportion.toString()}px` } as cssVariables} className="product-card">
-      
+    <article style={{ "--proportion": `${scrollBarWidth.toString()}px` } as cssVariables} className="product-card">
+      <div className="product-card__subcontainer">
+        <div className="product-card__image-container"></div>
+      </div>
     </article>
   );
 };

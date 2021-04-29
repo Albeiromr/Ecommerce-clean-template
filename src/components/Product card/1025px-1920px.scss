@@ -2,8 +2,32 @@
 
 @media only screen and (min-width: 1025px) {
   .product-card {
-    width: calc(90vw - var(--proportion));
-    height: 200px;
-    background: rgb(206, 173, 89);
+    width: calc(23.815vw - var(--proportion));
+    max-width: 392.95px;
+    height: 36.36vw;
+    max-height: 599.95px;
+    background: rgb(116, 96, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__subcontainer {
+      width: 89.311%;
+      height: 89.522%;
+      background: darksalmon;
+      position: relative;
+      border-radius: clamp(10px, 0.952vw, 15.71px);
+      border: 1px $c1-D solid;
+    }
+
+    &__image-container {
+      width: 88.691%;
+      height: 61.198%;
+      background: rgb(55, 87, 55);
+      position: absolute;
+      top: 3.9%;
+      left: 5.652%;
+      border-radius: clamp(10px, 0.952vw, 15.71px);
+    }
   }
 }
