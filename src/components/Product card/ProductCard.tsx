@@ -19,6 +19,8 @@ const ProductCard:FC<productCardProps> = (props) => {
         <div className="product-card__image-container"></div>
         <h2 className="product-card__title">Product Title</h2>
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
+        <p className="product-card__actual-price">36.99 USD</p>
+        <p className="product-card__old-price">48.56</p>
       </div>
     </article>
   );
