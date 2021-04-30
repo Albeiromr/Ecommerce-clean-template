@@ -35,7 +35,9 @@ const ProductCard = () => {
       <div className="product-card__subcontainer">
         <div className="product-card__image-container">
           <img className="product-card__image" src={test} alt="product"/>
-          <div className="product-card__discount"></div>
+          <div className="product-card__discount-container">
+            <p className="product-card__discount">-14%</p>
+          </div>
         </div>
         <h2 className="product-card__title">Product Title</h2>
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
