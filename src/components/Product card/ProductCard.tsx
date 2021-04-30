@@ -14,6 +14,10 @@ const ProductCard = () => {
   const bigProportion:number = 25.006 * width / 100
   const mediumProportion:number = 32.421 * width / 100
   const smallProportion:number = 49.033 * width / 100
+  
+  const bigImage:number = 19.920 * width / 100
+  const mediumImage:number = 26.027 * width / 100
+  const smallImage:number = 39.987 * width / 100
 
   return (
     <article 
@@ -21,7 +25,10 @@ const ProductCard = () => {
     style={{
        "--big": `${bigProportion.toString()}px`, 
        "--medium" : `${mediumProportion.toString()}px`,
-       "--small" : `${smallProportion.toString()}px`
+       "--small" : `${smallProportion.toString()}px`,
+       "--bigImage" : `${bigImage.toString()}px`,
+       "--mediumImage" : `${mediumImage.toString()}px`,
+       "--smallImage" : `${smallImage.toString()}px`,
       } as cssVariables} >
 
       <div className="product-card__subcontainer">

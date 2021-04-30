@@ -21,12 +21,12 @@
     }
 
     &__image-container {
-      width: 88.058%;
-      height: 49.417%;
+      width: clamp(127.961px, calc(39.987vw - var(--smallImage)), 300px);
+      height: clamp(127.961px, calc(39.987vw - var(--smallImage)), 300px);
       background: rgb(55, 87, 55);
       position: absolute;
       top: 3.283%;
-      left: 5.973%;
+      left: 5.773%;
       border-radius: clamp(5px, 2.033vw, 15px);
     }
 
