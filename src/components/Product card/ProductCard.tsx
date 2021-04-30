@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import {cssVariables} from "./types";
 import useScrollbarSize from "react-scrollbar-size";
 import fiveStars from '../../assets/images/fiveStars.png';
+import test from '../../assets/images/test.jpg';
 
 const ProductCard = () => {
 
@@ -32,7 +33,10 @@ const ProductCard = () => {
       } as cssVariables} >
 
       <div className="product-card__subcontainer">
-        <div className="product-card__image-container"></div>
+        <div className="product-card__image-container">
+          <img className="product-card__image" src={test} alt="product"/>
+          <div className="product-card__discount"></div>
+        </div>
         <h2 className="product-card__title">Product Title</h2>
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
         <p className="product-card__actual-price">36.99 USD</p>
