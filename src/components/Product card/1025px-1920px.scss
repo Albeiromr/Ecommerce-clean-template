@@ -2,8 +2,8 @@
 
 @media only screen and (min-width: 1025px) {
   .product-card {
-    width: calc(23.815vw - var(--proportion));
-    max-width: 392.95px;
+    width: calc(25.006vw - var(--proportion));
+    max-width: 412.6px;
     height: 36.36vw;
     max-height: 599.95px;
     background: rgb(116, 96, 47);
@@ -12,7 +12,7 @@
     justify-content: center;
 
     &__subcontainer {
-      width: 89.311%;
+      width: 89.820%;
       height: 89.522%;
       background: darksalmon;
       position: relative;
@@ -22,7 +22,7 @@
 
     &__image-container {
       width: 88.691%;
-      height: 61.198%;
+      height: 61.256%;
       background: rgb(55, 87, 55);
       position: absolute;
       top: 3.9%;
@@ -71,6 +71,16 @@
       position: absolute;
       top: 91.710%;
       left: 5.652%;
+    }
+
+    &__button {
+      width: 32.226%;
+      height: 8.776%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      position: absolute;
+      top: 86.346%;
+      left: 62.298%;
     }
   }
 }

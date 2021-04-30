@@ -21,6 +21,7 @@ const ProductCard:FC<productCardProps> = (props) => {
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
         <p className="product-card__actual-price">36.99 USD</p>
         <p className="product-card__old-price">48.56</p>
+        <div className="product-card__button"></div>
       </div>
     </article>
   );
