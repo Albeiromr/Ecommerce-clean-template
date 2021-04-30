@@ -14,7 +14,7 @@ const ProductCard = () => {
   const bigProportion:number = 25.006 * width / 100
   const mediumProportion:number = 32.421 * width / 100
   const smallProportion:number = 49.033 * width / 100
-  
+
   const bigImage:number = 19.920 * width / 100
   const mediumImage:number = 26.027 * width / 100
   const smallImage:number = 39.987 * width / 100
@@ -37,7 +37,9 @@ const ProductCard = () => {
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
         <p className="product-card__actual-price">36.99 USD</p>
         <p className="product-card__old-price">48.56</p>
-        <div className="product-card__button"></div>
+        <div className="product-card__button">
+          <p className="product-card__button-text">View</p>
+        </div>
       </div>
 
     </article>
