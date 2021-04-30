@@ -12,9 +12,7 @@ const Temporal = () => {
     return(
         <div className="temporal">
 
-            <ProductCard 
-            fractionToDivide={3}
-            />
+            <ProductCard />
 
         </div>
     )

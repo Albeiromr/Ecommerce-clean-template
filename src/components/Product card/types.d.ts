@@ -3,9 +3,8 @@ import React from 'react';
 
 
 export interface cssVariables extends React.CSSProperties{
-    "--proportion": string;
+    "--big": string;
+    "--medium": string;
+    "--small": string;
 };
 
-export interface productCardProps {
-    fractionToDivide: number;
-}
