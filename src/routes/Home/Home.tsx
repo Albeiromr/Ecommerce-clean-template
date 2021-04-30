@@ -15,7 +15,6 @@ const Home = () => {
         <div className="home">
 
             <Slide />
-            <Temporal />
             <DiscoverSection />
             
         </div>

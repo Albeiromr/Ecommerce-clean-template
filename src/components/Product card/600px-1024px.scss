@@ -4,7 +4,6 @@
   .product-card {
     width: calc(32.421vw - var(--medium));
     height: 55.859vw;
-    background: rgb(116, 96, 47);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +11,7 @@
     &__subcontainer {
       width: 91.164%;
       height: 94.871%;
-      background: darksalmon;
+      background: #ffffff;
       position: relative;
       border-radius: clamp(8px, 1.324vw, 15px);
       border: 1px $c1-D solid;
@@ -21,7 +20,7 @@
     &__image-container {
       width: calc(26.027vw - var(--mediumImage));
       height: calc(26.027vw - var(--mediumImage));
-      background: rgb(55, 87, 55);
+      background: $c1-H;
       position: absolute;
       top: 3.329%;
       left: 5.769%;

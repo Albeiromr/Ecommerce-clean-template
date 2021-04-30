@@ -6,7 +6,6 @@
     max-width: 412.6px;
     height: 36.36vw;
     max-height: 599.95px;
-    background: rgb(116, 96, 47);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +13,7 @@
     &__subcontainer {
       width: 89.82%;
       height: 89.522%;
-      background: darksalmon;
+      background: #ffffff;
       position: relative;
       border-radius: clamp(10px, 0.952vw, 15.71px);
       border: 1px $c1-D solid;
@@ -23,7 +22,7 @@
     &__image-container {
       width: clamp(100px, calc(19.92vw - var(--bigImage)), 328.69px);
       height: clamp(100px, calc(19.92vw - var(--bigImage)), 328.69px);
-      background: rgb(55, 87, 55);
+      background: $c1-H;
       position: absolute;
       top: 3.9%;
       left: 5.452%;
