@@ -1,0 +1,11 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .home-grid {
+    width: 100%;
+    min-width: 320px;
+    height: 230.654vw;
+    min-height: 738.094px;
+    background: darkcyan;
+  }
+}

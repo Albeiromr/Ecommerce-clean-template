@@ -4,7 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import Slide from '../../components/Slide/Slide';
 import DiscoverSection from '../../components/Discover section/DiscoverSection';
-import Temporal from '../../components/temporal/temporal';
+import HomeGrid from '../../components/Home grid/HomeGrid';
 
 
 
@@ -15,6 +15,7 @@ const Home = () => {
         <div className="home">
 
             <Slide />
+            <HomeGrid />
             <DiscoverSection />
             
         </div>
