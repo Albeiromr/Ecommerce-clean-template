@@ -31,7 +31,7 @@
     &__green-text {
       font-family: $secundary-font;
       color: $c2-A;
-      font-weight: $regular;
+      font-weight: 400;
       margin: 0;
       font-size: clamp(9.327px, 2.913vw, 17.449px);
       margin-right: clamp(10.821px, 3.381vw, 20.256px);
@@ -40,7 +40,7 @@
     &__black-text {
       font-family: $secundary-font;
       color: $c1-A;
-      font-weight: $regular;
+      font-weight: 400;
       margin: 0;
       font-size: clamp(9.327px, 2.913vw, 17.449px);
       margin-right: 0 clamp(10.821px, 3.381vw, 20.256px);

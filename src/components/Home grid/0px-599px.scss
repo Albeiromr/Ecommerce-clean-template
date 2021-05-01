@@ -7,5 +7,49 @@
     height: 230.654vw;
     min-height: 738.094px;
     background: darkcyan;
+    position: relative;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family:$primary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 4.347vw, 25px);
+      color: $c1-A;
+      position: absolute;
+      top: 2.613%;
+      left: 5.797%;
+    }
+
+    &__category-container {
+      width: 100%;
+      height: 2.722%;
+      padding: 0 clamp(18.550px, 5.797vw, 50px);
+      background: rgb(153, 122, 43);
+      position: absolute;
+      top: 8.063%;
+      left: 0;
+      overflow-x: scroll;
+    }
+
+    &__category-subcontainer {
+      width: auto;
+      min-width: 100%;
+      height: 100%;
+      background: darksalmon;
+      display: flex;
+    }
+
+    &__individual-category-container {
+      width: auto;
+      height: 100%;
+      background: darkseagreen;
+    }
+
+    &__category {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
   }
 }

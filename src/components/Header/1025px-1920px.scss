@@ -31,7 +31,7 @@
     &__green-text {
       font-family: $secundary-font;
       color: $c2-A;
-      font-weight: $regular;
+      font-weight: 400;
       margin: 0;
       font-size: clamp(14px, 0.952vw, 18px);
       margin-right: clamp(13.421px, 2.618vw, 21.605px);
@@ -40,7 +40,7 @@
     &__black-text {
       font-family: $secundary-font;
       color: $c1-A;
-      font-weight: $regular;
+      font-weight: 400;
       margin: 0;
       font-size: clamp(14px, 0.952vw, 18px);
       margin: 0 clamp(13.421px, 2.618vw, 21.605px);
@@ -58,7 +58,7 @@
     &__green-link {
       font-family: $secundary-font;
       color: $c2-A;
-      font-weight: $regular;
+      font-weight: 400;
       margin: 0;
       font-size: clamp(14px, 0.952vw, 18px);
       cursor: pointer;
