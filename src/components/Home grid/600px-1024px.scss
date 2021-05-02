@@ -22,32 +22,34 @@
     &__category-container {
       width: 100%;
       height: 3.735%;
-      padding: 0 5.598vw;
       background: rgb(153, 122, 43);
       position: absolute;
       top: 13.936%;
       left: 0;
       overflow-x: scroll;
-      
     }
 
     &__category-subcontainer {
       width: auto;
       height: 100%;
+      padding: 0 5.598vw;
       background: darksalmon;
-      display: flex;
+      display: inline-block;
+      white-space: nowrap;
     }
 
     &__individual-category-container {
       width: auto;
       height: 100%;
       background: darkseagreen;
+      display: inline-block;
     }
 
     &__category {
       margin: 0;
       padding: 0;
       white-space: nowrap;
+      font-size: 18px;
     }
   }
 }
