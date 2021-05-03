@@ -55,5 +55,28 @@
       cursor: pointer;
       text-decoration: underline;
     }
+
+    &__product-card-container {
+      width: auto;
+      min-width: 20%;
+      height: auto;
+      min-height: 20%;
+      background: darkkhaki;
+      position: absolute;
+      top: 2.019%;
+      right: 3.03%;
+      display: flex;
+    }
+
+    &__button {
+      width: 13.012%;
+      height: 9.821%;
+      background: $c1-F;
+      cursor: pointer;
+      border-radius: clamp(8px, 0.727vw, 12px);
+      position: absolute;
+      top: 55.862%;
+      left: 3.03%;
+    }
   }
 }

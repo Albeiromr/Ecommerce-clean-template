@@ -51,6 +51,7 @@
       display: flex;
       align-items: center;
       border-radius: 100px;
+      cursor: pointer;
     }
 
     &__category {
@@ -61,6 +62,29 @@
       font-weight: 600;
       font-size: clamp(12px, 1.562vw, 20px);
       color: $c1-A;
+    }
+
+    &__product-card-container {
+      width: auto;
+      min-width: 20%;
+      height: auto;
+      min-height: 20%;
+      background: darkkhaki;
+      position: absolute;
+      top: 21.264%;
+      left: 1.302%;
+      display: flex;
+    }
+
+    &__button {
+      width: 24.441%;
+      height: 7.327%;
+      background: $c1-F;
+      cursor: pointer;
+      border-radius: clamp(8px, 2.045vw, 22px);
+      position: absolute;
+      bottom: 2%;
+      left: 72.656%;
     }
   }
 }
