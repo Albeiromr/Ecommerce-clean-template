@@ -4,7 +4,6 @@
   .home-grid {
     width: 100%;
     height: 90.625vw;
-    background: darkcyan;
     position: relative;
 
     &__title {
@@ -22,7 +21,6 @@
     &__category-container {
       width: 100%;
       height: 3.735%;
-      background: rgb(153, 122, 43);
       position: absolute;
       top: 13.936%;
       left: 0;
@@ -38,7 +36,6 @@
       width: auto;
       height: 100%;
       padding: 0 calc(5.598vw - 8px);
-      background: darksalmon;
       display: inline-flex;
     }
 
@@ -69,7 +66,6 @@
       min-width: 20%;
       height: auto;
       min-height: 20%;
-      background: darkkhaki;
       position: absolute;
       top: 21.264%;
       left: 1.302%;
@@ -83,7 +79,7 @@
       cursor: pointer;
       border-radius: clamp(8px, 2.045vw, 22px);
       position: absolute;
-      bottom: 2%;
+      bottom: 6%;
       left: 72.656%;
       display: flex;
       align-items: center;

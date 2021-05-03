@@ -13,33 +13,33 @@ const HomeGrid = () => {
             <div className="home-grid__category-container">
                 <div className="home-grid__category-subcontainer">
                     <div className="home-grid__individual-category-container">
-                        <h3 className="home-grid__category">Product Category One</h3>
+                        <h3 className="home-grid__category">Training Sneakers</h3>
                     </div>
                     
                     <div className="home-grid__individual-category-container">
-                        <h3 className="home-grid__category">Product Category Two</h3>
+                        <h3 className="home-grid__category">Casual Sneakers</h3>
                     </div>
                     
                     <div className="home-grid__individual-category-container">
-                        <h3 className="home-grid__category">Product Category Three</h3>
+                        <h3 className="home-grid__category">Thin Material</h3>
                     </div>
                     
                     <div className="home-grid__individual-category-container">
-                        <h3 className="home-grid__category">Product Category Four</h3>
+                        <h3 className="home-grid__category">Thick sole</h3>
                     </div>
                     
                     <div className="home-grid__individual-category-container">
-                        <h3 className="home-grid__category">Product Category Five</h3>
+                        <h3 className="home-grid__category">For Any Occasion</h3>
                     </div>
                     
                 </div>
             </div>
 
             <div className="home-grid__product-card-container">
-                {/* <ProductCard />
+                 <ProductCard />
                 <ProductCard />
                 <ProductCard /> 
-                <ProductCard />  */}
+                {/* <ProductCard />  */} 
             </div>
 
             <div className="home-grid__button">

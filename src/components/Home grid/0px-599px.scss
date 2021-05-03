@@ -6,7 +6,6 @@
     min-width: 320px;
     height: 230.654vw;
     min-height: 738.094px;
-    background: darkcyan;
     position: relative;
 
     &__title {
@@ -24,7 +23,6 @@
     &__category-container {
       width: 100%;
       height: 2.722%;
-      background: rgb(153, 122, 43);
       position: absolute;
       top: 8.063%;
       left: 0;
@@ -40,7 +38,6 @@
       width: auto;
       height: 100%;
       padding: 0 calc(clamp(18.55px, 5.797vw, 50px) - 8px);
-      background: darksalmon;
       display: inline-flex;
     }
 
@@ -70,7 +67,6 @@
       width: 98.067%;
       height: auto;
       min-height: 20%;
-      background: darkkhaki;
       position: absolute;
       top: 13.299%;
       left: 0.966%;
@@ -85,7 +81,7 @@
       cursor: pointer;
       border-radius: clamp(7.907px, 2.471vw, 22px);
       position: absolute;
-      bottom: 1%;
+      bottom: 3%;
       right: 2.891%;
       display: flex;
       align-items: center;
