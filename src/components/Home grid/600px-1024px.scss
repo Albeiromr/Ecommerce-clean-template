@@ -34,22 +34,21 @@
       height: 100%;
       padding: 0 5.598vw;
       background: darksalmon;
-      display: inline-block;
-      white-space: nowrap;
+      display: inline-flex;
     }
 
     &__individual-category-container {
       width: auto;
       height: 100%;
-      background: darkseagreen;
-      display: inline-block;
+      background: white;
+      display: flex;
+      align-items: center;
     }
 
     &__category {
       margin: 0;
       padding: 0;
       white-space: nowrap;
-      font-size: 18px;
     }
   }
 }
