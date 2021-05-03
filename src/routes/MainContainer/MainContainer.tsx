@@ -8,6 +8,7 @@ import FixedMenu from "../../components/Fixed menu/FixedMenu";
 import Footer from "../../components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from '../Home/Home';
+import Products from '../Products/Products';
 
 const MainContainer = () => {
   return (
@@ -19,6 +20,7 @@ const MainContainer = () => {
       <Switch>
 
         <Route path="/" exact component={Home} />
+        <Route path="/products" exact component={Products} />
 
       </Switch>
       <Footer />
