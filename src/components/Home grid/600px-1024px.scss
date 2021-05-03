@@ -27,28 +27,40 @@
       top: 13.936%;
       left: 0;
       overflow-x: scroll;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
     }
 
     &__category-subcontainer {
       width: auto;
       height: 100%;
-      padding: 0 5.598vw;
+      padding: 0 calc(5.598vw - 8px);
       background: darksalmon;
       display: inline-flex;
     }
 
     &__individual-category-container {
+      margin: 0 8px;
+      padding: 0 14px;
       width: auto;
       height: 100%;
-      background: white;
+      background: $c1-F;
       display: flex;
       align-items: center;
+      border-radius: 100px;
     }
 
     &__category {
       margin: 0;
       padding: 0;
       white-space: nowrap;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(12px, 1.562vw, 20px);
+      color: $c1-A;
     }
   }
 }
