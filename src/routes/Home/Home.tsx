@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import Slide from '../../components/Slide/Slide';
 import DiscoverSection from '../../components/Discover section/DiscoverSection';
 import HomeGrid from '../../components/Home grid/HomeGrid';
+import InterestProducts from '../../components/Interest products/InterestProducts';
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <HomeGrid />
             <HomeGrid />
             <DiscoverSection />
+            <InterestProducts />
             
         </div>
     )
