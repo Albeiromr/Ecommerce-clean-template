@@ -4,9 +4,8 @@
   .interest-products {
     width: 100%;
     max-width: 1650px;
-    height: 46.533vw;
-    background: darkolivegreen;
-    max-height: 767.81px;
+    height: 42.060vw;
+    max-height: 694px;
     position: relative;
     display: flex;
 
@@ -18,7 +17,7 @@
       font-size: clamp(16px, 1.428vw, 23.57px);
       color: $c1-A;
       position: absolute;
-      top: 5.451%;
+      top: 6.031%;
       left: 2.966%;
     }
 
@@ -26,10 +25,10 @@
       width: 100%;
       height: auto;
       min-height: 300px;
-      background: darksalmon;
       position: absolute;
-      top: 12.242%;
+      top: 13.544%;
       left: 0;
+      display: flex;
     }
 
     &__button {
@@ -38,7 +37,7 @@
       cursor: pointer;
       border-radius: clamp(8px, 0.727vw, 12px);
       position: absolute;
-      top: 4.051%;
+      top: 4.751%;
       right: 2.966%;
       display: flex;
       align-items: center;
@@ -49,8 +48,8 @@
       margin: 0;
       padding: 0;
       font-family: $primary-font;
-      font-weight: 700;
-      font-size: clamp(14px, 1.4vw, 19.64px);
+      font-weight: 600;
+      font-size: clamp(14px, 1.2vw, 19.64px);
       color: $c1-A;
       margin-left: 10%;
     }
