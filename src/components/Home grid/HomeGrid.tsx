@@ -2,10 +2,14 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import { useWindowWidth } from "@react-hook/window-size";
 import ProductCard from '../Product card/ProductCard';
 import arrowRight from '../../assets/icons/arrowRight.svg';
 
 const HomeGrid = () => {
+    
+    //with this costum hook we can get the window width for conditionally to render some components
+    const windowWidth = useWindowWidth()
 
     return (
         <section className="home-grid">
@@ -36,10 +40,10 @@ const HomeGrid = () => {
             </div>
 
             <div className="home-grid__product-card-container">
-                 <ProductCard />
+                <ProductCard />
                 <ProductCard />
                 <ProductCard /> 
-                {/* <ProductCard />  */} 
+                {windowWidth < 599 ? <ProductCard /> : null} 
             </div>
 
             <div className="home-grid__button">

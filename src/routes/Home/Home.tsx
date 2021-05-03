@@ -16,6 +16,7 @@ const Home = () => {
 
             <Slide />
             <HomeGrid />
+            <HomeGrid />
             <DiscoverSection />
             
         </div>
