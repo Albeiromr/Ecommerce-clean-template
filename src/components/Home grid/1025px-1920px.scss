@@ -70,13 +70,31 @@
 
     &__button {
       width: 13.012%;
-      height: 9.821%;
+      height: 9.221%;
       background: $c1-F;
       cursor: pointer;
       border-radius: clamp(8px, 0.727vw, 12px);
       position: absolute;
       top: 55.862%;
       left: 3.03%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(14px, 1.19vw, 19.64px);
+      color: $c1-A;
+      margin-left: 10%;
+    }
+
+    &__button-arrow {
+      width: clamp(10px, 1.569vw, 20.95px);
+      margin-right: 10%;
     }
   }
 }
