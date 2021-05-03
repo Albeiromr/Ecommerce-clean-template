@@ -1,0 +1,11 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .actual-path {
+    width: 100%;
+    max-width: 1650px;
+    height: 3.809vw;
+    max-height: 69.43px;
+    background: darkcyan;
+  }
+}
