@@ -28,6 +28,15 @@
       position: absolute;
       top: 59.636%;
       left: 0;
+      overflow-x: scroll;
+    }
+
+    &__small-category-subcontainer {
+      width: auto;
+      height: 100%;
+      padding: 0 clamp(18.55px, 5.797vw, 40px);
+      background: rgb(160, 154, 147);
+      display: inline-flex;
     }
   }
 }
