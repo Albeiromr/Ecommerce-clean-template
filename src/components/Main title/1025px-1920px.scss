@@ -7,7 +7,6 @@
     height: 5.09vw;
     max-height: 84px;
     padding: 0 clamp(1px, 3.636vw, 60px);
-    background: darkcyan;
     position: relative;
 
     &__title {
@@ -18,13 +17,12 @@
       font-size: clamp(16px, 2.539vw, 41.9px);
       color: $c1-A;
       position: absolute;
-      top: 21.326%;
+      top: 17.326%;
     }
 
     &__small-category-container {
       width: auto;
-      height: 38.095%;
-      background: rgb(197, 175, 120);
+      height: 28.571%;
       position: absolute;
       top: 31.746%;
       right: clamp(1px, 3.636vw, 60px);
@@ -33,7 +31,6 @@
     &__small-category-subcontainer {
       width: auto;
       height: 100%;
-      background: rgb(160, 154, 147);
       display: inline-flex;
       align-items: center;
     }
