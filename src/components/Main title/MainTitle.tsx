@@ -8,6 +8,7 @@ const MainTitle = () => {
     return(
         <section className="main-title">
             <h1 className="main-title__title">Sneakers &amp; Shoes</h1>
+            <div className="main-title__small-category-container"></div>
         </section>
     )
 };
