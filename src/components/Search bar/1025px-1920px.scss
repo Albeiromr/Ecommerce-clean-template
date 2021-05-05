@@ -16,6 +16,7 @@
       padding-left: 4.8%;
       padding-right: 15%;
       font-family: $secundary-font;
+      font-size: clamp(12px, 1110vw, 18.33px);
       font-weight: 400;
       color: $c1-C;
     }
@@ -34,12 +35,13 @@
     }
 
     &__icon-container {
-      width: 4.4000%;
+      width: 4.4%;
       height: 52.381%;
       position: absolute;
       z-index: 10;
       top: 23.818%;
       right: 2.399%;
+      cursor: pointer;
     }
 
     &__icon {

@@ -3,6 +3,7 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import Header from "../../components/Header/Header";
+import SearchMobile from '../../components/Search mobile/SearchMobile';
 import MainNav from "../../components/Main nav/MainNav";
 import FixedMenu from "../../components/Fixed menu/FixedMenu";
 import Footer from "../../components/Footer/Footer";
@@ -16,6 +17,7 @@ const MainContainer = () => {
     <div className="main-container">
       
       <Header />
+      <SearchMobile />
       <MainNav />
       <Switch>
 
