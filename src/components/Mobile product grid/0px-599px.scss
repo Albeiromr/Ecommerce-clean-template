@@ -8,6 +8,7 @@
     min-height: 1136px;
     background: darkcyan;
     position: relative;
+    transform: translateX(var(--translate));
 
     &__subcontainer {
       width: 54.205%;

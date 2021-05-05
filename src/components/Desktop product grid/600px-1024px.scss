@@ -6,6 +6,7 @@
     height: 174.088vw;
     background: darkcyan;
     position: relative;
+    transform: translateX(var(--translate));
 
     &__subcontainer {
       width: 65.526%;
