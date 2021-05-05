@@ -20,6 +20,25 @@
       left: clamp(18.55px, 5.797vw, 40px);
     }
 
+    &__filter-button {
+      width: 15.217%;
+      height: 65.079%;
+      background: $c1-H;
+      position: absolute;
+      bottom: 58.784%;
+      right: 2.657%;
+      border-radius: clamp(8px, 4.611vw, 20px);
+      border: 2px $c1-D solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__filter-button-icon {
+      width: 45.46%;
+    }
+
     &__small-category-container {
       width: 100%;
       height: 27.272%;

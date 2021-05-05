@@ -13,9 +13,7 @@ const ActualPAth = () => {
             <div className="actual-path__subcontainer">
                 <p className="actual-path__text">Home</p>
                 <p className="actual-path__bar">/</p>
-                <p className="actual-path__text">Sneakers and Shoes</p>
-                <p className="actual-path__bar">/</p>
-                <p className="actual-path__text--strong">Qniro A28</p>
+                <p className="actual-path__text--strong">Sneakers and Shoes</p>
                 <p className="actual-path__bar--hidden">/</p>
             </div>
         </div>

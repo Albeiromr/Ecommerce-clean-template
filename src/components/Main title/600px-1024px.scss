@@ -18,6 +18,25 @@
       left: 5.533vw;
     }
 
+    &__filter-button {
+      width: 8.203%;
+      height: 65.079%;
+      background: $c1-H;
+      position: absolute;
+      bottom: 49.42%;
+      right: 2.76%;
+      border-radius: 2.485vw;
+      border: 2px $c1-D solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__filter-button-icon {
+      width: 45.46%;
+    }
+
     &__small-category-container {
       width: 100%;
       height: 27.272%;
