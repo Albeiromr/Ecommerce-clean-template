@@ -35,8 +35,25 @@
       justify-content: center;
     }
 
+    &__filter-button--activated {
+      width: 15.217%;
+      height: 65.079%;
+      background: $c2-A;
+      position: absolute;
+      bottom: 58.784%;
+      right: 2.657%;
+      border-radius: clamp(8px, 4.611vw, 20px);
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease;
+    }
+
     &__filter-button-icon {
       width: 45.46%;
+      transition: all .3s ease;
     }
 
     &__small-category-container {

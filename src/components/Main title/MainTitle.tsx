@@ -4,6 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import filters from '../../assets/icons/filters.svg';
+import chevronLeft from '../../assets/icons/chevronLeft.svg';
 import SmallCategory from '../../components/Small category/SmallCategory';
 
 
@@ -20,8 +21,14 @@ const MainTitle = () => {
         <section className="main-title">
             <h1 className="main-title__title">Sneakers &amp; Shoes</h1>
 
-            <div onClick={handleButtonClick} className="main-title__filter-button">
-                <img className="main-title__filter-button-icon" src={filters} alt="filters"/>
+            <div onClick={handleButtonClick} 
+            className={showFilters === false ? "main-title__filter-button" : "main-title__filter-button--activated"}
+            >
+
+                <img className="main-title__filter-button-icon" 
+                src={showFilters === false ? filters : chevronLeft} 
+                alt="filters"/>
+
             </div>
             
             <div className="main-title__small-category-container">

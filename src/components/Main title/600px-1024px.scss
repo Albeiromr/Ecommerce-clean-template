@@ -31,10 +31,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all .3s ease;
+    }
+
+    &__filter-button--activated {
+      width: 8.203%;
+      height: 65.079%;
+      background: $c2-A;
+      position: absolute;
+      bottom: 49.42%;
+      right: 2.76%;
+      border-radius: 2.485vw;
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease;
     }
 
     &__filter-button-icon {
       width: 45.46%;
+      transition: all .3s ease;
     }
 
     &__small-category-container {
