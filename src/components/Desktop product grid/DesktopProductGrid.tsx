@@ -11,7 +11,7 @@ const DesktopProductGrid = () => {
     const {showFilters} = useContext(ProductGridContext);
 
     //This state is for hidding or not the filters in smartphone and tablets screens
-    const [translate, setTranslate] = useState("-0%");
+    const [translate, setTranslate] = useState("-32.631%");
 
 
     useEffect(() => {

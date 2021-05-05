@@ -7,6 +7,7 @@
     background: darkcyan;
     position: relative;
     transform: translateX(var(--translate));
+    transition: all 0.3s ease;
 
     &__subcontainer {
       width: 65.526%;

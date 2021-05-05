@@ -11,7 +11,7 @@ const MobileProductGrid = () => {
     const {showFilters} = useContext(ProductGridContext);
 
     //This state is for hidding or not the filters in smartphone and tablets screens
-    const [translate, setTranslate] = useState("-0%");
+    const [translate, setTranslate] = useState("-44.726%");
 
     useEffect(() => {
         if (showFilters === false) setTranslate("-44.726%");
