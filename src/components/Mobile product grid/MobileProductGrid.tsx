@@ -8,6 +8,7 @@ const MobileProductGrid = () => {
 
     return (
         <main className="mobile-product-grid">
+            <div className="mobile-product-grid__filter-container"></div>
             <div className="mobile-product-grid__subcontainer">
                 <ProductCard />
                 <ProductCard />

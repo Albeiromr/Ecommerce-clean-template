@@ -8,6 +8,7 @@ const DesktopProductGrid = () => {
 
     return (
         <main className="desktop-product-grid">
+            <div className="desktop-product-grid__filter-container"></div>
             <div className="desktop-product-grid__subcontainer">
                 <ProductCard />
                 <ProductCard />

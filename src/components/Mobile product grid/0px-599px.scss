@@ -2,22 +2,31 @@
 
 @media only screen and (max-width: 599px) {
   .mobile-product-grid {
-    width: 100%;
-    min-width: 320px;
+    width: 180.917%;
+    min-width: 578.937px;
     height: 355vw;
     min-height: 1136px;
     background: darkcyan;
     position: relative;
 
     &__subcontainer {
-      width: 98.067%;
+      width: 54.205%;
       height: 96.618%;
       background: darkgrey;
       position: absolute;
       top: 1.656%;
-      left: 0.966%;
+      left: 45.26%;
       display: flex;
       flex-wrap: wrap;
+    }
+
+    &__filter-container {
+      width: 44.058%;
+      height: 61.283%;
+      background: darkseagreen;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
