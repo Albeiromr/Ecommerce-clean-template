@@ -4,7 +4,6 @@
   .desktop-product-grid {
     width: 148.437%;
     height: 174.088vw;
-    background: darkcyan;
     position: relative;
     transform: translateX(var(--translate));
     transition: all 0.3s ease;
@@ -12,7 +11,6 @@
     &__subcontainer {
       width: 65.526%;
       height: 96.26%;
-      background: darkgrey;
       position: absolute;
       top: 1.869%;
       left: 33.552%;

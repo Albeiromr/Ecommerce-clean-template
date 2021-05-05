@@ -6,15 +6,13 @@
     min-width: 578.937px;
     height: 355vw;
     min-height: 1136px;
-    background: darkcyan;
     position: relative;
     transform: translateX(var(--translate));
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &__subcontainer {
       width: 54.205%;
       height: 96.618%;
-      background: darkgrey;
       position: absolute;
       top: 1.656%;
       left: 45.26%;
