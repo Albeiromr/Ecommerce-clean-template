@@ -2,6 +2,22 @@
 
 @media only screen and (min-width: 1025px) {
   .desktop-product-grid {
-      
+    width: 100%;
+    max-width: 1650px;
+    height: 115.382vw;
+    max-height: 1903.91px;
+    background: darkcyan;
+    position: relative;
+
+    &__subcontainer {
+      width: 75.151%;
+      height: 94.547%;
+      background: darkgrey;
+      position: absolute;
+      top: 1.05%;
+      right: 0.434%;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }

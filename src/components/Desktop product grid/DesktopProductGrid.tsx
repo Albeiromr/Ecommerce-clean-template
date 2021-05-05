@@ -2,11 +2,24 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import ProductCard from '../Product card/ProductCard';
 
 const DesktopProductGrid = () => {
 
     return (
-        <main className="desktop-product-grid"></main>
+        <main className="desktop-product-grid">
+            <div className="desktop-product-grid__subcontainer">
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+            </div>
+        </main>
     )
 };
 
