@@ -30,7 +30,7 @@
       scrollbar-width: none;
 
       &::-webkit-scrollbar {
-        width: 0px;
+        display: none;
       }
     }
 
