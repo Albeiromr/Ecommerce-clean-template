@@ -1,0 +1,9 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .price-filter {
+    width: 100%;
+    height: 100%;
+    background: rgb(168, 149, 126);
+  }
+}

@@ -4,6 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import IndividualCategory from '../Individual category/IndividualCategory';
 import IndividualSize from '../Individual size/IndividualSize';
+import PriceFilter from '../Price filter/PriceFilter';
 
 
 const Filters = () => {
@@ -30,7 +31,9 @@ const Filters = () => {
                 <IndividualSize />
             </div>
 
-            <div className="filters__range-filter-container"></div>
+            <div className="filters__range-filter-container">
+                <PriceFilter />
+            </div>
             
             
         </aside>
