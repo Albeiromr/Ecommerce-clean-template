@@ -24,6 +24,10 @@ const Filters = () => {
 
             <div className="filters__sizes-container">
                 <IndividualSize />
+                <IndividualSize />
+                <IndividualSize />
+                <IndividualSize />
+                <IndividualSize />
             </div>
 
             <div className="filters__range-filter-container"></div>

@@ -52,6 +52,9 @@
       position: absolute;
       top: 37.927%;
       left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__range-filter-container {
