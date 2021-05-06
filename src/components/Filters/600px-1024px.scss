@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .filters {
+    width: 86.285%;
+    height: 94.938%;
+    background: darkgray;
+    position: absolute;
+    top: 2.812%;
+    left: 12.285%;
+  }
+}

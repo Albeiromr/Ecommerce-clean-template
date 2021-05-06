@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import {cssVariables} from './types';
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import ProductCard from '../Product card/ProductCard';
+import Filters from '../Filters/Filters';
 
 const DesktopProductGrid = () => {
 
@@ -22,7 +23,9 @@ const DesktopProductGrid = () => {
     return (
         <main style={{"--translate": translate} as cssVariables} className="desktop-product-grid">
             
-            <div className="desktop-product-grid__filter-container"></div>
+            <div className="desktop-product-grid__filter-container">
+                <Filters />
+            </div>
             
             <div className="desktop-product-grid__subcontainer">
                 <ProductCard />

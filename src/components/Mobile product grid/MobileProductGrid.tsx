@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import {cssVariables} from './types';
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import ProductCard from '../Product card/ProductCard';
+import Filters from '../Filters/Filters';
 
 const MobileProductGrid = () => {
 
@@ -21,7 +22,9 @@ const MobileProductGrid = () => {
     return (
         <main style={{"--translate": translate} as cssVariables} className="mobile-product-grid">
 
-            <div className="mobile-product-grid__filter-container"></div>
+            <div className="mobile-product-grid__filter-container">
+                <Filters />
+            </div>
 
             <div className="mobile-product-grid__subcontainer">
                 <ProductCard />
