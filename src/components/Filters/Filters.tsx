@@ -19,15 +19,4 @@ const Filters = () => {
     )
 };
 
-/* const individualCategorie = () => {
-
-    return (
-        <div className="individual-categorie">
-
-        </div>
-    )
-}; */
-
-
-
 export default Filters;

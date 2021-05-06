@@ -5,7 +5,7 @@ import "./1025px-1920px.scss";
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import filters from '../../assets/icons/filters.svg';
 import chevronLeft from '../../assets/icons/chevronLeft.svg';
-import SmallCategory from '../../components/Small category/SmallCategory';
+import SmallFilter from '../Small filter/SmallFilter';
 
 
 const MainTitle = () => {
@@ -34,9 +34,9 @@ const MainTitle = () => {
             <div className="main-title__small-category-container">
                 <div className="main-title__small-category-subcontainer">
                     <p className="main-title__small-category-pretext">Applied filters:</p>
-                    <SmallCategory />
-                    <SmallCategory />
-                    <SmallCategory />
+                    <SmallFilter />
+                    <SmallFilter />
+                    <SmallFilter />
                 </div>
             </div>
 
