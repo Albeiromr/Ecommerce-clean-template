@@ -28,6 +28,9 @@
       position: absolute;
       top: 6.629%;
       left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__title-two {
