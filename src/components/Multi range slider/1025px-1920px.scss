@@ -1,7 +1,7 @@
 @import "../../sass/variables";
 
 @media only screen and (min-width: 1025px) {
-  .container {
+  .multi-range-slider {
     height: 9.574%;
     width: 100%;
     background: rgb(255, 255, 255);
@@ -11,93 +11,91 @@
     position: absolute;
     top: 19.724%;
     left: 0;
-  }
 
-  .slider {
-    position: relative;
-    width: 100%;
-    height: 30%;
-  }
+    &__thumb {
+      -webkit-appearance: none;
+      pointer-events: none;
+      position: absolute;
+      height: 0;
+      width: 100%;
+      outline: none;
+      z-index: 4;
 
-  .slider__track {
-    position: absolute;
-    border-radius: 3px;
-    height: 100%;
-    background-color: $c1-E;
-    width: 100%;
-    z-index: 1;
-  }
+      &::-webkit-slider-thumb {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        background-color: $c1-J;
+        border: none;
+        border-radius: 50%;
+        border: 1px $c1-D solid;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        height: clamp(5px, 1.212vw, 20px);
+        width: clamp(5px, 1.212vw, 20px);
+        pointer-events: all;
+        position: relative;
+      }
 
-  .slider__range {
-    position: absolute;
-    border-radius: 3px;
-    height: 100%;
-    background-color: $c2-A;
-    z-index: 2;
-  }
+      &::-moz-range-thumb {
+        box-sizing: border-box;
+        background-color: $c1-J;
+        border: none;
+        border-radius: 50%;
+        border: 1px $c1-D solid;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        height: clamp(5px, 1.212vw, 20px);
+        width: clamp(5px, 1.212vw, 20px);
+        pointer-events: all;
+        position: relative;
+      }
+    }
 
-  .slider__left-value {
-    position: absolute;
-    color: #dee2e6;
-    font-size: 12px;
-    margin-top: 20px;
-    left: 6px;
-  }
+    &__thumb--left::-webkit-slider-thumb {
+      z-index: 4;
+    }
 
-  .slider__right-value {
-    position: absolute;
-    color: #dee2e6;
-    font-size: 12px;
-    margin-top: 20px;
-    right: -4px;
-  }
+    &__thumb--right::-webkit-slider-thumb {
+      z-index: 4;
+    }
 
-  .thumb {
-    -webkit-appearance: none;
-    pointer-events: none;
-    position: absolute;
-    height: 0;
-    width: 100%;
-    outline: none;
-    z-index: 4;
-  }
+    &__slider {
+      position: relative;
+      width: 100%;
+      height: 30%;
+    }
 
-  .thumb::-webkit-slider-thumb {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    background-color: $c1-J;
-    border: none;
-    border-radius: 50%;
-    border: 1px $c1-D solid;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    height: clamp(5px, 1.212vw, 20px );
-    width: clamp(5px, 1.212vw, 20px );
-    pointer-events: all;
-    position: relative;
-  }
+    &__slider-track {
+      position: absolute;
+      border-radius: 3px;
+      height: 100%;
+      background-color: $c1-E;
+      width: 100%;
+      z-index: 1;
+    }
 
-  .thumb::-moz-range-thumb {
-    box-sizing: border-box;
-    background-color: $c1-J;
-    border: none;
-    border-radius: 50%;
-    border: 1px $c1-D solid;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    height: clamp(5px, 1.212vw, 20px );
-    width: clamp(5px, 1.212vw, 20px );
-    pointer-events: all;
-    position: relative;
-    
-  }
+    &__slider-range {
+      position: absolute;
+      border-radius: 3px;
+      height: 100%;
+      background-color: $c2-A;
+      z-index: 2;
+    }
 
-  .thumb--left::-webkit-slider-thumb {
-    z-index: 4;
-  }
+    &__slider-left-value {
+      position: absolute;
+      color: #dee2e6;
+      font-size: 12px;
+      margin-top: 20px;
+      left: 6px;
+    }
 
-  .thumb--right::-webkit-slider-thumb {
-    z-index: 4;
+    &__slider-right-value {
+      position: absolute;
+      color: #dee2e6;
+      font-size: 12px;
+      margin-top: 20px;
+      right: -4px;
+    }
   }
-
 }

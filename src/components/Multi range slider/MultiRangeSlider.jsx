@@ -41,7 +41,7 @@ const MultiRangeSlider = ({ min, max }) => {
   }, [maxVal, getPercent]);
 
   return (
-    <div className="container">
+    <div className="multi-range-slider">
 
       <input
         type="range"
@@ -53,7 +53,7 @@ const MultiRangeSlider = ({ min, max }) => {
           setMinVal(value);
           minValRef.current = value;
         }}
-        className="thumb thumb--left"
+        className="multi-range-slider__thumb multi-range-slider__thumb--left"
         style={{ zIndex: minVal > max - 100 && "5" }}
       />
 
@@ -67,14 +67,14 @@ const MultiRangeSlider = ({ min, max }) => {
           setMaxVal(value);
           maxValRef.current = value;
         }}
-        className="thumb thumb--right"
+        className="multi-range-slider__thumb multi-range-slider__thumb--right"
       />
 
-      <div className="slider">
-        <div className="slider__track" />
-        <div ref={range} className="slider__range" />
-        <div className="slider__left-value">{minVal}</div>
-        <div className="slider__right-value">{maxVal}</div>
+      <div className="multi-range-slider__slider">
+        <div className="multi-range-slider__slider-track" />
+        <div ref={range} className="multi-range-slider__slider-range" />
+        <div className="multi-range-slider__slider-left-value">{minVal}</div>
+        <div className="multi-range-slider__slider-right-value">{maxVal}</div>
       </div>
     </div>
   );
