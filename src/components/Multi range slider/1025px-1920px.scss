@@ -2,23 +2,28 @@
 
 @media only screen and (min-width: 1025px) {
   .container {
-    height: 100%;
-    
+    height: 9.574%;
+    width: 100%;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 19.724%;
+    left: 0;
   }
 
   .slider {
     position: relative;
-    width: 200px;
+    width: 100%;
+    height: 30%;
   }
 
   .slider__track {
     position: absolute;
     border-radius: 3px;
-    height: 5px;
-    background-color: #ced4da;
+    height: 100%;
+    background-color: $c1-E;
     width: 100%;
     z-index: 1;
   }
@@ -26,8 +31,8 @@
   .slider__range {
     position: absolute;
     border-radius: 3px;
-    height: 5px;
-    background-color: #9fe5e1;
+    height: 100%;
+    background-color: $c2-A;
     z-index: 2;
   }
 
@@ -52,28 +57,39 @@
     pointer-events: none;
     position: absolute;
     height: 0;
-    width: 200px;
+    width: 100%;
     outline: none;
     z-index: 4;
   }
 
   .thumb::-webkit-slider-thumb {
+    box-sizing: border-box;
     -webkit-appearance: none;
-    background-color: #f1f5f7;
+    background-color: $c1-J;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 1px 1px #ced4da;
+    border: 1px $c1-D solid;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    height: 18px;
-    width: 18px;
-    margin-top: 4px;
+    height: clamp(5px, 1.212vw, 20px );
+    width: clamp(5px, 1.212vw, 20px );
     pointer-events: all;
     position: relative;
   }
 
   .thumb::-moz-range-thumb {
-    pointer-events: all;
+    box-sizing: border-box;
+    background-color: $c1-J;
+    border: none;
+    border-radius: 50%;
+    border: 1px $c1-D solid;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    height: clamp(5px, 1.212vw, 20px );
+    width: clamp(5px, 1.212vw, 20px );
+    pointer-events: all;
+    position: relative;
+    
   }
 
   .thumb--left::-webkit-slider-thumb {
@@ -84,5 +100,4 @@
     z-index: 4;
   }
 
-  /* Left and right thumbs */
 }
