@@ -1,0 +1,76 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .middle {
+    width: 100%;
+    height: 40%;
+    background: darkslategrey;
+    position: relative;
+  }
+
+  .slider {
+    position: relative;
+    z-index: 10;
+    height: 10px;
+    background: darkturquoise;
+    margin: 0 11px;
+    
+  }
+
+  .slider > .track {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: rgb(194, 40, 91);
+  }
+
+  .slider > .range {
+    position: absolute;
+    z-index: 20;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: forestgreen;
+  }
+
+  .slider > .thumb {
+    position: absolute;
+    z-index: 30;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: rgb(255, 255, 255);
+  }
+
+  .slider > .thumb.left {
+    left: 25%;
+    transform: translate(-11px, -6px);
+  }
+
+  .slider > .thumb.right {
+    right: 25%;
+    transform: translate(11px, -6px);
+  }
+
+  input[type=range] {
+      position: absolute;
+      z-index: 20;
+      height: 10px;
+      width: 100%;
+  }
+
+  .input-left {
+    top: -40px;
+  }
+
+  .input-right {
+    top: -20px;
+  }
+}
