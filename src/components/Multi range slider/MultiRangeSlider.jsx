@@ -7,10 +7,10 @@ import "./1025px-1920px.scss";
 
 
 const MultiRangeSlider = ({ min, max }) => {
-  const [minVal, setMinVal] = useState(min);
-  const [maxVal, setMaxVal] = useState(max);
-  const minValRef = useRef(min);
-  const maxValRef = useRef(max);
+  const [minVal, setMinVal] = useState(min + 20);
+  const [maxVal, setMaxVal] = useState(max - 20);
+  const minValRef = useRef(min + 20);
+  const maxValRef = useRef(max - 20);
   const range = useRef(null);
 
   // Convert to percentage
@@ -42,7 +42,7 @@ const MultiRangeSlider = ({ min, max }) => {
 
   return (
     <div className="container">
-        
+
       <input
         type="range"
         min={min}
