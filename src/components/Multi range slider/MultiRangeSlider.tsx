@@ -12,7 +12,6 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
   const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
 
   const [bodyOverflow, setBodyOverflow] = useState("scroll")
-  
   const [minVal, setMinVal] = useState(min + 20);
   const [maxVal, setMaxVal] = useState(max - 20);
   const minValRef = useRef(min + 20);
