@@ -7,6 +7,7 @@ import {componentProps, cssVariables} from './types';
 
 
 const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
+  const [bodyOverflow, setBodyOverflow] = useState("scroll")
   const [minVal, setMinVal] = useState(min + 20);
   const [maxVal, setMaxVal] = useState(max - 20);
   const minValRef = useRef(min + 20);
@@ -40,34 +41,54 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
     }
   }, [maxVal, getPercent]);
 
+  //Disable page scroll when sliding the multi range input thumbs
+  document.body.style.overflowY = bodyOverflow
+
   return (
-    <div className="multi-range-slider">
+    <div  className="multi-range-slider">
 
       <input
+        className="multi-range-slider__thumb multi-range-slider__thumb--left"
+        style={{ zIndex: minVal > max - 100 && "5" } as cssVariables}
         type="range"
         min={min}
         max={max}
         value={minVal}
+        
         onChange={(event) => {
           const value = Math.min(Number(event.target.value), maxVal - 1);
           setMinVal(value);
           minValRef.current = value;
         }}
-        className="multi-range-slider__thumb multi-range-slider__thumb--left"
-        style={{ zIndex: minVal > max - 100 && "5" } as cssVariables}
+        onTouchStart={() => {
+          setBodyOverflow("hidden")
+        }}
+        onTouchEnd={() => {
+          setBodyOverflow("scroll")
+        }}
+        
       />
 
       <input
+
+        className="multi-range-slider__thumb multi-range-slider__thumb--right"
         type="range"
         min={min}
         max={max}
         value={maxVal}
+
         onChange={(event) => {
           const value = Math.max(Number(event.target.value), minVal + 1);
           setMaxVal(value);
           maxValRef.current = value;
         }}
-        className="multi-range-slider__thumb multi-range-slider__thumb--right"
+        onTouchStart={() => {
+          setBodyOverflow("hidden")
+        }}
+        onTouchEnd={() => {
+          setBodyOverflow("scroll")
+        }}
+        
       />
 
       <div className="multi-range-slider__slider">
