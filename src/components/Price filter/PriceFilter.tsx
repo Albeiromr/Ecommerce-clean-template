@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import MultiRangeSlider from '../Multi range slider/MultiRangeSlider';
+import { ProductGridContext } from "../../context/Product grid context/ProductGridContext";
+
 
 const PriceFilter = () => {
+
+    const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
 
     return (
         <div className="price-filter">
@@ -17,6 +21,7 @@ const PriceFilter = () => {
                     <label className="price-filter__form-label" htmlFor="minAmount">Min</label>
                     <input
                      className="price-filter__form-input"
+                     placeholder={minValue.toString()}
                      type="text" 
                      name="min"
                      id="minAmount"
@@ -29,6 +34,7 @@ const PriceFilter = () => {
                     <label className="price-filter__form-label" htmlFor="maxAmount">Max</label>
                     <input
                      className="price-filter__form-input"
+                     placeholder={maxValue.toString()}
                      type="text" 
                      name="max"
                      id="maxAmount"

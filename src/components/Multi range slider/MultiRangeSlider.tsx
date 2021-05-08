@@ -1,12 +1,16 @@
-import React, { useCallback, useEffect, useState, useRef, FC } from "react";
+import React, { useCallback, useEffect, useState, useRef, FC, useContext } from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import {componentProps, cssVariables} from './types';
+import { ProductGridContext } from "../../context/Product grid context/ProductGridContext";
 
 
 
 const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
+
+  const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
+
   const [bodyOverflow, setBodyOverflow] = useState("scroll")
   const [minVal, setMinVal] = useState(min + 20);
   const [maxVal, setMaxVal] = useState(max - 20);
@@ -29,6 +33,9 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
       range.current.style.left = `${minPercent}%`;
       range.current.style.width = `${maxPercent - minPercent}%`;
     }
+
+    setMinValue(minVal);
+
   }, [minVal, getPercent]);
 
   // Set width of the range to decrease from the right side
@@ -39,10 +46,15 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
     if (range.current) {
       range.current.style.width = `${maxPercent - minPercent}%`;
     }
+
+    
+    setMaxValue(maxVal);
+
   }, [maxVal, getPercent]);
 
   //Disable page scroll when sliding the multi range input thumbs
   document.body.style.overflowY = bodyOverflow
+
 
   return (
     <div  className="multi-range-slider">
@@ -54,7 +66,7 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
         min={min}
         max={max}
         value={minVal}
-        
+
         onChange={(event) => {
           const value = Math.min(Number(event.target.value), maxVal - 1);
           setMinVal(value);
