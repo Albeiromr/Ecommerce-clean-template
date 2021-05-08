@@ -28,5 +28,24 @@
       top: 0;
       left: 0;
     }
+
+    &__button {
+      width: 8.424%;
+      height: 3.956%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(8px, 4.611vw, 20px);
+      position: absolute;
+      top: 64.941%;
+      left: 19.626%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-icon {
+      width: 45.46%;
+    }
   }
 }

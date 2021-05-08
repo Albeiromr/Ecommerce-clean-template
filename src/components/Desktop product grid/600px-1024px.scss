@@ -26,5 +26,24 @@
       top: 0;
       left: 0;
     }
+
+    &__button {
+      width: 5.535%;
+      height: 4.291%;
+      background: $c2-A;
+      border-radius: 2.485vw;
+      border: 2px $c2-B solid;
+      position: absolute;
+      top: 70.231%;
+      left: 14.649%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-icon {
+      width: 45.46%;
+    }
   }
 }
