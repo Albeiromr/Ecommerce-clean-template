@@ -8,12 +8,12 @@ import { ProductGridContext } from "../../context/Product grid context/ProductGr
 
 const PriceFilter = () => {
 
-    const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
+    const {range, minValue, maxValue, setMinValue, setMaxValue, setRange,} = useContext(ProductGridContext);
 
     return (
         <div className="price-filter">
             <h2 className="price-filter__title">price range</h2>
-            <MultiRangeSlider min={1} max={100}/>
+            <MultiRangeSlider min={range.min} max={range.max}/>
 
             <form className="price-filter__form">
 
