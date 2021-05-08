@@ -9,7 +9,7 @@ import { ProductGridContext } from "../../context/Product grid context/ProductGr
 
 const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
 
-  const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
+  const {setMinValue, setMaxValue} = useContext(ProductGridContext);
 
   const [bodyOverflow, setBodyOverflow] = useState("scroll")
   const [minVal, setMinVal] = useState(min + 20);
@@ -36,7 +36,7 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
 
     setMinValue(minVal);
 
-  }, [minVal, getPercent]);
+  }, [minVal, getPercent, setMinValue]);
 
   // Set width of the range to decrease from the right side
   useEffect(() => {
@@ -50,7 +50,7 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
     
     setMaxValue(maxVal);
 
-  }, [maxVal, getPercent]);
+  }, [maxVal, getPercent, setMaxValue]);
 
   //Disable page scroll when sliding the multi range input thumbs
   document.body.style.overflowY = bodyOverflow
