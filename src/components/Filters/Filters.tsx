@@ -11,7 +11,7 @@ const Filters = () => {
 
     return(
         <aside className="filters">
-            <h2 className="filters__title-one">Categories</h2>
+            <h2 className="filters__title-one">Choose a Category</h2>
 
             <div className="filters__categories-container">
                 <IndividualCategory />
@@ -21,7 +21,7 @@ const Filters = () => {
                 <IndividualCategory />
             </div>
 
-            <h2 className="filters__title-two">Filter By Size</h2>
+            <h2 className="filters__title-two">Find your size</h2>
 
             <div className="filters__sizes-container">
                 <IndividualSize />

@@ -8,7 +8,7 @@ const PriceFilter = () => {
 
     return (
         <div className="price-filter">
-            <h2 className="price-filter__title">Price</h2>
+            <h2 className="price-filter__title">price range</h2>
             <MultiRangeSlider min={1} max={100}/>
 
             <form className="price-filter__form">
