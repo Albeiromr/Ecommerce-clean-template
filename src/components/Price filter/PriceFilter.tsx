@@ -10,6 +10,13 @@ const PriceFilter = () => {
 
     const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
 
+    const handleMinChange = (event:any) => {
+        setMinValue(event.target.value)
+    }
+    const handleMaxChange = (event:any) => {
+        setMaxValue(event.target.value)
+    }
+
     return (
         <div className="price-filter">
             <h2 className="price-filter__title">price range</h2>
@@ -21,7 +28,8 @@ const PriceFilter = () => {
                     <label className="price-filter__form-label" htmlFor="minAmount">Min</label>
                     <input
                      className="price-filter__form-input"
-                     placeholder={minValue.toString()}
+                     value={minValue.toString()}
+                     onChange={handleMinChange}
                      type="text" 
                      name="min"
                      id="minAmount"
@@ -34,7 +42,8 @@ const PriceFilter = () => {
                     <label className="price-filter__form-label" htmlFor="maxAmount">Max</label>
                     <input
                      className="price-filter__form-input"
-                     placeholder={maxValue.toString()}
+                     value={maxValue.toString()}
+                     onChange={handleMaxChange}
                      type="text" 
                      name="max"
                      id="maxAmount"
