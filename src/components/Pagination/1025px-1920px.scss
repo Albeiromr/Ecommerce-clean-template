@@ -6,13 +6,11 @@
     max-width: 1650px;
     height: 6.303vw;
     max-height: 104.76px;
-    background: darkcyan;
     position: relative;
 
     &__subcontainer {
       width: 92.856%;
       height: 60.003%;
-      background: dimgray;
       position: absolute;
       top: 19.998%;
       left: 3.571%;
@@ -33,7 +31,6 @@
     &__pages-numbers-container {
       width: auto;
       height: 37.734%;
-      background: floralwhite;
       position: absolute;
       top: 31.132%;
       left: 3.773%;
@@ -116,6 +113,41 @@
 
     &__button-right-icon {
       width: clamp(10px, 1.572vw, 21px);
+    }
+
+    &__product-quantity-container {
+      width: auto;
+      height: 38.18%;
+      padding: 0 clamp(7px, 0.635vw, 10.48px);
+      border-radius: 100px;
+      background: $c2-E;
+      position: absolute;
+      top: 31%;
+      right: 5.149%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__product-quantity {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(8px, 0.952vw, 15.71px);
+      color: $c2-A;
+    }
+
+    &__product-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(10px, 1.078vw, 17.79px);
+      position: absolute;
+      top: 31.132%;
+      right: 0;
+      color: $c1-C;
     }
   }
 }

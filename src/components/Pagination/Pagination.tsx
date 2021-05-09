@@ -28,6 +28,11 @@ const Pagination = () => {
                     <p className="pagination__button-right-text">Next</p>
                     <img className="pagination__button-right-icon" src={chevronRight} alt="right" />
                 </div>
+
+                <div className="pagination__product-quantity-container">
+                    <p className="pagination__product-quantity">336</p>
+                </div>
+                <p className="pagination__product-text">Products</p>
             </div>
         </div>
     )

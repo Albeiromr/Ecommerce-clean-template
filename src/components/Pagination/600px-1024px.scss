@@ -4,13 +4,11 @@
   .pagination {
     width: 100%;
     height: 10.026vw;
-    background: darkcyan;
     position: relative;
 
     &__subcontainer {
       width: 81.235%;
       height: 61.044%;
-      background: dimgray;
       position: absolute;
       top: 19.477%;
       left: 9.316%;
@@ -31,7 +29,6 @@
     &__pages-numbers-container {
       width: auto;
       height: 50.458%;
-      background: floralwhite;
       position: absolute;
       top: 27.651%;
       left: 9.094%;
@@ -124,6 +121,41 @@
 
     &__button-right-icon {
       width: clamp(10px, 3vw, 30px);
+    }
+
+    &__product-quantity-container {
+      width: auto;
+      height: 56.743%;
+      padding: 0 clamp(7px, 1.523vw, 20px);
+      border-radius: 100px;
+      background: $c2-E;
+      position: absolute;
+      top: 21.745%;
+      right: 12.872%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__product-quantity {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(8px, 2.285vw, 30px);
+      color: $c2-A;
+    }
+
+    &__product-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(10px, 2.257vw, 30px);
+      position: absolute;
+      top: 27.651%;
+      right: 0;
+      color: $c1-C;
     }
   }
 }
