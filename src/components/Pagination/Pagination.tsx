@@ -11,6 +11,15 @@ const Pagination = () => {
     return (
         <div className="pagination">
             <div className="pagination__subcontainer">
+
+                <p className="pagination__pages-text">Page:</p>
+                <div className="pagination__pages-numbers-container">
+                    <p className="pagination__page-number">1</p>
+                    <p className="pagination__page-number">2</p>
+                    <p className="pagination__page-number--selected">3</p>
+                    <p className="pagination__page-number">4</p>
+                </div>
+
                 <div className="pagination__button-left">
                     <img className="pagination__button-left-icon" src={chevronLeft} alt="left" />
                     <p className="pagination__button-left-text">Back</p>

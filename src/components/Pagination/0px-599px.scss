@@ -18,6 +18,48 @@
       left: 3.719%;
     }
 
+    &__pages-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(13.75px, 4.297vw, 30px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $c1-C;
+    }
+
+    &__pages-numbers-container {
+      width: auto;
+      height: 28.926%;
+      background: floralwhite;
+      position: absolute;
+      top: 0;
+      left: 15.19%;
+      display: inline-flex;
+    }
+
+    &__page-number {
+      margin: 0 clamp(4.637px, 1.449vw, 30px);
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(13.75px, 4.297vw, 30px);
+      color: $c1-A;
+      cursor: pointer;
+    }
+
+    &__page-number--selected {
+      margin: 0 clamp(4.637px, 1.449vw, 30px);
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 600;
+      font-size: clamp(13.75px, 4.297vw, 30px);
+      color: $c4-A;
+      cursor: pointer;
+    }
+
     &__button-left {
       width: 28.776%;
       height: 52.439%;
