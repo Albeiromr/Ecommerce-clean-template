@@ -89,10 +89,9 @@
     &__submit {
       width: 26.44%;
       height: 22.018%;
-      padding-bottom: 1%;
       background: $c2-A;
       outline: none;
-      border-radius: clamp(8px, 0.727vw, 12px);
+      border-radius: clamp(9.275px, 2.898vw, 30px);
       border: 2px $c2-B solid;
       position: absolute;
       bottom: 0;
@@ -100,11 +99,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+    }
+
+    &__submit-text {
       font-family: $primary-font;
       font-weight: 700;
       font-size: clamp(11.594px, 3.623vw, 30px);
       color: $c1-J;
-      cursor: pointer;
     }
 
     &__reset {

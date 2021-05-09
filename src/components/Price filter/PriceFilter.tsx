@@ -42,7 +42,9 @@ const PriceFilter = () => {
 
             </div>
 
-            <input className="price-filter__submit" type="submit" value="Apply" />
+            <div className="price-filter__submit" >
+                <p className="price-filter__submit-text">Apply</p>
+            </div>
 
             <p className="price-filter__reset">Reset</p>
 
