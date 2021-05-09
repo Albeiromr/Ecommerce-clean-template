@@ -107,8 +107,6 @@ const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
       <div className="multi-range-slider__slider">
         <div className="multi-range-slider__slider-track" />
         <div ref={range} className="multi-range-slider__slider-range" />
-        {/* <div className="multi-range-slider__slider-left-value">{minVal}</div>
-        <div className="multi-range-slider__slider-right-value">{maxVal}</div> */}
       </div>
     </div>
   );
