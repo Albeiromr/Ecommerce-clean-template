@@ -19,22 +19,22 @@ const PriceFilter = () => {
 
             <div className="price-filter__subcontainer">
 
-                <div className="price-filter__subcontainer-min-container">
+                <div className="price-filter__min-container">
 
-                    <p className="price-filter__subcontainer-label">Min</p>
-                    <div className="price-filter__subcontainer-text-container">
-                        <p className="price-filter__subcontainer-text">{minValue}</p>
+                    <p className="price-filter__label">Min</p>
+                    <div className="price-filter__text-container">
+                        <p className="price-filter__text">{`$${minValue}.00`}</p>
                     </div>
 
                 </div>
 
-                <div className="price-filter__subcontainer-dash"/>
+                <div className="price-filter__dash"/>
 
-                <div className="price-filter__subcontainer-max-container">
+                <div className="price-filter__max-container">
 
-                    <p className="price-filter__subcontainer-label" >Max</p>
-                    <div className="price-filter__subcontainer-text-container">
-                        <p className="price-filter__subcontainer-text">{maxValue}</p>
+                    <p className="price-filter__label" >Max</p>
+                    <div className="price-filter__text-container">
+                        <p className="price-filter__text">{`$${maxValue}.00`}</p>
                     </div>
 
                 </div>

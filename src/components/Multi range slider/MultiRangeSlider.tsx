@@ -10,8 +10,9 @@ import { ProductGridContext } from "../../context/Product grid context/ProductGr
 const MultiRangeSlider:FC<componentProps> = ({ min, max }) => {
 
   const {setMinValue, setMaxValue} = useContext(ProductGridContext);
-
+  //the bodyOverflow state tells the body to hide or not hide its scroll
   const [bodyOverflow, setBodyOverflow] = useState("scroll")
+
   const [minVal, setMinVal] = useState(min + 20);
   const [maxVal, setMaxVal] = useState(max - 20);
   const minValRef = useRef(min + 20);
