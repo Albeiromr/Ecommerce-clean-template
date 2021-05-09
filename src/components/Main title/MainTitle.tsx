@@ -4,7 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import filters from '../../assets/icons/filters.svg';
-import chevronLeft from '../../assets/icons/chevronLeft.svg';
+import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
 import SmallFilter from '../Small filter/SmallFilter';
 
 
@@ -26,7 +26,7 @@ const MainTitle = () => {
             >
 
                 <img className="main-title__filter-button-icon" 
-                src={showFilters === false ? filters : chevronLeft} 
+                src={showFilters === false ? filters : chevronHideCategories} 
                 alt="filters"/>
 
             </div>

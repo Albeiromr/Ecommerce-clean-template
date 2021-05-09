@@ -1,0 +1,79 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .pagination {
+    width: 100%;
+    min-width: 320px;
+    height: 28.502vw;
+    min-height: 91.207px;
+    background: darkcyan;
+    position: relative;
+
+    &__subcontainer {
+      width: 92.574%;
+      height: 67.213%;
+      background: dimgray;
+      position: absolute;
+      top: 16.393%;
+      left: 3.719%;
+    }
+
+    &__button-left {
+      width: 28.776%;
+      height: 52.439%;
+      padding: 0 clamp(11.076px, 3.461vw, 30px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(7.729px, 2.415vw, 30px);
+      position: absolute;
+      bottom: 0%;
+      right: 56.846%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-left-text {
+      margin: 0 10% 0 3%;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(9px, 4.328vw, 30px);
+      color: $c1-J;
+    }
+
+    &__button-left-icon {
+      width: clamp(10px, 6vw, 30px);
+    }
+
+    &__button-right {
+      width: 28.776%;
+      height: 52.439%;
+      padding: 0 clamp(11.076px, 3.461vw, 30px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(7.729px, 2.415vw, 30px);
+      position: absolute;
+      bottom: 0%;
+      left: 57.304%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-right-text {
+      margin: 0 3% 0 10%;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(9px, 4.328vw, 30px);
+      color: $c1-J;
+    }
+
+    &__button-right-icon {
+      width: clamp(10px, 6vw, 30px);
+    }
+  }
+}

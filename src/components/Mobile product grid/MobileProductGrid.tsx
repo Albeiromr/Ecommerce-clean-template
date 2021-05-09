@@ -2,7 +2,7 @@ import React, {useState, useContext, useEffect} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import chevronLeft from '../../assets/icons/chevronLeft.svg';
+import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
 import {cssVariables} from './types';
 import {ProductGridContext} from '../../context/Product grid context/ProductGridContext';
 import ProductCard from '../Product card/ProductCard';
@@ -32,7 +32,7 @@ const MobileProductGrid = () => {
             </div>
 
             <div onClick={handlebuttonClick} className="mobile-product-grid__button">
-                <img className="mobile-product-grid__button-icon" src={chevronLeft} alt="hide"/>
+                <img className="mobile-product-grid__button-icon" src={chevronHideCategories} alt="hide"/>
             </div>
 
             <div className="mobile-product-grid__subcontainer">

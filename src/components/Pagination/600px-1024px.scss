@@ -1,0 +1,77 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .pagination {
+    width: 100%;
+    height: 10.026vw;
+    background: darkcyan;
+    position: relative;
+
+    &__subcontainer {
+      width: 81.235%;
+      height: 61.044%;
+      background: dimgray;
+      position: absolute;
+      top: 19.477%;
+      left: 9.316%;
+    }
+
+    &__button-left {
+      width: 16.669%;
+      height: 100%;
+      padding: 0 clamp(5px, 2.031vw, 30px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(5px, 1.302vw, 30px);
+      position: absolute;
+      top: 0%;
+      right: 51.893%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-left-text {
+      margin: 0 10% 0 3%;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(9px, 1.903vw, 30px);
+      color: $c1-J;
+    }
+
+    &__button-left-icon {
+      width: clamp(10px, 3vw, 30px);
+    }
+
+    &__button-right {
+      width: 16.669%;
+      height: 100%;
+      padding: 0 clamp(5px, 2.031vw, 30px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(5px, 1.302vw, 30px);
+      position: absolute;
+      top: 0%;
+      left: 51%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-right-text {
+      margin: 0 3% 0 10%;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(9px, 1.903vw, 30px);
+      color: $c1-J;
+    }
+
+    &__button-right-icon {
+      width: clamp(10px, 3vw, 30px);
+    }
+  }
+}

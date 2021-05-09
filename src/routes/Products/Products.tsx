@@ -7,6 +7,7 @@ import ActualPath from '../../components/Actual path/ActualPath';
 import MainTitle from '../../components/Main title/MainTitle';
 import DesktopProductGrid from '../../components/Desktop product grid/DesktopProductGrid';
 import MobileProductGrid from '../../components/Mobile product grid/MobileProductGrid';
+import Pagination from '../../components/Pagination/Pagination';
 import DiscoverSection from '../../components/Discover section/DiscoverSection';
 import InterestProducts from '../../components/Interest products/InterestProducts';
 
@@ -22,6 +23,7 @@ const Products = () => {
             <ActualPath />
             <MainTitle />
             {windowWidth > 599 ? <DesktopProductGrid /> : <MobileProductGrid />}
+            <Pagination />
             <DiscoverSection />
             <InterestProducts />
         </div>
