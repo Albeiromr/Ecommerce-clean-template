@@ -8,50 +8,39 @@ import { ProductGridContext } from "../../context/Product grid context/ProductGr
 
 const PriceFilter = () => {
 
-    const {minValue, maxValue, setMinValue, setMaxValue} = useContext(ProductGridContext);
+    const {minValue, maxValue} = useContext(ProductGridContext);
 
-    const handleMinChange = (event:any) => {
-        setMinValue(event.target.value)
-    }
-    const handleMaxChange = (event:any) => {
-        setMaxValue(event.target.value)
-    }
+    
 
     return (
         <div className="price-filter">
             <h2 className="price-filter__title">price range</h2>
             <MultiRangeSlider min={1} max={100}/>
 
-            <form className="price-filter__form">
+            <div className="price-filter__subcontainer">
 
-                <div className="price-filter__form-min-container">
-                    <label className="price-filter__form-label" htmlFor="minAmount">Min</label>
-                    <input
-                     className="price-filter__form-input"
-                     value={minValue.toString()}
-                     onChange={handleMinChange}
-                     type="text" 
-                     name="min"
-                     id="minAmount"
-                    />
+                <div className="price-filter__subcontainer-min-container">
+
+                    <p className="price-filter__subcontainer-label">Min</p>
+                    <div className="price-filter__subcontainer-text-container">
+                        <p className="price-filter__subcontainer-text">{minValue}</p>
+                    </div>
+
                 </div>
 
-                <div className="price-filter__form-dash"/>
+                <div className="price-filter__subcontainer-dash"/>
 
-                <div className="price-filter__form-max-container">
-                    <label className="price-filter__form-label" htmlFor="maxAmount">Max</label>
-                    <input
-                     className="price-filter__form-input"
-                     value={maxValue.toString()}
-                     onChange={handleMaxChange}
-                     type="text" 
-                     name="max"
-                     id="maxAmount"
-                    />
+                <div className="price-filter__subcontainer-max-container">
+
+                    <p className="price-filter__subcontainer-label" >Max</p>
+                    <div className="price-filter__subcontainer-text-container">
+                        <p className="price-filter__subcontainer-text">{maxValue}</p>
+                    </div>
+
                 </div>
 
 
-            </form>
+            </div>
 
             <input className="price-filter__submit" type="submit" value="Apply" />
 

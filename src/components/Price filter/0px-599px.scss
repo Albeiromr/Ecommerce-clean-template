@@ -17,7 +17,7 @@
       left: 0;
     }
 
-    &__form {
+    &__subcontainer {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -27,7 +27,7 @@
       left: 0;
     }
 
-    &__form-min-container {
+    &__subcontainer-min-container {
       width: 43.427%;
       height: 100%;
       position: absolute;
@@ -35,7 +35,7 @@
       left: 0;
     }
 
-    &__form-dash {
+    &__subcontainer-dash {
       width: 2%;
       height: 2px;
       background: $c1-C;
@@ -44,7 +44,7 @@
       left: 49%;
     }
 
-    &__form-max-container {
+    &__subcontainer-max-container {
       width: 43.427%;
       height: 100%;
       position: absolute;
@@ -52,7 +52,7 @@
       right: 0;
     }
 
-    &__form-input {
+    &__subcontainer-text-container {
       width: 100%;
       height: 70%;
       padding: 0 16.03%;
@@ -63,13 +63,16 @@
       border-radius: clamp(9.275px, 2.898vw, 30px);
       border: 1px $c1-D solid;
       background: $c1-H;
+    }
+
+    &__subcontainer-text {
       font-family: $secundary-font;
       font-weight: 600;
       font-size: clamp(10px, 4.381vw, 30px);
       color: $c1-C;
     }
 
-    &__form-label {
+    &__subcontainer-label {
       margin: 0;
       padding: 0;
       font-family: $primary-font;
