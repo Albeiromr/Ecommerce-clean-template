@@ -6,7 +6,6 @@ import Slide from '../../components/Slide/Slide';
 import DiscoverSection from '../../components/Discover section/DiscoverSection';
 import HomeGrid from '../../components/Home grid/HomeGrid';
 import InterestProducts from '../../components/Interest products/InterestProducts';
-import TestForm from '../../components/Test form/TestForm';
 
 
 
@@ -18,7 +17,6 @@ const Home = () => {
 
             <Slide />
             <HomeGrid />
-            <TestForm />
             <HomeGrid />
             <DiscoverSection />
             <InterestProducts />

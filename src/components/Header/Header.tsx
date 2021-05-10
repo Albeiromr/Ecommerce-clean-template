@@ -2,11 +2,11 @@ import React from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import logo from '../../assets/logo/brand.png';
-import basket from '../../assets/icons/basket.svg';
-import user from '../../assets/icons/user.svg';
-import SearchBar from '../Search bar/SearchBar';
-
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo/brand.png";
+import basket from "../../assets/icons/basket.svg";
+import user from "../../assets/icons/user.svg";
+import SearchBar from "../Search bar/SearchBar";
 
 const Header = () => {
   return (
@@ -26,9 +26,13 @@ const Header = () => {
       </div>
 
       <div className="header__logo-bar">
-        <div className="header__logo-container">
-          <img className="header__logo-image" src={logo} alt="logo" />
-        </div>
+        
+        <Link className="Link" to="/">
+          <div className="header__logo-container">
+            <img className="header__logo-image" src={logo} alt="logo" />
+          </div>
+        </Link>
+
         <div className="header__search-container">
           <SearchBar />
         </div>
