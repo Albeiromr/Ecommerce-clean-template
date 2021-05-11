@@ -2,7 +2,6 @@ import React, { Fragment, useContext, FC } from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import { Link } from "react-router-dom";
 import { componentProps } from "./types";
 import { MainNavContext } from "../../context/Main nav context/MainNavContext";
 
@@ -20,7 +19,7 @@ const MainNavButton: FC<componentProps> = (props) => {
 
   return (
     <Fragment>
-      <Link className="Link" to={props.name === "Home" ? "/" : "/products"}>
+      
         <li
           className={
             optionSelected === props.name
@@ -39,7 +38,7 @@ const MainNavButton: FC<componentProps> = (props) => {
             {props.name}
           </p>
         </li>
-      </Link>
+      
       <div
         className={
           props.name !== productOptions[productsLength].name
