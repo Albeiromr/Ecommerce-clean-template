@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {FC, MouseEvent} from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { withRouter} from 'react-router-dom';
 
-const CustomLink = ({ history, to, onClick, tag: Tag, ...rest }) => (
+interface routerHistory extends History {
+    push: (value: string) => {}
+}
+
+interface customLinkProps{
+    to: string;
+    tag: string;
+    history:  routerHistory;
+    onClick: (event:MouseEvent) => {}
+}
+
+const CustomLink:FC<customLinkProps> = ({ history, to, onClick, tag: Tag}) => (
+   
     <Tag
-        {...rest}
         onClick={(event) => {
             onClick(event);
             history.push(to)
