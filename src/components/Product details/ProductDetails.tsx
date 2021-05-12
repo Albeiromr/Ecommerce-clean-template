@@ -3,6 +3,7 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import fourStars from '../../assets/images/fourStars.png';
+import grayCheck from '../../assets/icons/grayCheck.svg';
 
 
 
@@ -23,7 +24,11 @@ const ProductDetails = () => {
                             <p className="product-details__rate-container-amount">&#40;223&#41;</p>
                         </div>
                         <div className="product-details__popularity-container-line" />
-                        <div className="product-details__sold-container"></div>
+                        <div className="product-details__sold-container">
+                            <img className="product-details__sold-container-icon" src={grayCheck} alt="check" />
+                            <p className="product-details__sold-container-number">4.320</p>
+                            <p className="product-details__sold-container-text">Sold</p>
+                        </div>
                         <div className="product-details__popularity-container-line product-details__popularity-container-line-last" />
                         <div className="product-details__viewed-container"></div>
                         

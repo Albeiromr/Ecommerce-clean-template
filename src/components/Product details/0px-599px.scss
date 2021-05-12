@@ -108,6 +108,33 @@
       width: 33.933%;
       height: 70.967%;
       background: cornsilk;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__sold-container-icon {
+      margin: 0;
+      padding: 0;
+      width: 18.584%;
+    }
+
+    &__sold-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
+    }
+
+    &__sold-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
     }
 
     &__viewed-container {
