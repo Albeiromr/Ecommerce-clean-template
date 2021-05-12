@@ -18,7 +18,7 @@ const CustomLink:FC<customLinkProps> = ({ history, to, onClick, tag: Tag}) => (
     <Tag
         onClick={(event) => {
             onClick(event);
-            history.push(to)
+            history.push(to);
         }}
     />
 );
