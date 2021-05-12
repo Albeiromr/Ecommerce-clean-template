@@ -249,6 +249,30 @@
       width: 100%;
       height: 27.541%;
       background: rgb(161, 101, 101);
+      position: relative;
+    }
+
+    &__buttons-subcontainer {
+      width: 87.804%;
+      height: 42.567%;
+      border-radius: clamp(9.986px, 3.12vw, 30px);
+      border: 1px $c1-E solid;
+      background: rgb(165, 165, 117);
+      position: absolute;
+      bottom: 0;
+      right: 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__buy-button {
+      width: 95.679%;
+      height: 78.857%;
+      background: $c2-A;
+      border-radius: inherit;
+      border: 2px $c2-B solid;
+      cursor: pointer;
     }
 
     &__social-container {

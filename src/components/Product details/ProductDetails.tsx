@@ -62,7 +62,11 @@ const ProductDetails = () => {
                                 {sizes.map((size) => <SizeSquare name={size.name}/>)}
                             </div>
                         </div>
-                        <div className="product-details__buttons-container"></div>
+                        <div className="product-details__buttons-container">
+                            <div className="product-details__buttons-subcontainer">
+                                <div className="product-details__buy-button"></div>
+                            </div>
+                        </div>
                         <div className="product-details__social-container"></div>
                         
                     </div>
