@@ -150,5 +150,17 @@
     &__popularity-container-line-last {
       display: none;
     }
+
+    &__description {
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(14px, calc(0.85em + 1.065vw), 30px);
+      color: $c1-A;
+      line-height: 180%;
+      position: absolute;
+      top: 3.884%;
+      left: 0;
+    }
   }
 }

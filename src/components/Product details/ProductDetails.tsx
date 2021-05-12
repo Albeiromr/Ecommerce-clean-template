@@ -34,10 +34,14 @@ const ProductDetails = () => {
                         <div className="product-details__viewed-container">
                             <img className="product-details__viewed-container-icon" src={eye} alt="eye" />
                             <p className="product-details__viewed-container-number">1.4K</p>
-                            <p className="product-details__viewed-container-text">viewed</p>
+                            <p className="product-details__viewed-container-text">iewed</p>
                         </div>
                         
                     </div>
+                    <p className="product-details__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
                 </div>
             </div>
         </section>
