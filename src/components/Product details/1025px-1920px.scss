@@ -58,5 +58,68 @@
       top: 0;
       left: 0;
     }
+
+    &__popularity-container {
+      width: 74.558%;
+      height: 4.499%;
+      background: burlywood;
+      position: absolute;
+      top: 17.789%;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container {
+      width: 36.291%;
+      height: 70.967%;
+      background: cornsilk;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(14px, 1.09vw, 18px);
+      color: $c1-A;
+    }
+
+    &__rate-container-stars {
+      margin: 0;
+      padding: 0;
+      width: 55.434%;
+    }
+
+    &__rate-container-amount {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(14px, 1.09vw, 18px);
+      color: #bababa;
+    }
+
+    &__sold-container {
+      width: 22.287%;
+      height: 70.967%;
+      background: cornsilk;
+    }
+
+    &__viewed-container {
+      width: 27.81%;
+      height: 70.967%;
+      background: cornsilk;
+    }
+
+    &__popularity-container-line {
+      width: 2px;
+      height: 100%;
+      background: #f2f2f2;
+    }
   }
 }
