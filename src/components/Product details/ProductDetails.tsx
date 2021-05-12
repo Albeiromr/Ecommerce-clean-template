@@ -5,10 +5,25 @@ import "./1025px-1920px.scss";
 import fourStars from '../../assets/images/fourStars.png';
 import grayCheck from '../../assets/icons/grayCheck.svg';
 import eye from '../../assets/icons/eye.svg';
+import SizeSquare from '../Size square/SizeSquare';
 
 
 
 const ProductDetails = () => {
+    
+    //temporal sizes array ------------------------------------------------------------
+    type size = {
+        name: string
+    };
+
+    const sizes:size[] = [
+        {name: "XS"},
+        {name: "S"},
+        {name: "M"},
+        {name: "L"},
+        {name: "XL"}
+    ];
+    //----------------------------------------------------------------------------------
 
     return (
         <section className="product-details">
@@ -51,7 +66,12 @@ const ProductDetails = () => {
                                 <p className="product-details__discount">20%</p>
                             </div>
                         </div>
-                        <div className="product-details__size-container"></div>
+                        <div className="product-details__size-container">
+                            <p className="product-details__size-text">Sizes</p>
+                            <div className="product-details__size-square-container">
+                                {sizes.map((size) => <SizeSquare name={size.name}/>)}
+                            </div>
+                        </div>
                         <div className="product-details__buttons-container"></div>
                         <div className="product-details__social-container"></div>
                         

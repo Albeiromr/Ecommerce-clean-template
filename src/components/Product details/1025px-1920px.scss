@@ -249,6 +249,25 @@
       width: 73.088%;
       height: 9.92%;
       background: darksalmon;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__size-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(10px, 1.212vw, 20px);
+      color: $c1-B;
+    }
+
+    &__size-square-container {
+      width: auto;
+      height: 100%;
+      background: indianred;
+      display: inline-flex;
     }
 
     &__buttons-container {
