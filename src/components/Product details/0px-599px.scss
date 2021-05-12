@@ -163,15 +163,61 @@
       padding: 0;
       font-family: $third-font;
       font-weight: 400;
-      font-size: clamp(14px, calc(0.85em + 1.065vw), 30px);
+      font-size: clamp(13px, calc(0.65em + 1.005vw), 30px);
       color: $c1-A;
-      line-height: 180%;
+      line-height: 150%;
     }
 
     &__price-container {
       width: 86.756%;
       height: 9.981%;
-      background: darkorange;
+      background: rgb(231, 226, 219);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5%;
+      margin-bottom: 7%;
+    }
+
+    &__price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(27.826px, 8.695vw, 50px);
+      color: $c2-A;
+    }
+
+    &__crossed-line-price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(14.458px, 4.83vw, 30px);
+      color: $c1-C;
+      text-decoration: line-through;
+      margin-top: 3%;
+    }
+
+    &__discount-container {
+      width: 14.953%;
+      height: 42.592%;
+      background: #3ab137;
+      border-radius: clamp(4.637px, 1.449vw, 6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+    }
+
+    &__discount {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: #ffffff;
+      margin-top: 3%;
     }
 
     &__size-container {

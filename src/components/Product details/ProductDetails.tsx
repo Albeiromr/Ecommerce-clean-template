@@ -44,7 +44,13 @@ const ProductDetails = () => {
                         New Design Hoodied Long tyuvr Sleeve Linen Shirt Men Solid Color 100%
                         Cotton Quality Pullover Shirt for Men Streetwear Men's Shirts
                         </p>
-                        <div className="product-details__price-container"></div>
+                        <div className="product-details__price-container">
+                            <p className="product-details__price">$976.33</p>
+                            <p className="product-details__crossed-line-price">$1.020.99</p>
+                            <div className="product-details__discount-container">
+                                <p className="product-details__discount">20%</p>
+                            </div>
+                        </div>
                         <div className="product-details__size-container"></div>
                         <div className="product-details__buttons-container"></div>
                         <div className="product-details__social-container"></div>
