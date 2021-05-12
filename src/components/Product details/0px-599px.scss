@@ -151,6 +151,14 @@
       display: none;
     }
 
+    &__flex-container {
+      width: 100%;
+      height: 96.115%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
     &__description {
       padding: 0;
       font-family: $third-font;
@@ -158,9 +166,12 @@
       font-size: clamp(14px, calc(0.85em + 1.065vw), 30px);
       color: $c1-A;
       line-height: 180%;
-      position: absolute;
-      top: 3.884%;
-      left: 0;
+    }
+
+    &__price-container {
+      width: 86.756%;
+      height: 9.981%;
+      background: darkorange;
     }
   }
 }

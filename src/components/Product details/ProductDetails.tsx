@@ -38,10 +38,13 @@ const ProductDetails = () => {
                         </div>
                         
                     </div>
-                    <p className="product-details__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </p>
+                    <div className="product-details__flex-container">
+                        <p className="product-details__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <div className="product-details__price-container"></div>
+                    </div>
                 </div>
             </div>
         </section>
