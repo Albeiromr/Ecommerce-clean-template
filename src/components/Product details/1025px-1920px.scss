@@ -141,6 +141,33 @@
       width: 27.81%;
       height: 70.967%;
       background: cornsilk;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__viewed-container-icon {
+      margin: 0;
+      padding: 0;
+      width: 19.858%;
+    }
+
+    &__viewed-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(14px, 1.09vw, 18px);
+      color: $c1-A;
+    }
+
+    &__viewed-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(14px, 1.09vw, 18px);
+      color: $c1-A;
     }
 
     &__popularity-container-line {

@@ -4,6 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import fourStars from '../../assets/images/fourStars.png';
 import grayCheck from '../../assets/icons/grayCheck.svg';
+import eye from '../../assets/icons/eye.svg';
 
 
 
@@ -30,7 +31,11 @@ const ProductDetails = () => {
                             <p className="product-details__sold-container-text">Sold</p>
                         </div>
                         <div className="product-details__popularity-container-line product-details__popularity-container-line-last" />
-                        <div className="product-details__viewed-container"></div>
+                        <div className="product-details__viewed-container">
+                            <img className="product-details__viewed-container-icon" src={eye} alt="eye" />
+                            <p className="product-details__viewed-container-number">1.4K</p>
+                            <p className="product-details__viewed-container-text">viewed</p>
+                        </div>
                         
                     </div>
                 </div>
