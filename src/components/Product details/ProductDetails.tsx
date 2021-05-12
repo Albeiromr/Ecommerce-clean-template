@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -6,24 +6,14 @@ import fourStars from '../../assets/images/fourStars.png';
 import grayCheck from '../../assets/icons/grayCheck.svg';
 import eye from '../../assets/icons/eye.svg';
 import SizeSquare from '../Size square/SizeSquare';
+import {ProductDetailsContext} from '../../context/Product details context/ProductDetailsContext';
 
 
 
 const ProductDetails = () => {
-    
-    //temporal sizes array ------------------------------------------------------------
-    type size = {
-        name: string
-    };
 
-    const sizes:size[] = [
-        {name: "XS"},
-        {name: "S"},
-        {name: "M"},
-        {name: "L"},
-        {name: "XL"}
-    ];
-    //----------------------------------------------------------------------------------
+    const {sizes} = useContext(ProductDetailsContext);
+    
 
     return (
         <section className="product-details">
