@@ -38,13 +38,19 @@ const ProductDetails = () => {
                         </div>
                         
                     </div>
+                    
                     <div className="product-details__flex-container">
                         <p className="product-details__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        New Design Hoodied Long tyuvr Sleeve Linen Shirt Men Solid Color 100%
+                        Cotton Quality Pullover Shirt for Men Streetwear Men's Shirts
                         </p>
                         <div className="product-details__price-container"></div>
+                        <div className="product-details__size-container"></div>
+                        <div className="product-details__buttons-container"></div>
+                        <div className="product-details__social-container"></div>
+                        
                     </div>
+                
                 </div>
             </div>
         </section>
