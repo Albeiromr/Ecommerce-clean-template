@@ -31,7 +31,7 @@
     &__mobile-sku {
       margin: 0;
       padding: 0;
-      font-family: $primary-font;
+      font-family: $third-font;
       font-weight: 400;
       font-size: clamp(12px, 3.613vw, 40px);
       color: $c1-A;
@@ -160,6 +160,7 @@
       font-size: clamp(13px, calc(0.65em + 1.005vw), 30px);
       color: $c1-A;
       line-height: 150%;
+      margin-top: 5%;
     }
 
     &__tablet-quantity-selector-container {
@@ -344,6 +345,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__social-twitter-container {
@@ -354,6 +356,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__social-linkedin-container {
@@ -364,6 +367,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__social-instagram-container {
@@ -374,6 +378,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__social-icon {
