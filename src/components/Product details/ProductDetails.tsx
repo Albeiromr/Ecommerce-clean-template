@@ -7,6 +7,7 @@ import grayCheck from '../../assets/icons/grayCheck.svg';
 import eye from '../../assets/icons/eye.svg';
 import SizeSquare from '../Size square/SizeSquare';
 import {ProductDetailsContext} from '../../context/Product details context/ProductDetailsContext';
+import ProductQuantitySelector from '../Product quantity selector/ProductQuantitySelector';
 
 
 
@@ -39,7 +40,7 @@ const ProductDetails = () => {
                         <div className="product-details__viewed-container">
                             <img className="product-details__viewed-container-icon" src={eye} alt="eye" />
                             <p className="product-details__viewed-container-number">1.4K</p>
-                            <p className="product-details__viewed-container-text">iewed</p>
+                            <p className="product-details__viewed-container-text">Viewed</p>
                         </div>
                         
                     </div>
@@ -49,6 +50,9 @@ const ProductDetails = () => {
                         New Design Hoodied Long tyuvr Sleeve Linen Shirt Men Solid Color 100%
                         Cotton Quality Pullover Shirt for Men Streetwear Men's Shirts
                         </p>
+                        <div className="product-details__tablet-quantity-selector-container">
+                            <ProductQuantitySelector />
+                        </div>
                         <div className="product-details__price-container">
                             <p className="product-details__price">$976.33</p>
                             <p className="product-details__crossed-line-price">$1.020.99</p>
@@ -63,9 +67,20 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div className="product-details__buttons-container">
+
+                            <div className="product-details__mobile-quantity-selector-container">
+                                <ProductQuantitySelector />
+                            </div>
+                            <div className="product-details__mobile-add-button-container"></div>
+                            
                             <div className="product-details__buttons-subcontainer">
+                                <div className="product-details__quantity-selector-container">
+                                    <ProductQuantitySelector />
+                                </div>
+                                <div className="product-details__add-button-container"></div>
                                 <div className="product-details__buy-button"></div>
                             </div>
+
                         </div>
                         <div className="product-details__social-container"></div>
                         

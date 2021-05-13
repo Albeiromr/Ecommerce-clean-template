@@ -168,6 +168,10 @@
       line-height: 150%;
     }
 
+    &__tablet-quantity-selector-container {
+      display: none;
+    }
+
     &__price-container {
       width: 86.756%;
       height: 9.981%;
@@ -252,6 +256,24 @@
       position: relative;
     }
 
+    &__mobile-quantity-selector-container {
+      width: 45.257%;
+      height: 30.405%;
+      background: chocolate;
+      position: absolute;
+      top: 1.351%;
+      left: 0;
+    }
+
+    &__mobile-add-button-container {
+      width: 50.948%;
+      height: 36.675%;
+      background: chocolate;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
     &__buttons-subcontainer {
       width: 87.804%;
       height: 42.567%;
@@ -264,6 +286,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    &__quantity-selector-container {
+      display: none;
+    }
+
+    &__add-button-container {
+      display: none;
     }
 
     &__buy-button {

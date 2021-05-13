@@ -191,6 +191,15 @@
       line-height: 180%;
     }
 
+    &__tablet-quantity-selector-container {
+      width: 24.486%;
+      height: 9.615%;
+      background: chocolate;
+      position: absolute;
+      top: 25%;
+      right: 19.501%;
+    }
+
     &__price-container {
       width: 47.059%;
       height: 11.538%;
@@ -274,6 +283,14 @@
       background: rgb(161, 101, 101);
     }
 
+    &__mobile-quantity-selector-container {
+      display: none;
+    }
+
+    &__mobile-add-button-container {
+      display: none;
+    }
+
     &__buttons-subcontainer {
       width: 100%;
       height: 100%;
@@ -281,6 +298,19 @@
       border: 1px $c1-E solid;
       background: rgb(165, 165, 117);
       position: relative;
+    }
+
+    &__quantity-selector-container {
+      display: none;
+    }
+
+    &__add-button-container {
+      width: 35.483%;
+      height: 51.75%;
+      background: chocolate;
+      position: absolute;
+      top: 23.958%;
+      right: 52.492%;
     }
 
     &__buy-button {
