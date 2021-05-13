@@ -6,6 +6,10 @@ import fourStars from '../../assets/images/fourStars.png';
 import grayCheck from '../../assets/icons/grayCheck.svg';
 import eye from '../../assets/icons/eye.svg';
 import plusWhite from '../../assets/icons/plusWhite.svg';
+import facebook from '../../assets/icons/facebook.svg';
+import twitter from '../../assets/icons/twitter.svg';
+import linkedin from '../../assets/icons/linkedin.svg';
+import instagram from '../../assets/icons/instagram.svg';
 import SizeSquare from '../Size square/SizeSquare';
 import {ProductDetailsContext} from '../../context/Product details context/ProductDetailsContext';
 import ProductQuantitySelector from '../Product quantity selector/ProductQuantitySelector';
@@ -93,7 +97,26 @@ const ProductDetails = () => {
                             </div>
 
                         </div>
-                        <div className="product-details__social-container"></div>
+                        <div className="product-details__social-container">
+                            
+                            <p className="product-details__social-text">Share</p>
+
+                            <div className="product-details__social-network-container">
+                                <div className="product-details__social-facebook-container">
+                                    <img className="product-details__social-icon" src={facebook} alt="facebook icon"/>
+                                </div>
+                                <div className="product-details__social-twitter-container">
+                                    <img className="product-details__social-icon" src={twitter} alt="twitter icon"/>
+                                </div>
+                                <div className="product-details__social-linkedin-container">
+                                    <img className="product-details__social-icon" src={linkedin} alt="linkedin icon"/>
+                                </div>
+                                <div className="product-details__social-instagram-container">
+                                    <img className="product-details__social-icon" src={instagram} alt="instagram icon"/>
+                                </div>
+                            </div>
+
+                        </div>
                         
                     </div>
                 

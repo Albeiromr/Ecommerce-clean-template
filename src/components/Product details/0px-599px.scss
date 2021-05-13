@@ -317,7 +317,71 @@
     &__social-container {
       width: 76.486%;
       height: 5.914%;
-      background: hotpink;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 11.756%;
+    }
+
+    &__social-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(15.458px, 4.83vw, 30px);
+      color: $c1-B;
+    }
+
+    &__social-network-container {
+      width: 70.671%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-facebook-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #4668b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__social-twitter-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #1d98e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__social-linkedin-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0076b4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__social-instagram-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ca3174;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__social-icon {
+      width: 43.75%;
+      height: 43.75%;
     }
   }
 }

@@ -33,6 +33,7 @@ const Footer = () => {
           </div>
         </article>
         <div className="footer__social">
+
           <div className="footer__social-network-container">
             <div className="footer__social-facebook-container">
               <img className="footer__social-icon" src={facebook} alt="facebook icon"/>
@@ -47,6 +48,7 @@ const Footer = () => {
               <img className="footer__social-icon" src={instagram} alt="instagram icon"/>
             </div>
           </div>
+
           <div className="footer__social-card-container">
             <img className="footer__social-card" src={visa} alt="credit card icon"/>
             <img className="footer__social-card" src={mastercard} alt="credit card icon"/>
