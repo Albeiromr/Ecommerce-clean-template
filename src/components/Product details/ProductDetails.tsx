@@ -5,9 +5,11 @@ import "./1025px-1920px.scss";
 import fourStars from '../../assets/images/fourStars.png';
 import grayCheck from '../../assets/icons/grayCheck.svg';
 import eye from '../../assets/icons/eye.svg';
+import plusWhite from '../../assets/icons/plusWhite.svg';
 import SizeSquare from '../Size square/SizeSquare';
 import {ProductDetailsContext} from '../../context/Product details context/ProductDetailsContext';
 import ProductQuantitySelector from '../Product quantity selector/ProductQuantitySelector';
+import AddButton from '../Add button/AddButton';
 
 
 
@@ -71,14 +73,21 @@ const ProductDetails = () => {
                             <div className="product-details__mobile-quantity-selector-container">
                                 <ProductQuantitySelector />
                             </div>
-                            <div className="product-details__mobile-add-button-container"></div>
+                            <div className="product-details__mobile-add-button-container">
+                                <AddButton />
+                            </div>
                             
                             <div className="product-details__buttons-subcontainer">
                                 <div className="product-details__quantity-selector-container">
                                     <ProductQuantitySelector />
                                 </div>
-                                <div className="product-details__add-button-container"></div>
-                                <div className="product-details__buy-button"></div>
+                                <div className="product-details__add-button-container">
+                                    <AddButton />
+                                </div>
+                                <div className="product-details__buy-button">
+                                    <img className="product-details__buy-button-icon" src={plusWhite} alt="plus" />
+                                    <p className="product-details__buy-button-text">Buy Now</p>
+                                </div>
                             </div>
 
                         </div>

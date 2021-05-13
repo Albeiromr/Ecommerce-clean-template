@@ -13,6 +13,7 @@ const ProductQuantitySelector = () => {
             <div className="product-quantity-selector__button">
                 <img className="product-quantity-selector__icon" src={less} alt="less" />
             </div>
+            
                 <p className="product-quantity-selector__number">1</p>
 
             <div className="product-quantity-selector__button">

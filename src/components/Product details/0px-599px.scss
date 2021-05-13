@@ -303,6 +303,23 @@
       border-radius: inherit;
       border: 2px $c2-B solid;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__buy-button-icon {
+      width: 6.854%;
+      margin-right: 3%;
+    }
+
+    &__buy-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.753px, 3.985vw, 30px);
+      color: #ffffff;
     }
 
     &__social-container {
