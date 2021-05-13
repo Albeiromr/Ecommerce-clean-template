@@ -48,13 +48,12 @@ const ProductDetails = () => {
                     </div>
                     
                     <div className="product-details__flex-container">
+
                         <p className="product-details__description">
                         New Design Hoodied Long tyuvr Sleeve Linen Shirt Men Solid Color 100%
                         Cotton Quality Pullover Shirt for Men Streetwear Men's Shirts
                         </p>
-                        <div className="product-details__tablet-quantity-selector-container">
-                            <ProductQuantitySelector />
-                        </div>
+                        
                         <div className="product-details__price-container">
                             <p className="product-details__price">$976.33</p>
                             <p className="product-details__crossed-line-price">$1.020.99</p>
@@ -66,6 +65,9 @@ const ProductDetails = () => {
                             <p className="product-details__size-text">Sizes</p>
                             <div className="product-details__size-square-container">
                                 {sizes.map((size) => <SizeSquare name={size.name}/>)}
+                            </div>
+                            <div className="product-details__tablet-quantity-selector-container">
+                            <ProductQuantitySelector />
                             </div>
                         </div>
                         <div className="product-details__buttons-container">
