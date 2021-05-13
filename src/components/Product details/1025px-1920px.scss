@@ -62,7 +62,6 @@
     &__popularity-container {
       width: 74.558%;
       height: 4.499%;
-      background: burlywood;
       position: absolute;
       top: 17.789%;
       left: 0;
@@ -74,7 +73,6 @@
     &__rate-container {
       width: 36.291%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -107,7 +105,6 @@
     &__sold-container {
       width: 22.287%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -140,7 +137,6 @@
     &__viewed-container {
       width: 27.81%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -200,7 +196,6 @@
     &__price-container {
       width: 47.205%;
       height: 10.456%;
-      background: rgb(231, 226, 219);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -252,7 +247,6 @@
     &__size-container {
       width: 73.088%;
       height: 9.92%;
-      background: darksalmon;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -271,14 +265,12 @@
     &__size-square-container {
       width: auto;
       height: 100%;
-      background: indianred;
       display: inline-flex;
     }
 
     &__buttons-container {
       width: 100%;
       height: 22.655%;
-      background: rgb(165, 150, 150);
       margin-bottom: 4.99%;
     }
 
@@ -295,14 +287,12 @@
       height: 100%;
       border-radius: clamp(10px, 0.952vw, 15.71px);
       border: 1px $c1-E solid;
-      background: rgb(165, 165, 117);
       position: relative;
     }
 
     &__quantity-selector-container {
       width: 24.558%;
       height: 38.461%;
-      background: darkcyan;
       position: absolute;
       top: 30.769%;
       left: 3.97%;
@@ -311,7 +301,6 @@
     &__add-button-container {
       width: 31.323%;
       height: 51.649%;
-      background: chocolate;
       position: absolute;
       top: 23.931%;
       right: 37.677%;

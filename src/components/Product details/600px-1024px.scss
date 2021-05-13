@@ -60,7 +60,6 @@
     &__popularity-container {
       width: 74.327%;
       height: 5.984%;
-      background: burlywood;
       position: absolute;
       top: 0;
       left: 0;
@@ -72,7 +71,6 @@
     &__rate-container {
       width: 36.291%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -105,7 +103,6 @@
     &__sold-container {
       width: 22.287%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -138,7 +135,6 @@
     &__viewed-container {
       width: 27.81%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -194,13 +190,11 @@
     &__tablet-quantity-selector-container {
       width: 24.486%;
       height: 86.538%;
-      background: chocolate;
     }
 
     &__price-container {
       width: 47.059%;
       height: 11.538%;
-      background: rgb(231, 226, 219);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -252,7 +246,6 @@
     &__size-container {
       width: 100%;
       height: 11.16%;
-      background: darksalmon;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -271,14 +264,12 @@
     &__size-square-container {
       width: auto;
       height: 100%;
-      background: indianred;
       display: inline-flex;
     }
 
     &__buttons-container {
       width: 100%;
       height: 20.512%;
-      background: rgb(161, 101, 101);
       margin-bottom: 4%;
     }
 
@@ -295,7 +286,6 @@
       height: 100%;
       border-radius: clamp(8px, 1.682vw, 30px);
       border: 1px $c1-E solid;
-      background: rgb(165, 165, 117);
       position: relative;
     }
 
@@ -306,7 +296,6 @@
     &__add-button-container {
       width: 35.483%;
       height: 51.75%;
-      background: chocolate;
       position: absolute;
       top: 23.958%;
       right: 52.492%;

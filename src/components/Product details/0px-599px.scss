@@ -62,7 +62,6 @@
     &__popularity-container {
       width: 90%;
       height: 5.335%;
-      background: burlywood;
       position: absolute;
       top: 0;
       left: 0;
@@ -74,7 +73,6 @@
     &__rate-container {
       width: 55.255%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -107,7 +105,6 @@
     &__sold-container {
       width: 33.933%;
       height: 70.967%;
-      background: cornsilk;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -175,7 +172,6 @@
     &__price-container {
       width: 86.756%;
       height: 9.981%;
-      background: rgb(231, 226, 219);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -227,7 +223,6 @@
     &__size-container {
       width: 100%;
       height: 7.308%;
-      background: darksalmon;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -246,14 +241,12 @@
     &__size-square-container {
       width: auto;
       height: 100%;
-      background: indianred;
       display: inline-flex;
     }
 
     &__buttons-container {
       width: 100%;
       height: 27.541%;
-      background: rgb(161, 101, 101);
       position: relative;
       margin-bottom: 10%;
     }
@@ -261,7 +254,6 @@
     &__mobile-quantity-selector-container {
       width: 45.257%;
       height: 30.405%;
-      background: chocolate;
       position: absolute;
       top: 1.351%;
       left: 0;
@@ -270,7 +262,6 @@
     &__mobile-add-button-container {
       width: 50.948%;
       height: 36.675%;
-      background: chocolate;
       position: absolute;
       top: 0;
       right: 0;
@@ -281,7 +272,6 @@
       height: 42.567%;
       border-radius: clamp(9.986px, 3.12vw, 30px);
       border: 1px $c1-E solid;
-      background: rgb(165, 165, 117);
       position: absolute;
       bottom: 0;
       right: 6%;
