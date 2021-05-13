@@ -8,7 +8,7 @@ import fiveStars from '../../assets/images/fiveStars.png';
 
 const ProductCard = () => {
 
-  //this useScrollBarSize is a costum hook to get the browswer scroll bar width
+  //this useScrollBarSize is a custom hook to get the browswer scroll bar width
   // this is necessary due to give the individual product card the right width to fit in its parent container
   const {width} = useScrollbarSize();
   const bigProportion:number = 25.006 * width / 100

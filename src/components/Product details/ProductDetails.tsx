@@ -14,6 +14,7 @@ import SizeSquare from '../Size square/SizeSquare';
 import {ProductDetailsContext} from '../../context/Product details context/ProductDetailsContext';
 import ProductQuantitySelector from '../Product quantity selector/ProductQuantitySelector';
 import AddButton from '../Add button/AddButton';
+import ProductBigPicture from '../Product big picture/ProductBigPicture';
 
 
 
@@ -25,6 +26,9 @@ const ProductDetails = () => {
     return (
         <section className="product-details">
             <div className="product-details__subcontainer">
+
+                <ProductBigPicture />
+                
                 <h1 className="product-details__mobile-title">Kamura Orange</h1>
                 <p className="product-details__mobile-sku">SKU 3457SNE9088</p>
                 <div className="product-details__description-container">
