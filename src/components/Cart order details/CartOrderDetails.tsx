@@ -2,6 +2,7 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import CartIndividualProduct from '../Cart individual Product/CartIndividualProduct';
 
 const CartOrderDetails  = () => {
     
@@ -15,7 +16,10 @@ const CartOrderDetails  = () => {
                 </p>
             </div>
 
-            <div className="cart-order-details__products-container"></div>
+            <div className="cart-order-details__products-container">
+                <CartIndividualProduct />
+                <CartIndividualProduct />
+            </div>
 
             <div className="cart-order-details__price-summary-container"></div>
 
