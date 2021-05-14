@@ -1,0 +1,26 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .cart-order-details {
+    width: 100%;
+    height: auto;
+    min-height: clamp(439.806px, 137.439vw, 823.263px);
+    background: lightcoral;
+    border-radius: clamp(7.945px, 2.483vw, 30px);
+    border: 1px $c1-D solid;
+    padding: clamp(9.275px, 2.898vw, 30px) clamp(10.515px, 3.286vw, 30px)
+      clamp(18.264px, 5.707vw, 30px) clamp(10.515px, 3.286vw, 30px);
+
+    &__title-container {
+      display: none;
+    }
+
+    &__products-container {
+      margin-left: 2.449%;
+      width: 95.101%;
+      height: auto;
+      min-height: clamp(299.686px, 93.652vw, 500px);
+      background: dimgray;
+    }
+  }
+}

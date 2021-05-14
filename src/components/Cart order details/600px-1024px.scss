@@ -1,0 +1,51 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .cart-order-details {
+    width: 100%;
+    height: auto;
+    min-height: 115.891vw;
+    background: lightcoral;
+    border-radius: clamp(8px, 2.045vw, 30px);
+    border: 1px $c1-D solid;
+    padding: 4.455vw 2.727vw;
+
+    &__title-container {
+      width: 100%;
+      height: clamp(10px, 9.042vw, 100px);
+      background: rgb(255, 255, 255);
+      position: relative;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10px, 3.751vw, 50px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__paragraph {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(10px, calc(.1em + 2.045vw), 30px);
+      color: $c1-C;
+      position: absolute;
+      top: 60%;
+    }
+
+    &__products-container {
+      margin-top: 6.820vw;
+      width: 100%;
+      height: auto;
+      min-height: 54.947vw;
+      background: dimgray;
+    }
+  }
+}
