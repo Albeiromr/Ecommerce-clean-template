@@ -47,5 +47,19 @@
       min-height: 54.947vw;
       background: dimgray;
     }
+
+    &__price-summary-container {
+      margin-top: 6.820vw;
+      width: 100%;
+      height: 13.467vw;
+      background: rgb(134, 134, 78);
+    }
+
+    &__total-price {
+      margin-top: 6.820vw;
+      width: 100%;
+      height: 6.649vw;
+      background: palegoldenrod;
+    }
   }
 }

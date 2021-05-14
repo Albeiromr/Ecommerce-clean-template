@@ -48,5 +48,19 @@
       min-height: clamp(262.151px, 25.257vw, 422px);
       background: dimgray;
     }
+
+    &__price-summary-container {
+      margin-top: clamp(20px, 3.174vw, 52.38px);
+      width: 100%;
+      height: clamp(50px, 6.268vw, 103.43px);
+      background: rgb(134, 134, 78);
+    }
+
+    &__total-price {
+      margin-top: clamp(20px, 3.174vw, 52.38px);
+      width: 100%;
+      height: clamp(10px, 3.095vw, 51.07px);
+      background: palegoldenrod;
+    }
   }
 }

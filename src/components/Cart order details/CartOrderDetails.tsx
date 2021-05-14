@@ -16,6 +16,11 @@ const CartOrderDetails  = () => {
             </div>
 
             <div className="cart-order-details__products-container"></div>
+
+            <div className="cart-order-details__price-summary-container"></div>
+
+            <div className="cart-order-details__total-price"></div>
+
         </div>
     )
 };
