@@ -1,0 +1,18 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .cart {
+    width: 100%;
+    height: auto;
+    min-height: clamp(902.343px, 150.390vw, 1540px);
+    padding: 6.25vw 10.091vw 10.416vw 10.091vw;
+    background: darkcyan;
+
+    &__cart-order-details-container {
+      width: 100%;
+      height: auto;
+      min-height: 115.891vw;
+      background: lightblue;
+    }
+  }
+}

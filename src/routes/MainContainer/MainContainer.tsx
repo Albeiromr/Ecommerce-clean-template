@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from '../Home/Home';
 import Products from '../Products/Products';
 import Item from '../Item/item';
+import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const MainContainer = () => {
   return (
@@ -25,6 +26,7 @@ const MainContainer = () => {
         <Route path="/" exact component={Home} />
         <Route path="/products" exact component={Products} />
         <Route path="/products/item" exact component={Item} />
+        <Route path="/shopping-cart" exact component={ShoppingCart} />
 
       </Switch>
       <Footer />
