@@ -226,5 +226,33 @@
       top: 57%;
       left: 0;
     }
+
+    &__check {
+      width: 2.638vw;
+      height: 2.638vw;
+      border: 2px $c1-D solid;
+      background: #ffffff;
+      margin-right: 1.319vw;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__check--selected {
+      width: 2.638vw;
+      height: 2.638vw;
+      border: 2px $c2-B solid;
+      background: $c2-A;
+      margin-right: 1.319vw;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__check-icon {
+      width: 75%;
+    }
   }
 }

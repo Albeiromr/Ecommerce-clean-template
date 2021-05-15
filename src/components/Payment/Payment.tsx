@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import cardCircle from '../../assets/images/cardCircle.png';
 import colorCards from '../../assets/images/colorCards.png';
+import checked from '../../assets/icons/checked.svg';
 
 const Payment = () => {
+
+    // checkOne and checkTwo state are needed for changing the check class when it is clicked
+    const [checkOne, setCheckOne] = useState(false);
+    const [checkTwo, setCheckTwo] = useState(false);
+
+    const handleCheckOneClick = () => {
+        if(!checkOne) setCheckOne(true);
+        else setCheckOne(false)
+    }
+
+    const handleCheckTwoClick = () => {
+        if(!checkTwo) setCheckTwo(true);
+        else setCheckTwo(false)
+    }
 
     return (
         <div className="payment">
@@ -67,12 +82,17 @@ const Payment = () => {
             <p className="payment__confirmation-text">We are getting to the end. Just few clicks and your order si ready!</p>
 
             <div className="payment__check-container-above">
-                <div className="payment__check"></div>
+                <div className={!checkOne ? "payment__check" : "payment__check--selected"} onClick={handleCheckOneClick}>
+                    {checkOne ? <img className="payment__check-icon" src={checked} alt="check" />: null}
+                </div>
                 <p className="payment__check-container-text">I agree with sending me Marketing emails</p>
             </div>
 
             <div className="payment__check-container-below">
-            <p className="payment__check-container-text">I agree with  the <u>terms and conditions</u>  </p>
+                <div className={!checkTwo ? "payment__check" : "payment__check--selected"} onClick={handleCheckTwoClick}>
+                    {checkTwo ? <img className="payment__check-icon" src={checked} alt="check" />: null}
+                </div>
+                <p className="payment__check-container-text">I agree with  the <u>terms and conditions</u></p>
             </div>
 
         </div>

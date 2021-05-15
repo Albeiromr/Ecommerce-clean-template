@@ -3,7 +3,7 @@
 @media only screen and (max-width: 599px) {
   .mobile-checkout {
     width: 100%;
-    height: 283.574vw;
+    height: clamp(907.439px, 283.574vw, 1600px);
     background: darkcyan;
     position: relative;
 

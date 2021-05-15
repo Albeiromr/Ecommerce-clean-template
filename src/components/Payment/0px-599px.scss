@@ -210,5 +210,33 @@
       top: 56%;
       left: 0;
     }
+
+    &__check {
+      width: clamp(15.659px, 4.893vw, 30px);
+      height: clamp(15.659px, 4.893vw, 30px);
+      border: 2px $c1-D solid;
+      background: #ffffff;
+      margin-right: clamp(7.829px, 2.446vw, 30px);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__check--selected {
+      width: clamp(15.659px, 4.893vw, 30px);
+      height: clamp(15.659px, 4.893vw, 30px);
+      border: 2px $c2-B solid;
+      background: $c2-A;
+      margin-right: clamp(7.829px, 2.446vw, 30px);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__check-icon {
+      width: 75%;
+    }
   }
 }

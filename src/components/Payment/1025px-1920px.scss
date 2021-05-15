@@ -232,6 +232,27 @@
       height: clamp(10px, 1.687vw, 29.19px);
       border: 2px $c1-D solid;
       background: #ffffff;
+      margin-right: clamp(5px, 0.63vw, 10.4px);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__check--selected {
+      width: clamp(10px, 1.687vw, 29.19px);
+      height: clamp(10px, 1.687vw, 29.19px);
+      border: 2px $c2-B solid;
+      background: $c2-A;
+      margin-right: clamp(5px, 0.63vw, 10.4px);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__check-icon {
+      width: 75%;
     }
   }
 }
