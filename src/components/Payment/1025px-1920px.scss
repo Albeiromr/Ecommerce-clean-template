@@ -24,7 +24,7 @@
       padding: 0;
       font-family: $secundary-font;
       font-weight: 400;
-      font-size: clamp(10px, 0.952vw, 15.71px);
+      font-size: clamp(14px, calc(0.1em + 0.852vw), 15.71px);
       color: $c1-C;
       position: absolute;
       top: 3.663%;
@@ -164,6 +164,74 @@
       font-weight: 700;
       font-size: clamp(10px, 1.19vw, 19.64px);
       color: #ffffff;
+    }
+
+    &__confirmation-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10px, 1.746vw, 28.81px);
+      color: $c1-A;
+      position: absolute;
+      top: 50.696%;
+      left: 0;
+    }
+
+    &__confirmation-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, calc(0.1em + 0.852vw), 15.71px);
+      color: $c1-C;
+      position: absolute;
+      left: 0;
+      top: 55.059%;
+    }
+
+    &__check-container-above {
+      width: auto;
+      padding: 0 clamp(10px, 1.269vw, 20.95px);
+      height: 4.952%;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(14px, 0.952vw, 15.71px);
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+      top: 60.72%;
+      left: 0;
+    }
+
+    &__check-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(15px, 1.11vw, 18.33px);
+      color: $c1-A;
+    }
+
+    &__check-container-below {
+      width: auto;
+      padding: 0 clamp(10px, 1.269vw, 20.95px);
+      height: 4.952%;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(14px, 0.952vw, 15.71px);
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+      top: 67.22%;
+      left: 0;
+    }
+
+    &__check {
+      width: clamp(10px, 1.687vw, 29.19px);
+      height: clamp(10px, 1.687vw, 29.19px);
+      border: 2px $c1-D solid;
+      background: #ffffff;
     }
   }
 }

@@ -63,6 +63,18 @@ const Payment = () => {
                 <p className="payment__demo-card-button-text">Use Demo Card</p>
             </div>
 
+            <h2 className="payment__confirmation-title">Confirmation</h2>
+            <p className="payment__confirmation-text">We are getting to the end. Just few clicks and your order si ready!</p>
+
+            <div className="payment__check-container-above">
+                <div className="payment__check"></div>
+                <p className="payment__check-container-text">I agree with sending me Marketing emails</p>
+            </div>
+
+            <div className="payment__check-container-below">
+            <p className="payment__check-container-text">I agree with  the <u>terms and conditions</u>  </p>
+            </div>
+
         </div>
     )
 };
