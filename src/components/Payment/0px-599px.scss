@@ -31,5 +31,98 @@
       top: 4.597%;
       left: 4.336%;
     }
+
+    &__card-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 5.871%;
+      left: 15.317%;
+    }
+
+    &__card-color-cards {
+      width: 25.802%;
+      position: absolute;
+      top: 5.471%;
+      right: 4.279%;
+    }
+
+    &__card-number-input-container {
+      width: 91.327%;
+      height: 20.689%;
+      position: absolute;
+      top: 20.977%;
+      left: 4.336%;
+    }
+
+    &__card-holder-input-container {
+      width: 91.327%;
+      height: 20.689%;
+      position: absolute;
+      top: 47.413%;
+      left: 4.336%;
+    }
+
+    &__card-expiration-input-container {
+      width: 39.837%;
+      height: 17.528%;
+      position: absolute;
+      top: 73.563%;
+      left: 4.336%;
+    }
+
+    &__card-cvc-input-container {
+      width: 39.837%;
+      height: 17.528%;
+      position: absolute;
+      top: 73.563%;
+      right: 4.336%;
+    }
+
+    &__label {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__input {
+      margin: 0;
+      outline: none;
+      width: 100%;
+      height: 70.368%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(9.399px, 2.931vw, 30px);
+      padding: 0 clamp(15px, 5vw, 30px);
+      font-family: $secundary-font;
+      font-weight: 400;
+      color: $c1-C;
+    }
+
+    ::placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    :-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
   }
 }
