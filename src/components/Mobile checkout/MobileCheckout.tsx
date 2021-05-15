@@ -8,7 +8,7 @@ const MobileCheckout = () => {
 
     return(
         <section className="mobile-checkout">
-            
+            <div className="mobile-checkout__payment-container"></div>
         </section>
     )
 };

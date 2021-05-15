@@ -2,5 +2,19 @@
 
 @media only screen and (max-width: 599px) {
   .mobile-checkout {
+    width: 100%;
+    height: 283.574vw;
+    background: darkcyan;
+    position: relative;
+
+    &__payment-container {
+      width: 89.371%;
+      height: 93.441%;
+      background: chocolate;
+      position: absolute;
+      top: 2.299%;
+      left: 5.314%;
+
+    }
   }
 }
