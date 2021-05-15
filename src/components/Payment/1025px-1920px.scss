@@ -141,5 +141,29 @@
       color: $c1-C;
       opacity: 1;
     }
+
+    &__demo-card-button {
+      width: 59.533%;
+      height: 6.573%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      position: absolute;
+      top: 41.422%;
+      right: 0;
+      border-radius: clamp(10px, 0.952vw, 15.71px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__demo-card-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(10px, 1.19vw, 19.64px);
+      color: #ffffff;
+    }
   }
 }

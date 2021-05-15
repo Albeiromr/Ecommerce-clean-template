@@ -58,6 +58,11 @@ const Payment = () => {
                 </div>
 
             </div>
+
+            <div className="payment__demo-card-button">
+                <p className="payment__demo-card-button-text">Use Demo Card</p>
+            </div>
+
         </div>
     )
 };
