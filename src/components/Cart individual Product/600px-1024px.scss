@@ -4,7 +4,6 @@
   .cart-individual-product {
     width: 100%;
     height: 27.473vw;
-    background: powderblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +12,6 @@
     &__subcontainer {
       width: 100%;
       height: 81.042%;
-      background: rosybrown;
       position: relative;
     }
 
@@ -21,7 +19,7 @@
       width: 17.05vw;
       height: 17.05vw;
       border-radius: 2.045vw;
-      background: sandybrown;
+      background: rgb(206, 199, 194);
     }
 
     &__image {
@@ -154,7 +152,6 @@
     &__remove-container {
       width: 14.643%;
       height: 13.117%;
-      background: snow;
       position: absolute;
       top: 2.498%;
       right: 0;
