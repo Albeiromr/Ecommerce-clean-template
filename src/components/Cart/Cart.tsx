@@ -10,6 +10,8 @@ const Cart = () => {
     return (
         <section className="cart">
 
+            <div className="cart__payment-container"></div>
+
             <div className="cart__cart-order-details-container">
                 <CartOrderDetails />
             </div>

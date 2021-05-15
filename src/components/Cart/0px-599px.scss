@@ -10,6 +10,10 @@
       clamp(23.188px, 7.246vw, 50px) clamp(5.025px, 1.47vw, 50px);
     background: darkcyan;
 
+    &__payment-container {
+      display: none;
+    }
+
     &__cart-order-details-container {
       width: 100%;
       height: auto;

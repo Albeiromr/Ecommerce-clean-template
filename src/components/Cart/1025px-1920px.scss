@@ -9,6 +9,14 @@
     padding: clamp(10px, 2.521vw, 41.61px) clamp(10px, 3.557vw, 58.7px)
       clamp(10px, 6.476vw, 106.86px) clamp(10px, 3.557vw, 58.7px);
     background: darkcyan;
+    display: inline-flex;
+
+    &__payment-container {
+      width: 57.396%;
+      height: clamp(689.868px, 67.304vw, 1110.52px);
+      background: lightblue;
+      margin-right: clamp(10px, 2.46vw, 20.61px);
+    }
 
     &__cart-order-details-container {
       width: 39.955%;

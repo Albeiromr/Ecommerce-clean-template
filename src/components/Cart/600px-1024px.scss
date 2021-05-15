@@ -8,6 +8,10 @@
     padding: 6.25vw 10.091vw 10.416vw 10.091vw;
     background: darkcyan;
 
+    &__payment-container {
+      display: none;
+    }
+
     &__cart-order-details-container {
       width: 100%;
       height: auto;
