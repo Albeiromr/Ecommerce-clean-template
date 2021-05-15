@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import cardCircle from '../../assets/images/cardCircle.png';
 import colorCards from '../../assets/images/colorCards.png';
 import checked from '../../assets/icons/checked.svg';
+import shield from '../../assets/icons/shield.svg';
 
 const Payment = () => {
 
@@ -95,6 +96,15 @@ const Payment = () => {
                 <p className="payment__check-container-text">I agree with  the <u>terms and conditions</u></p>
             </div>
 
+            <div className="payment__complete-order-button">
+                <p className="payment__demo-card-button-text"> Complete Order</p>
+            </div>
+
+            <img className="payment__shield-icon" src={shield} alt="shield" />
+            <p className="payment__shield-title">All your data is safe</p>
+            <p className="payment__shield-paragraph">
+                We are using the most advanced security to provide you the best experience ever.
+            </p>
         </div>
     )
 };
