@@ -1,0 +1,35 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .payment {
+    width: 100%;
+    height: 100%;
+    background: rgb(146, 93, 93);
+
+    &__title {
+      display: none;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__card-info-container {
+      width: 100%;
+      height: 31.722%;
+      background: #ffffff;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      border-radius: clamp(9.399px, 2.937vw, 30px);
+      border: 2px $c1-D solid;
+    }
+
+    &__card-circle {
+      width: 6.588%;
+      position: absolute;
+      top: 4.597%;
+      left: 4.336%;
+    }
+  }
+}
