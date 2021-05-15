@@ -34,14 +34,14 @@
       padding: 0;
       font-family: $secundary-font;
       font-weight: 400;
-      font-size: clamp(10px, calc(.1em + 2.045vw), 30px);
+      font-size: clamp(10px, calc(0.1em + 2.045vw), 30px);
       color: $c1-C;
       position: absolute;
       top: 60%;
     }
 
     &__products-container {
-      margin-top: 6.820vw;
+      margin-top: 6.82vw;
       width: 100%;
       height: auto;
       min-height: 54.947vw;
@@ -49,17 +49,94 @@
     }
 
     &__price-summary-container {
-      margin-top: 6.820vw;
+      margin-top: 6.82vw;
       width: 100%;
       height: 13.467vw;
       background: rgb(134, 134, 78);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__subtotal-container {
+      width: 100%;
+      height: 23.204%;
+      background: burlywood;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__tax-container {
+      width: 100%;
+      height: 23.204%;
+      background: burlywood;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__shipping-container {
+      width: 100%;
+      height: 23.204%;
+      background: burlywood;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 1.975vw;
+      color: $c1-A;
     }
 
     &__total-price {
-      margin-top: 6.820vw;
+      margin-top: 6.82vw;
       width: 100%;
       height: 6.649vw;
       background: palegoldenrod;
+      position: relative;
+    }
+
+    &__total-order-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 1.975vw;
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__total-number {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 4.433vw;
+      color: $c2-A;
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+
+    &__total-order-paragraph {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: 1.975vw;
+      color: $c2-A;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }
