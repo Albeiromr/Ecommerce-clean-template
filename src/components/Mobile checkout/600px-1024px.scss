@@ -6,6 +6,11 @@
     height: 149.869vw;
     background: darkcyan;
     position: relative;
+    animation-name: mobileCheckoutComponent;
+    animation-duration: .3s;
+    animation-delay: none;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
 
     &__payment-container {
       width: 88.671%;
@@ -14,6 +19,16 @@
       position: absolute;
       top: 4.170%;
       left: 5.664%;
+    }
+  }
+
+  @keyframes  mobileCheckoutComponent {
+    from {
+      transform: translateX(90%);
+    }
+
+    to {
+      transform: translateX(0%);
     }
   }
 }
