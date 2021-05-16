@@ -8,14 +8,23 @@ import checked from '../../assets/icons/checked.svg';
 import shield from '../../assets/icons/shield.svg';
 import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
 import {ShoppingCartContext} from '../../context/Shopping cart context/ShoppingCartContext';
+import { useWindowWidth } from "@react-hook/window-size";
 
 const Payment = () => {
 
     const {setShowPayment} = useContext(ShoppingCartContext);
 
+    //with this costum hook we can get the window width
+    const windowWidth = useWindowWidth();
+    
+
     // checkOne and checkTwo state are needed for changing the check class when it is clicked
     const [checkOne, setCheckOne] = useState(false);
     const [checkTwo, setCheckTwo] = useState(false);
+    
+    const TabletVwToScrollUp: number = (windowWidth / 100) * 25;
+    const smarthphoneVwToScrollUp: number = (windowWidth / 100) * 58;
+
 
     const handleCheckOneClick = () => {
         if(!checkOne) setCheckOne(true);
@@ -28,7 +37,12 @@ const Payment = () => {
     };
 
     const handleRetunClick = () => {
-        setShowPayment(false);
+      setShowPayment(false);
+      if (windowWidth <= 599) {
+        window.scrollTo(0, smarthphoneVwToScrollUp);
+      } else if (windowWidth >= 600 && windowWidth <= 1024) {
+        window.scrollTo(0, TabletVwToScrollUp);
+      }
     };
 
     return (

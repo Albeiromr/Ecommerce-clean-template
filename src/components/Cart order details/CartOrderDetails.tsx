@@ -19,6 +19,9 @@ const CartOrderDetails  = () => {
             <div className="cart-order-details__products-container">
                 <CartIndividualProduct />
                 <CartIndividualProduct />
+                <CartIndividualProduct />
+                <CartIndividualProduct />
+                <CartIndividualProduct />
                 
             </div>
 
