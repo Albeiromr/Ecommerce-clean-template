@@ -7,6 +7,7 @@ import Cart from '../../components/Cart/Cart'
 import DiscoverSection from '../../components/Discover section/DiscoverSection';
 import InterestProducts from '../../components/Interest products/InterestProducts';
 import MobileCheckout from '../../components/Mobile checkout/MobileCheckout';
+import ShoppingCartTitle from '../../components/Shopping cart title/ShoppingCartTitle';
 import {ShoppingCartContext} from '../../context/Shopping cart context/ShoppingCartContext';
 import { useWindowWidth } from "@react-hook/window-size";
 
@@ -14,10 +15,13 @@ import { useWindowWidth } from "@react-hook/window-size";
 const ShoppingCart = () => {
 
   const {showPayment} = useContext(ShoppingCartContext);
+  
   const width = useWindowWidth();
 
   return <div className="shopping-cart">
     <ActualPath />
+
+    { width <= 599 ? <ShoppingCartTitle /> : null }
 
     { width >= 1025 ? <Cart /> : null }
 
