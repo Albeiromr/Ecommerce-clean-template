@@ -286,5 +286,24 @@
       left: 0;
       line-height: 130%;
     }
+
+    &__return-button {
+      width: clamp(48.772px, 15.241vw, 100px);
+      height: clamp(48.772px, 15.241vw, 100px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(14.755px, 4.611vw, 30px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 91.248%;
+      left: 2%;
+    }
+
+    &__return-button-icon {
+      width: 45.546%;
+    }
   }
 }

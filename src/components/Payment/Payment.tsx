@@ -6,6 +6,7 @@ import cardCircle from '../../assets/images/cardCircle.png';
 import colorCards from '../../assets/images/colorCards.png';
 import checked from '../../assets/icons/checked.svg';
 import shield from '../../assets/icons/shield.svg';
+import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
 
 const Payment = () => {
 
@@ -105,6 +106,10 @@ const Payment = () => {
             <p className="payment__shield-paragraph">
                 We are using the most advanced security to provide you the best experience ever.
             </p>
+
+            <div className="payment__return-button">
+                <img className="payment__return-button-icon" src={chevronHideCategories} alt="arrow" />
+            </div>
         </div>
     )
 };

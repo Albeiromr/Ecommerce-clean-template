@@ -302,5 +302,24 @@
       left: 0;
       line-height: 130%;
     }
+
+    &__return-button {
+      width: 8.616vw;
+      height: 8.616vw;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: 2.485vw;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 90.127%;
+      left: 2%;
+    }
+
+    &__return-button-icon {
+      width: 45.546%;
+    }
   }
 }
