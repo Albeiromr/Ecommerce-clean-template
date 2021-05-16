@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -7,8 +7,11 @@ import colorCards from '../../assets/images/colorCards.png';
 import checked from '../../assets/icons/checked.svg';
 import shield from '../../assets/icons/shield.svg';
 import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
+import {ShoppingCartContext} from '../../context/Shopping cart context/ShoppingCartContext';
 
 const Payment = () => {
+
+    const {setShowPayment} = useContext(ShoppingCartContext);
 
     // checkOne and checkTwo state are needed for changing the check class when it is clicked
     const [checkOne, setCheckOne] = useState(false);
@@ -16,13 +19,17 @@ const Payment = () => {
 
     const handleCheckOneClick = () => {
         if(!checkOne) setCheckOne(true);
-        else setCheckOne(false)
-    }
+        else setCheckOne(false);
+    };
 
     const handleCheckTwoClick = () => {
         if(!checkTwo) setCheckTwo(true);
-        else setCheckTwo(false)
-    }
+        else setCheckTwo(false);
+    };
+
+    const handleRetunClick = () => {
+        setShowPayment(false);
+    };
 
     return (
         <div className="payment">
@@ -108,7 +115,7 @@ const Payment = () => {
             </p>
 
             <div className="payment__return-button">
-                <img className="payment__return-button-icon" src={chevronHideCategories} alt="arrow" />
+                <img onClick={handleRetunClick} className="payment__return-button-icon" src={chevronHideCategories} alt="arrow" />
             </div>
         </div>
     )

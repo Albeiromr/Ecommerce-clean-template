@@ -9,7 +9,7 @@ export const ShoppingCartContext = createContext<contextValue>({
 
 const ShoppingCartContextProvider:FC<contextProps> = (props) => {
 
-    const [showPayment, setShowPayment] = useState(true);
+    const [showPayment, setShowPayment] = useState(false);
 
     return (
         <ShoppingCartContext.Provider 
