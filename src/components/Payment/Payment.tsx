@@ -81,7 +81,7 @@ const Payment = () => {
             </div>
 
             <h2 className="payment__confirmation-title">Confirmation</h2>
-            <p className="payment__confirmation-text">We are getting to the end. Just few clicks and your order si ready!</p>
+            <p className="payment__confirmation-text">We are getting to the end. Just a few clicks and your order si ready!</p>
 
             <div className="payment__check-container-above">
                 <div className={!checkOne ? "payment__check" : "payment__check--selected"} onClick={handleCheckOneClick}>
