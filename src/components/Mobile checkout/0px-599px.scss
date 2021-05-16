@@ -4,7 +4,6 @@
   .mobile-checkout {
     width: 100%;
     height: clamp(907.439px, 283.574vw, 1600px);
-    background: darkcyan;
     position: relative;
     animation-name: mobileCheckoutComponent;
     animation-duration: 0.3s;
@@ -15,7 +14,6 @@
     &__payment-container {
       width: 89.371%;
       height: 93.441%;
-      background: chocolate;
       position: absolute;
       top: 2.299%;
       left: 5.314%;
