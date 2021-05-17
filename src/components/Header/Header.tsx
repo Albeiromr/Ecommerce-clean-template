@@ -4,7 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import logo from "../../assets/logo/brand.png";
 import basket from "../../assets/icons/basket.svg";
-import user from "../../assets/icons/user.svg";
+import home from "../../assets/icons/home.svg";
 import SearchBar from "../Search bar/SearchBar";
 
 const Header = () => {
@@ -19,8 +19,8 @@ const Header = () => {
         </div>
 
         <div className="header__contact-links">
-          <p className="header__green-link">Sign Up</p>
-          <p className="header__green-link">My Account</p>
+          <p className="header__green-link">Home</p>
+          <p className="header__green-link">Shopping Cart</p>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ const Header = () => {
         </div>
         <div className="header__icon-container">
           <div className="header__icon-subcontainer">
-            <img className="header__icon" src={user} alt="user icon" />
+            <img className="header__icon" src={home} alt="user icon" />
           </div>
           <div className="header__icon-subcontainer">
             <img className="header__icon" src={basket} alt="basket icon" />

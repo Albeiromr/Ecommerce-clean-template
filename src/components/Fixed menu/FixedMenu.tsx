@@ -4,7 +4,7 @@ import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import filters from '../../assets/icons/filters.svg';
 import search from '../../assets/icons/search.svg';
-import user from '../../assets/icons/user.svg'
+import home from '../../assets/icons/home.svg'
 import basket from '../../assets/icons/basket.svg'
 import arrowUp from '../../assets/icons/arrowUp.svg'
 
@@ -44,7 +44,7 @@ const FixedMenu = () => {
           </div>
           <div className="fixed-menu__right-block">
             <div className="fixed-menu__icon-container">
-              <img className="fixed-menu__icon" src={user} alt="filter icon" />
+              <img className="fixed-menu__icon" src={home} alt="filter icon" />
             </div>
 
             <div className="fixed-menu__line"></div>
