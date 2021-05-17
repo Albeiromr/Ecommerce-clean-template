@@ -1,0 +1,14 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .my-orders {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: clamp(224.927px, 70.289vw, 421.036px);
+    padding: clamp(23.188px, 7.246vw, 43.405px)
+      clamp(13.913px, 4.347vw, 26.043px) clamp(23.188px, 7.246vw, 43.405px)
+      clamp(13.913px, 4.347vw, 26.043px);
+    background: darkcyan;
+  }
+}

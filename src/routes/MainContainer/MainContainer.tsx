@@ -12,6 +12,7 @@ import Home from '../Home/Home';
 import Products from '../Products/Products';
 import Item from '../Item/item';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
+import MyAccount from '../My account/MyAccount';
 
 const MainContainer = () => {
   return (
@@ -27,6 +28,7 @@ const MainContainer = () => {
         <Route path="/products" exact component={Products} />
         <Route path="/products/item" exact component={Item} />
         <Route path="/shopping-cart" exact component={ShoppingCart} />
+        <Route path="/my-account" exact component={MyAccount} />
 
       </Switch>
       <Footer />

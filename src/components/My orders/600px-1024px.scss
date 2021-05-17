@@ -1,0 +1,11 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .my-orders {
+    width: 100%;
+    height: auto;
+    min-height: 47.656vw;
+    padding: 4.427vw 5.598vw 6.51vw 5.598vw;
+    background: darkcyan;
+  }
+}
