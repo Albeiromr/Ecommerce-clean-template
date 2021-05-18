@@ -11,9 +11,13 @@ const MainNav = () => {
   return (
     <nav className="main-nav">
       <ul className=" main-nav__subcontainer">
+
+        <MainNavButton name="Home" path="/"/>
+
         {productOptions.map((option) => (
-          <MainNavButton name={option.name} />
+          <MainNavButton name={option.name} path="/products" />
         ))}
+        
       </ul>
     </nav>
   );

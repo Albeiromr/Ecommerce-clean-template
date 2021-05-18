@@ -1,19 +1,25 @@
-import React, { Fragment, useContext, FC } from "react";
+import React, { Fragment, useContext, FC} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import { componentProps } from "./types";
 import { MainNavContext } from "../../context/Main nav context/MainNavContext";
+import {useHistory} from 'react-router-dom';
 
 const MainNavButton: FC<componentProps> = (props) => {
   const { setOptionSelected, optionSelected, productOptions } = useContext(
     MainNavContext
   );
 
+  const history = useHistory();
+
   const handleClick = () => {
     if (optionSelected !== props.name) setOptionSelected(props.name);
     else return;
+    history.push(props.path)
   };
+
+ 
 
   const productsLength: number = productOptions.length - 1;
 
