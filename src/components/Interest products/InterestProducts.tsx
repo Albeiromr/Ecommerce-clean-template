@@ -28,10 +28,10 @@ const InterestProducts = () => {
         <section className="interest-products">
             <h2 className="interest-products__title">This might interest you!!</h2>
             <div className="interest-products__product-card-container">
-                <ProductCard />
-                <ProductCard />
-                <ProductCard /> 
-                {windowWidth < 1025 && windowWidth > 599 ? null : <ProductCard />} 
+                <ProductCard scrollSmooth={false}/>
+                <ProductCard scrollSmooth={false}/>
+                <ProductCard scrollSmooth={false}/> 
+                {windowWidth < 1025 && windowWidth > 599 ? null : <ProductCard  scrollSmooth={false}/>} 
             </div>
             <div onClick={handleClick} className="interest-products__button">
                 <p className="interest-products__button-text">Show More</p>
