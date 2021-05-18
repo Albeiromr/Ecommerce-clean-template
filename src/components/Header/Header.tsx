@@ -6,8 +6,23 @@ import logo from "../../assets/logo/brand.png";
 import basket from "../../assets/icons/basket.svg";
 import home from "../../assets/icons/home.svg";
 import SearchBar from "../Search bar/SearchBar";
+import {Link} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
 const Header = () => {
+
+  const history =  useHistory();
+
+  const handleLogoContainerClick = () => {
+    history.push('/')
+  }
+  const handleHomeIconClick = () => {
+    history.push('/')
+  }
+  const handleHomeBasketClick = () => {
+    history.push('/shopping-cart')
+  }
+
   return (
     <header className="header">
       <div className="header__contact-bar">
@@ -19,14 +34,14 @@ const Header = () => {
         </div>
 
         <div className="header__contact-links">
-          <p className="header__green-link">Home</p>
-          <p className="header__green-link">Shopping Cart</p>
+          <Link to="/" className="header__green-link">Home</Link>
+          <Link to="/shopping-cart" className="header__green-link">Shopping Cart</Link>
         </div>
       </div>
 
       <div className="header__logo-bar">
         
-          <div className="header__logo-container">
+          <div onClick={handleLogoContainerClick} className="header__logo-container">
             <img className="header__logo-image" src={logo} alt="logo" />
           </div>
 
@@ -34,15 +49,19 @@ const Header = () => {
           <SearchBar />
         </div>
         <div className="header__icon-container">
-          <div className="header__icon-subcontainer">
+
+          <div onClick={handleHomeIconClick} className="header__icon-subcontainer">
             <img className="header__icon" src={home} alt="user icon" />
           </div>
-          <div className="header__icon-subcontainer">
+
+          <div onClick={handleHomeBasketClick}className="header__icon-subcontainer">
             <img className="header__icon" src={basket} alt="basket icon" />
           </div>
+
           <div className="header__basket-counter">
             <p className="header__basket-text">8</p>
           </div>
+
         </div>
       </div>
     </header>
