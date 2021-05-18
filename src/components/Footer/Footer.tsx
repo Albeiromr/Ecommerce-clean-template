@@ -11,9 +11,23 @@ import visa from '../../assets/icons/visa.svg';
 import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
-import logo from '../../assets/logo/brand.png'
+import logo from '../../assets/logo/brand.png';
+import {useHistory} from 'react-router-dom';
+
 
 const Footer = () => {
+
+  const history = useHistory();
+
+    const handleClick = () => {
+      history.push("/products");
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });   
+    };
+
   return (
     <footer className="footer">
       <div className="footer__subcontainer">
@@ -23,7 +37,7 @@ const Footer = () => {
               <p className="footer__article-title">All UPS FOR GRABS</p>
               <h2 className="footer__article-subtitle">Enjoy up to 70% off</h2>
               <p className="footer__article-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler products </p>
-              <div className="footer__article-button">
+              <div onClick={handleClick} className="footer__article-button">
                 <p className="footer__article-button-text">View Products</p>
               </div>
             </div>

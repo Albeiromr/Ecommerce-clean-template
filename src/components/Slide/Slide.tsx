@@ -8,6 +8,7 @@ import rightColumn from '../../assets/images/rightColumn.png';
 import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide2.jpg';
 import slide3 from '../../assets/images/slide3.jpg';
+import {useHistory} from 'react-router-dom';
 
 
 const Slide = () => {
@@ -53,13 +54,34 @@ const Slide = () => {
     }, [counter]);
 
 
+    const handleButtonClick = () => {
+      history.push('/products');
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    const history = useHistory();
+
+    const handleArticleClick = () => {
+      history.push('/products')
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+
+
   return (
     <section className="slide">
       <div className="slide__column-left">
         <img className="slide__column-left-image" src={leftColumn} alt="points texture"/>
       </div>
       <div className="slide__subcontainer">
-          <article className="slide__article" style={{backgroundImage: `url(${backgroundImg})`}}>
+          <article onClick={handleArticleClick} className="slide__article" style={{backgroundImage: `url(${backgroundImg})`}}>
 
               <div className="slide__articul-images-preload">
                   <img className="slide__image-preloaded" src={slide1} alt="slide"/>
@@ -76,7 +98,7 @@ const Slide = () => {
               <div className="slide__article-text-container">
                   <p className="slide__article-title">HOT PRODUCTS</p>
                   <h2 className="slide__article-subtitle">Fill your desk full of technology</h2>
-                  <div className="slide__article-button">
+                  <div onClick={handleButtonClick} className="slide__article-button">
                       <p className="slide__article-button-text">View More</p>
                   </div>
               </div>

@@ -7,10 +7,22 @@ import adultMan from '../../assets/images/adultMan.png';
 import adidas from '../../assets/icons/adidas.svg';
 import puma from '../../assets/icons/puma.svg';
 import hm from '../../assets/icons/hm.svg';
+import {useHistory} from 'react-router-dom';
 
 
 
 const DiscoverSection = () => {
+
+    const history = useHistory();
+
+    const handleClick = () => {
+      history.push("/products");
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    };
 
     return (
         <section className="discover-section">
@@ -23,7 +35,7 @@ const DiscoverSection = () => {
                             <div className="discover-section__card-text-container">
                                 <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
                                 <p className="discover-section__card-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler</p>
-                                <div className="discover-section__card-button">
+                                <div  onClick={handleClick} className="discover-section__card-button">
                                     <p className="discover-section__card-button-text">All Shirts</p>
                                 </div>
                             </div>
@@ -37,7 +49,7 @@ const DiscoverSection = () => {
                             <div className="discover-section__card-text-container">
                                 <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
                                 <p className="discover-section__card-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler</p>
-                                <div className="discover-section__card-button">
+                                <div onClick={handleClick} className="discover-section__card-button">
                                     <p className="discover-section__card-button-text">All Shirts</p>
                                 </div>
                             </div>

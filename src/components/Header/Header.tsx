@@ -15,12 +15,27 @@ const Header = () => {
 
   const handleLogoContainerClick = () => {
     history.push('/')
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
   const handleHomeIconClick = () => {
     history.push('/')
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
-  const handleHomeBasketClick = () => {
+  const handleBasketIconClick = () => {
     history.push('/shopping-cart')
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 
   return (
@@ -54,7 +69,7 @@ const Header = () => {
             <img className="header__icon" src={home} alt="user icon" />
           </div>
 
-          <div onClick={handleHomeBasketClick}className="header__icon-subcontainer">
+          <div onClick={handleBasketIconClick}className="header__icon-subcontainer">
             <img className="header__icon" src={basket} alt="basket icon" />
           </div>
 

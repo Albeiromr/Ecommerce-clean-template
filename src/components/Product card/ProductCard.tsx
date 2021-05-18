@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import {cssVariables} from "./types";
 import useScrollbarSize from "react-scrollbar-size";
 import fiveStars from '../../assets/images/fiveStars.png';
+import {useHistory} from 'react-router-dom';
 
 const ProductCard = () => {
 
@@ -18,6 +19,17 @@ const ProductCard = () => {
   const bigImage:number = 19.920 * width / 100
   const mediumImage:number = 26.027 * width / 100
   const smallImage:number = 39.987 * width / 100
+
+  const history =  useHistory();
+
+  const handleButtonClick = () => {
+    history.push('/products/item');
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  };
 
   return (
     <article 
@@ -42,7 +54,7 @@ const ProductCard = () => {
         <img className="product-card__stars" src={fiveStars} alt="rate"/>
         <p className="product-card__actual-price">36.99 USD</p>
         <p className="product-card__old-price">48.56</p>
-        <div className="product-card__button">
+        <div onClick={handleButtonClick} className="product-card__button">
           <p className="product-card__button-text">View</p>
         </div>
       </div>
