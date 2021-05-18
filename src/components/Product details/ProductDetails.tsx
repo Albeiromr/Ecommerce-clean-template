@@ -15,12 +15,24 @@ import {ProductDetailsContext} from '../../context/Product details context/Produ
 import ProductQuantitySelector from '../Product quantity selector/ProductQuantitySelector';
 import AddButton from '../Add button/AddButton';
 import ProductBigPicture from '../Product big picture/ProductBigPicture';
+import {useHistory} from 'react-router-dom';
 
 
 
 const ProductDetails = () => {
 
     const {sizes} = useContext(ProductDetailsContext);
+
+    const history = useHistory();
+
+    const handleBuyNowClick = () => {
+      history.push("/shopping-cart");
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    };
     
 
     return (
@@ -94,7 +106,7 @@ const ProductDetails = () => {
                                 <div className="product-details__add-button-container">
                                     <AddButton />
                                 </div>
-                                <div className="product-details__buy-button">
+                                <div onClick={handleBuyNowClick} className="product-details__buy-button">
                                     <img className="product-details__buy-button-icon" src={plusWhite} alt="plus" />
                                     <p className="product-details__buy-button-text">Buy Now</p>
                                 </div>
