@@ -7,15 +7,18 @@ import SearchMobile from '../../components/Search mobile/SearchMobile';
 import MainNav from "../../components/Main nav/MainNav";
 import FixedMenu from "../../components/Fixed menu/FixedMenu";
 import Footer from "../../components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {Switch, Route, useLocation} from "react-router-dom";
 import Home from '../Home/Home';
 import Products from '../Products/Products';
 import Item from '../Item/item';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const MainContainer = () => {
+
+  const ac = useLocation().pathname;
+  console.log(ac)
   return (
-    <Router >
+    
     <div className="main-container">
       
       <Header />
@@ -33,7 +36,6 @@ const MainContainer = () => {
       <FixedMenu />
       
     </div>
-    </Router>
   );
 };
 
