@@ -15,25 +15,28 @@ import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const MainContainer = () => {
 
-  const ac = useLocation().pathname;
-  console.log(ac)
+  const pathName = useLocation().pathname;
   return (
     
     <div className="main-container">
       
-      <Header />
-      <SearchMobile />
-      <MainNav />
-      <Switch>
+      {pathName !== "/admin-dashboard" ? <Header /> : null }
+      {pathName !== "/admin-dashboard" ? <SearchMobile /> : null }
+      {pathName !== "/admin-dashboard" ? <MainNav /> : null }
+      
+      
+        <Switch>
 
-        <Route path="/" exact component={Home} />
-        <Route path="/products" exact component={Products} />
-        <Route path="/products/item" exact component={Item} />
-        <Route path="/shopping-cart" exact component={ShoppingCart} />
+          <Route path="/" exact component={Home} />
+          <Route path="/products" exact component={Products} />
+          <Route path="/products/item" exact component={Item} />
+          <Route path="/shopping-cart" exact component={ShoppingCart} />
 
-      </Switch>
+        </Switch>
+
       <Footer />
-      <FixedMenu />
+      {pathName !== "/admin-dashboard" ? <FixedMenu /> : null }
+      
       
     </div>
   );
