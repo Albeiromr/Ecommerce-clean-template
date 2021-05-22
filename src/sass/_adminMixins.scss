@@ -1,0 +1,76 @@
+@import "./variables";
+
+//Text mixins
+
+@mixin poppinsRegular18 {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: clamp(16px, 1.09vw, 18px);
+  color: $admin-black-text;
+}
+
+@mixin greyButtonText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.278vw, 21.09px);
+  color: $c1-J;
+}
+
+@mixin whiteButtonText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.278vw, 21.09px);
+  color: $c1-C;
+}
+
+@mixin tableFieldTitle {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: clamp(16px, 1.09vw, 18px);
+  color: $c1-J;
+}
+
+// button mixins
+
+@mixin greyButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  background: $c1-D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin whiteButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  border: 2px $c1-C solid;
+  background: $c1-J;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin greenButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  border: 2px $c2-B solid;
+  background: $c2-A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
