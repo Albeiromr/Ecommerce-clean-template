@@ -1,0 +1,12 @@
+import React from "react";
+
+export interface contextValue {
+  menuSelected: string;
+  setMenuSelected: (value: string) => void;
+}
+
+export interface contextProps {
+  children: React.ReactNode;
+}
+
+

@@ -1,0 +1,30 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-dashboard-nav {
+    width: 100%;
+    max-width: 1650px;
+    height: 7.696vw;
+    max-height: 127px;
+    background: darksalmon;
+    padding: clamp(21.854px, 2.132vw, 35.18px) clamp(36.651px, 3.575vw, 59px);
+
+    &__left-button-container {
+      width: 28.526%;
+      height: 100%;
+      background: darkolivegreen;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__orders-button {
+      @include greyButton
+    }
+
+    &__products-button {
+      @include whiteButton
+    }
+  }
+}
