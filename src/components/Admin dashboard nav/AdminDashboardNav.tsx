@@ -8,6 +8,7 @@ import productsWhite from '../../assets/icons/productsWhite.svg';
 import productsGray from '../../assets/icons/productsGray.svg';
 import sortBy from '../../assets/icons/sortBy.svg';
 import chevronLeftGray from '../../assets/icons/chevronLeftGray.svg';
+import addGray from '../../assets/icons/addGray.svg';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminDashboardNav = () => {
@@ -82,6 +83,26 @@ const AdminDashboardNav = () => {
                 {adminRoute === "order-details" ?
                 <div className="admin-dashboard-nav__on-delivery-button">
                     <p className="admin-dashboard-nav__on-delivery-button-text">On Delivery</p>
+                </div>
+                : null}
+
+                {adminRoute === "products" ?
+                <div className="admin-dashboard-nav__add-new-button">
+                    <img className="admin-dashboard-nav__add-new-button-icon" src={addGray} alt="add" />
+                    <p className="admin-dashboard-nav__add-new-button-text">Add New</p>
+                </div>
+                : null}
+
+                {adminRoute === "product-form" ?
+                <div className="admin-dashboard-nav__all-products-button">
+                    <img className="admin-dashboard-nav__all-products-button-icon" src={chevronLeftGray} alt="back" />
+                    <p className="admin-dashboard-nav__all-products-button-text">All Products</p>
+                </div>
+                : null}
+
+                {adminRoute === "product-form" ?
+                <div className="admin-dashboard-nav__save-product-button">
+                    <p className="admin-dashboard-nav__save-product-button-text">Save Product</p>
                 </div>
                 : null}
 

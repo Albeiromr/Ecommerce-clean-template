@@ -50,10 +50,10 @@
     }
 
     &__right-button-container {
-      width: 28.526%;
+      width: auto;
       height: 100%;
       background: darkolivegreen;
-      position: relative;
+      display: inline-flex;
     }
 
     &__status-filter-button {
@@ -66,9 +66,6 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      position: absolute;
-      top: 0;
-      right: 0;
     }
 
     &__status-filter-button-text {
@@ -82,9 +79,7 @@
 
     &__all-orders-button {
       @include whiteButton;
-      position: absolute;
-      top: 0;
-      left: 0;
+      margin-right: clamp(9.318px, 0.909vw, 15px);
     }
 
     &__all-orders-button-icon {
@@ -93,18 +88,52 @@
     }
 
     &__all-orders-button-text {
-      @include whiteButtonText
+      @include whiteButtonText;
     }
 
     &__on-delivery-button {
       @include greenButton;
-      position: absolute;
-      top: 0;
-      right: 0;
+      margin-left: clamp(9.318px, 0.909vw, 15px);
     }
 
     &__on-delivery-button-text {
-      @include grayButtonText
+      @include grayButtonText;
+    }
+
+    &__add-new-button {
+      @include whiteButton;
+    }
+
+    &__add-new-button-icon {
+      width: 13.793%;
+      margin-right: 5%;
+    }
+
+    &__add-new-button-text {
+      @include whiteButtonText;
+    }
+
+    &__all-products-button {
+      @include whiteButton;
+      margin-right: clamp(9.318px, 0.909vw, 15px);
+    }
+
+    &__all-products-button-icon {
+      width: 13.822%;
+      margin-right: 4%;
+    }
+
+    &__all-products-button-text {
+      @include whiteButtonText;
+    }
+
+    &__save-product-button {
+      @include greenButton;
+      margin-left: clamp(9.318px, 0.909vw, 15px);
+    }
+
+    &__save-product-button-text {
+      @include grayButtonText;
     }
   }
 }

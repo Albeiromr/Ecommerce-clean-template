@@ -13,8 +13,8 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state is for highlighting the orders and products button in the admin panel
   const [menuSelected, setMenuSelected] = useState<string>("orders");
 
-  //this state tells the admindashboard what child and buttons to show, like orders, order-details
-  const [adminRoute, setAdminRoute] = useState<string>("order-details");
+  //this state tells the admindashboard what child and buttons to show, like orders, order-details, products, product-form
+  const [adminRoute, setAdminRoute] = useState<string>("product-form");
 
   return (
     <AdminDashboardContext.Provider
