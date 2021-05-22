@@ -12,11 +12,52 @@ const AdminDashboardNav = () => {
 
     const {menuSelected, setMenuSelected,} = useContext(AdminDashboardContext);
 
+    const handleOrderButtonClick = () => {
+      if (menuSelected !== "orders") setMenuSelected("orders");
+      else return;
+    };
+
+    const handleProductsButtonClick = () => {
+      if (menuSelected !== "products") setMenuSelected("products");
+      else return;
+    };
+
     return(
         <div className="admin-dashboard-nav">
             <div className="admin-dashboard-nav__left-button-container">
-                <div className="admin-dashboard-nav__orders-button"></div>
-                <div className="admin-dashboard-nav__products-button"></div>
+
+                <div className={menuSelected === "orders" ?
+                    "admin-dashboard-nav__selected-button" : 
+                    "admin-dashboard-nav__no-selected-button"}
+                    onClick={handleOrderButtonClick}>
+
+                        <img className="admin-dashboard-nav__orders-icon" 
+                        src={menuSelected === "orders" ? ordersWhite : ordersGray} alt="orders" 
+                        />
+
+                        <p className={menuSelected === "orders" ?
+                            "admin-dashboard-nav__selected-text" :
+                            "admin-dashboard-nav__no-selected-text"}
+                        >Orders</p>
+
+                </div>
+
+                <div className={menuSelected === "products" ?
+                    "admin-dashboard-nav__selected-button":
+                    "admin-dashboard-nav__no-selected-button"}
+                    onClick={handleProductsButtonClick}>
+
+                        <img className="admin-dashboard-nav__products-icon" 
+                        src={menuSelected === "products" ? productsWhite : productsGray} alt="products" 
+                        />
+
+                        <p className={menuSelected === "products" ?
+                            "admin-dashboard-nav__selected-text" :
+                            "admin-dashboard-nav__no-selected-text"}
+                        >Products</p>
+
+                </div>
+
             </div>
         </div>
     )

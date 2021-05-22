@@ -19,12 +19,31 @@
       justify-content: space-between;
     }
 
-    &__orders-button {
-      @include greyButton
+    &__selected-button {
+      @include greyButton;
+      transition: all 0.3s ease;
     }
 
-    &__products-button {
-      @include whiteButton
+    &__no-selected-button {
+      @include whiteButton;
+    }
+
+    &__orders-icon {
+      width: 18.105%;
+      margin-right: 5%;
+    }
+
+    &__products-icon {
+      width: 18.105%;
+      margin-right: 5%;
+    }
+
+    &__selected-text {
+      @include greyButtonText;
+    }
+
+    &__no-selected-text {
+      @include whiteButtonText;
     }
   }
 }
