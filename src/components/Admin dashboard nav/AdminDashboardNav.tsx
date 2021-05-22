@@ -37,12 +37,23 @@ const AdminDashboardNav = () => {
     const handleOrderButtonClick = () => {
       if (menuSelected !== "orders") setMenuSelected("orders");
       else return;
+      setAdminRoute("orders");
     };
 
     const handleProductsButtonClick = () => {
       if (menuSelected !== "products") setMenuSelected("products");
       else return;
+      setAdminRoute("products");
     };
+
+    const handleAddNewClick = () => {
+        setAdminRoute("product-form");
+    }
+
+    const handleAllProductsClick = () => {
+        setAdminRoute("products");
+    }
+    
 
     const handleSneakersClick = () => {
       if (productFamily !== "sneakers") setProductFamily("sneakers");
@@ -178,14 +189,14 @@ const AdminDashboardNav = () => {
                 : null}
 
                 {adminRoute === "products" ?
-                <div className="admin-dashboard-nav__add-new-button">
+                <div onClick={handleAddNewClick} className="admin-dashboard-nav__add-new-button">
                     <img className="admin-dashboard-nav__add-new-button-icon" src={addGray} alt="add" />
                     <p className="admin-dashboard-nav__add-new-button-text">Add New</p>
                 </div>
                 : null}
 
                 {adminRoute === "product-form" ?
-                <div className="admin-dashboard-nav__all-products-button">
+                <div onClick={handleAllProductsClick} className="admin-dashboard-nav__all-products-button">
                     <img className="admin-dashboard-nav__all-products-button-icon" src={chevronLeftGray} alt="back" />
                     <p className="admin-dashboard-nav__all-products-button-text">All Products</p>
                 </div>

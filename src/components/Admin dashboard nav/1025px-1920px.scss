@@ -7,7 +7,6 @@
     max-width: 1650px;
     height: 7.696vw;
     max-height: 127px;
-    background: darksalmon;
     padding: clamp(21.854px, 2.132vw, 35.18px) clamp(36.651px, 3.575vw, 59px);
     display: flex;
     align-items: center;
@@ -16,7 +15,6 @@
     &__left-button-container {
       width: 28.526%;
       height: 100%;
-      background: darkolivegreen;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -52,14 +50,12 @@
     &__right-button-container {
       width: auto;
       height: 100%;
-      background: darkolivegreen;
       display: inline-flex;
     }
 
     &__product-icon-container {
       width: 39.150%;
       height: 100%;
-      background: darkgoldenrod;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -70,11 +66,6 @@
       cursor: pointer;
       transition: all .3s ease;
     }
-
-
-
-
-
 
     &__status-filter-button {
       width: clamp(91.318px, 8.909vw, 147px);
