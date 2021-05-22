@@ -6,11 +6,13 @@ import ordersWhite from '../../assets/icons/ordersWhite.svg';
 import ordersGray from '../../assets/icons/ordersGray.svg';
 import productsWhite from '../../assets/icons/productsWhite.svg';
 import productsGray from '../../assets/icons/productsGray.svg';
+import sortBy from '../../assets/icons/sortBy.svg';
+import chevronLeftGray from '../../assets/icons/chevronLeftGray.svg';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminDashboardNav = () => {
 
-    const {menuSelected, setMenuSelected,} = useContext(AdminDashboardContext);
+    const {menuSelected, setMenuSelected, adminRoute, setAdminRoute} = useContext(AdminDashboardContext);
 
     const handleOrderButtonClick = () => {
       if (menuSelected !== "orders") setMenuSelected("orders");
@@ -24,6 +26,7 @@ const AdminDashboardNav = () => {
 
     return(
         <div className="admin-dashboard-nav">
+
             <div className="admin-dashboard-nav__left-button-container">
 
                 <div className={menuSelected === "orders" ?
@@ -59,7 +62,33 @@ const AdminDashboardNav = () => {
                 </div>
 
             </div>
-        </div>
+
+            <div className="admin-dashboard-nav__right-button-container">
+
+                {adminRoute === "orders" ?
+                <div className="admin-dashboard-nav__status-filter-button">
+                    <p className="admin-dashboard-nav__status-filter-button-text">Status</p>
+                    <img className="admin-dashboard-nav__status-filter-button-icon" src={sortBy} alt="sort by" />
+                </div>
+                : null}
+
+                {adminRoute === "order-details" ?
+                <div className="admin-dashboard-nav__all-orders-button">
+                    <img className="admin-dashboard-nav__all-orders-button-icon" src={chevronLeftGray} alt="back" />
+                    <p className="admin-dashboard-nav__all-orders-button-text">All Orders</p>
+                </div>
+                : null}
+
+                {adminRoute === "order-details" ?
+                <div className="admin-dashboard-nav__on-delivery-button">
+                    <p className="admin-dashboard-nav__on-delivery-button-text">On Delivery</p>
+                </div>
+                : null}
+
+            </div>
+            
+
+       </div>
     )
 };
 
