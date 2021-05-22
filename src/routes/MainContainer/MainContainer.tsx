@@ -12,6 +12,7 @@ import Home from '../Home/Home';
 import Products from '../Products/Products';
 import Item from '../Item/item';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
+import AdminDashboard from '../Admin dashboard/AdminDashboard';
 
 const MainContainer = () => {
 
@@ -31,6 +32,7 @@ const MainContainer = () => {
           <Route path="/products" exact component={Products} />
           <Route path="/products/item" exact component={Item} />
           <Route path="/shopping-cart" exact component={ShoppingCart} />
+          <Route path="/admin-dashboard" exact component={AdminDashboard} />
 
         </Switch>
 

@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .admin-dashboard {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1650px;
+    height: auto;
+    min-height: clamp(721.848px, 70.424vw, 1162px);
+    background: $c1-J;
+  }
+}
