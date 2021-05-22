@@ -9,11 +9,30 @@ import productsGray from '../../assets/icons/productsGray.svg';
 import sortBy from '../../assets/icons/sortBy.svg';
 import chevronLeftGray from '../../assets/icons/chevronLeftGray.svg';
 import addGray from '../../assets/icons/addGray.svg';
+import shoesGray from '../../assets/icons/shoesGray.svg';
+import shoesGreen from '../../assets/icons/shoesGreen.svg';
+import pantsGray from '../../assets/icons/pantsGray.svg';
+import pantsGreen from '../../assets/icons/pantsGreen.svg';
+import capGray from '../../assets/icons/capGray.svg';
+import capGreen from '../../assets/icons/capGreen.svg';
+import jacketGray from '../../assets/icons/jacketGray.svg';
+import jacketGreen from '../../assets/icons/jacketGreen.svg';
+import shortsGray from '../../assets/icons/shortsGray.svg';
+import shortsGreen from '../../assets/icons/shortsGreen.svg';
+import shirtGray from '../../assets/icons/shirtGray.svg';
+import shirtGreen from '../../assets/icons/shirtGreen.svg';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminDashboardNav = () => {
 
-    const {menuSelected, setMenuSelected, adminRoute, setAdminRoute} = useContext(AdminDashboardContext);
+    const {
+        menuSelected,
+        setMenuSelected,
+        adminRoute,
+        setAdminRoute,
+        productFamily,
+        setProductFamily
+    } = useContext(AdminDashboardContext);
 
     const handleOrderButtonClick = () => {
       if (menuSelected !== "orders") setMenuSelected("orders");
@@ -22,6 +41,36 @@ const AdminDashboardNav = () => {
 
     const handleProductsButtonClick = () => {
       if (menuSelected !== "products") setMenuSelected("products");
+      else return;
+    };
+
+    const handleSneakersClick = () => {
+      if (productFamily !== "sneakers") setProductFamily("sneakers");
+      else return;
+    };
+
+    const handlePantsClick = () => {
+      if (productFamily !== "pants") setProductFamily("pants");
+      else return;
+    };
+
+    const handleCapsClick = () => {
+      if (productFamily !== "caps") setProductFamily("caps");
+      else return;
+    };
+
+    const handleJacketsClick = () => {
+      if (productFamily !== "jackets") setProductFamily("jackets");
+      else return;
+    };
+
+    const handleShortsClick = () => {
+      if (productFamily !== "shorts") setProductFamily("shorts");
+      else return;
+    };
+
+    const handleShirtClick = () => {
+      if (productFamily !== "shirts") setProductFamily("shirts");
       else return;
     };
 
@@ -63,6 +112,48 @@ const AdminDashboardNav = () => {
                 </div>
 
             </div>
+
+            {adminRoute === "products" ?
+            <div className="admin-dashboard-nav__product-icon-container">
+
+                <img 
+                onClick={handleSneakersClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "sneakers" ? shoesGreen : shoesGray}
+                alt="product type" />
+
+                <img 
+                onClick={handlePantsClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "pants" ? pantsGreen : pantsGray}
+                alt="product type" />
+
+                <img 
+                onClick={handleCapsClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "caps" ? capGreen : capGray}
+                alt="product type" />
+
+                <img 
+                onClick={handleJacketsClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "jackets" ? jacketGreen : jacketGray}
+                alt="product type" />
+
+                <img 
+                onClick={handleShortsClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "shorts" ? shortsGreen : shortsGray}
+                alt="product type" />
+
+                <img 
+                onClick={handleShirtClick}
+                className="admin-dashboard-nav__product-icon"
+                src={productFamily === "shirts" ? shirtGreen : shirtGray}
+                alt="product type" />
+
+            </div>
+            : null}
 
             <div className="admin-dashboard-nav__right-button-container">
 

@@ -56,6 +56,26 @@
       display: inline-flex;
     }
 
+    &__product-icon-container {
+      width: 39.150%;
+      height: 100%;
+      background: darkgoldenrod;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-icon {
+      height: 100%;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+
+
+
+
+
+
     &__status-filter-button {
       width: clamp(91.318px, 8.909vw, 147px);
       height: clamp(35.185px, 3.432vw, 56.64px);

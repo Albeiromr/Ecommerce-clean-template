@@ -5,7 +5,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   menuSelected: "",
   setMenuSelected: () => {},
   adminRoute: "",
-  setAdminRoute: () => {}
+  setAdminRoute: () => {},
+  productFamily: "",
+  setProductFamily: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -14,7 +16,10 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [menuSelected, setMenuSelected] = useState<string>("orders");
 
   //this state tells the admindashboard what child and buttons to show, like orders, order-details, products, product-form
-  const [adminRoute, setAdminRoute] = useState<string>("product-form");
+  const [adminRoute, setAdminRoute] = useState<string>("products");
+
+  // this state is for selecting what product family is selected in the admin-panel products menu, like sneakers, pants, caps, jackets, shorts, shirts
+  const [productFamily, setProductFamily] = useState<string>("sneakers");
 
   return (
     <AdminDashboardContext.Provider
@@ -22,7 +27,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         menuSelected,
         setMenuSelected,
         adminRoute,
-        setAdminRoute
+        setAdminRoute,
+        productFamily,
+        setProductFamily
       }}
     >
       {props.children}

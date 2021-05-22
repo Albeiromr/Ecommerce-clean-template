@@ -5,6 +5,8 @@ export interface contextValue {
   setMenuSelected: (value: string) => void;
   adminRoute: string;
   setAdminRoute: (value: string) => void;
+  productFamily: string;
+  setProductFamily: (value:string) => void;
 }
 
 export interface contextProps {
