@@ -6,6 +6,7 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 import AdminDashboardHeader from '../../components/Admin dashboard header/AdminDashboardHeader';
 import AdminDashboardNav from '../../components/Admin dashboard nav/AdminDashboardNav';
 import AdminProductsTable from '../../components/Admin products table/AdminProductsTable';
+import AdminOrdersTable from '../../components/Admin orders table/AdminOrdersTable';
 
 
 const AdminDashboard = () => {
@@ -18,6 +19,7 @@ const AdminDashboard = () => {
             <AdminDashboardNav />
 
             {adminRoute === "products" ? <AdminProductsTable /> : null}
+            {adminRoute === "orders" ? <AdminOrdersTable /> : null}
             
         </div>
     )

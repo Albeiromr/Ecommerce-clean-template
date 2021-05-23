@@ -53,8 +53,12 @@ const AdminDashboardNav = () => {
     const handleAllProductsClick = () => {
         setAdminRoute("products");
     }
-    
 
+    const handleAllOrdersClick = () => {
+        setAdminRoute("orders");
+    };
+    
+    
     const handleSneakersClick = () => {
       if (productFamily !== "sneakers") setProductFamily("sneakers");
       else return;
@@ -176,7 +180,7 @@ const AdminDashboardNav = () => {
                 : null}
 
                 {adminRoute === "order-details" ?
-                <div className="admin-dashboard-nav__all-orders-button">
+                <div onClick={handleAllOrdersClick} className="admin-dashboard-nav__all-orders-button">
                     <img className="admin-dashboard-nav__all-orders-button-icon" src={chevronLeftGray} alt="back" />
                     <p className="admin-dashboard-nav__all-orders-button-text">All Orders</p>
                 </div>
