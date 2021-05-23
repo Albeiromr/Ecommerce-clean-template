@@ -16,9 +16,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [menuSelected, setMenuSelected] = useState<menuSelectedType>("orders");
 
   //this state tells the admindashboard what child and buttons to show
-  const [adminRoute, setAdminRoute] = useState<adminRouteType>("orders");
+  const [adminRoute, setAdminRoute] = useState<adminRouteType>("products");
 
-  // this state is for selecting what product family is selected in the admin-panel products menu, like sneakers, pants, caps, jackets, shorts, shirts
+  // this state is for selecting what product family is selected in the admin-panel products menu
   const [productFamily, setProductFamily] = useState<productFamilyType>("sneakers");
 
   return (
