@@ -7,6 +7,7 @@ import AdminDashboardHeader from '../../components/Admin dashboard header/AdminD
 import AdminDashboardNav from '../../components/Admin dashboard nav/AdminDashboardNav';
 import AdminProductsTable from '../../components/Admin products table/AdminProductsTable';
 import AdminOrdersTable from '../../components/Admin orders table/AdminOrdersTable';
+import AdminOrderDetailsTable from '../../components/Admin order details table/AdminOrderDetailsTable';
 
 
 const AdminDashboard = () => {
@@ -20,6 +21,7 @@ const AdminDashboard = () => {
 
             {adminRoute === "products" ? <AdminProductsTable /> : null}
             {adminRoute === "orders" ? <AdminOrdersTable /> : null}
+            {adminRoute === "order-details" ? <AdminOrderDetailsTable /> : null}
             
         </div>
     )

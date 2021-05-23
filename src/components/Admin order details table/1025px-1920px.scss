@@ -1,0 +1,121 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-order-details-table {
+    width: 100%;
+    max-width: 1650px;
+    height: auto;
+    min-height: clamp(330.484px, 32.242vw, 532px);
+    padding: 0 clamp(36.651px, 3.575vw, 59px);
+
+    &__title-bar {
+      width: 100%;
+      height: clamp(43.484px, 4.242vw, 70px);
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: relative;
+    }
+
+    &__titleOne {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 4.660%;
+    }
+
+    &__titleTwo {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 21.018%;
+    }
+
+    &__titleThree {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 45.104%;
+    }
+
+    &__titleFour {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 68.537%;
+    }
+
+    &__titleFive {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 84.791%;
+    }
+
+    &__table-container {
+      width: 100%;
+      height: auto;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      background: $c1-J;
+    }
+
+    &__first-bar {
+      width: 100%;
+      height: clamp(46.590px, 4.545vw, 75px);
+      position: relative;
+    }
+
+    &__first-bar-text-one {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 4.450%;
+    }
+
+    &__first-bar-text-two {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 20.942%;
+    }
+
+    &__first-bar-text-three {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 45.091%;
+    }
+
+    &__first-bar-text-four {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 68.686%;
+    }
+
+    &__first-bar-text-on-delivery {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.09vw, 18px);
+      color: $c2-A;
+      position: absolute;
+      top: 32.306%;
+      left: 84.882%;
+    }
+
+    &__first-bar-text-new-order {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.09vw, 18px);
+      color: $c4-A;
+      position: absolute;
+      top: 32.306%;
+      left: 84.882%;
+    }
+  }
+}

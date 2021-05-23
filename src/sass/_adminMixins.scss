@@ -75,10 +75,12 @@
   cursor: pointer;
 }
 
+@mixin tableTitleBarborderRadius {
+  border-radius: clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px) 0 0;
+}
+
 @mixin tableBorderRadius {
   border-radius: 0 0 clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px);
 }
 
-@mixin tableTitleBarborderRadius {
-  border-radius: clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px) 0 0;
-}
+
