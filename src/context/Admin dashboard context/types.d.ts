@@ -2,15 +2,22 @@ import React from "react";
 
 export interface contextValue {
   menuSelected: string;
-  setMenuSelected: (value: string) => void;
+  setMenuSelected: (value: menuSelected) => void;
   adminRoute: string;
-  setAdminRoute: (value: string) => void;
+  setAdminRoute: (value: adminRoute) => void;
   productFamily: string;
-  setProductFamily: (value:string) => void;
-}
+  setProductFamily: (value: productFamily) => void;
+};
 
 export interface contextProps {
   children: React.ReactNode;
-}
+};
+
+export type menuSelectedType = "orders" | "products";
+
+export type adminRouteType = "orders" | "order-details" | "products" | "product-form";
+
+export type productFamilyType = "sneakers" | "pants" | "caps" | "jackets" | "shorts" | "shirts";
+
 
 

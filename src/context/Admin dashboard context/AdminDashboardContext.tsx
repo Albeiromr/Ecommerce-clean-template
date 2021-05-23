@@ -1,5 +1,5 @@
 import React, { createContext, FC, useState } from "react";
-import { contextProps, contextValue } from "./types";
+import { contextProps, contextValue, menuSelectedType, adminRouteType, productFamilyType } from "./types";
 
 export const AdminDashboardContext = createContext<contextValue>({
   menuSelected: "",
@@ -12,14 +12,14 @@ export const AdminDashboardContext = createContext<contextValue>({
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   
-  //this state is for highlighting the orders and products button in the admin panel, like orders, products
-  const [menuSelected, setMenuSelected] = useState<string>("orders");
+  //this state is for highlighting the orders and products button in the admin panel
+  const [menuSelected, setMenuSelected] = useState<menuSelectedType>("orders");
 
-  //this state tells the admindashboard what child and buttons to show, like orders, order-details, products, product-form
-  const [adminRoute, setAdminRoute] = useState<string>("orders");
+  //this state tells the admindashboard what child and buttons to show
+  const [adminRoute, setAdminRoute] = useState<adminRouteType>("orders");
 
   // this state is for selecting what product family is selected in the admin-panel products menu, like sneakers, pants, caps, jackets, shorts, shirts
-  const [productFamily, setProductFamily] = useState<string>("sneakers");
+  const [productFamily, setProductFamily] = useState<productFamilyType>("sneakers");
 
   return (
     <AdminDashboardContext.Provider
