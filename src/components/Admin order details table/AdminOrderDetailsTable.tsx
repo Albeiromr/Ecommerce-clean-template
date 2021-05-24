@@ -41,7 +41,17 @@ const AdminOrderDetailsTable = () => {
 
                 </div>
 
-                <div></div>
+                <div className="admin-order-details-table__second-bar">
+
+                    <div className="admin-order-details-table__second-bar-title-container">
+                        <p className="admin-order-details-table__second-bar-title">Purchased Products</p>
+                    </div>
+
+                    <div className="admin-order-details-table__second-bar-address-container">
+                        <p className="admin-order-details-table__second-bar-shipping-title">Shipping Address:</p>
+                        <p className="admin-order-details-table__second-bar-shipping-text">Cll 123a # 148b -12</p>
+                    </div>
+                </div>
 
             </div>
 
