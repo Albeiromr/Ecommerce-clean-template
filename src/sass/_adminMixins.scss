@@ -136,20 +136,6 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
-
-  /* width: 11.336%;
-  height: 70.027%;
-  background: $c1-H;
-  border: 2px $c1-D solid;
-  border-radius: clamp(8.933px, 0.871vw, 14.38px);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .3s solid; */
 }
 
 @mixin labelAsButton {

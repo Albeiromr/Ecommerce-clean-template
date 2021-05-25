@@ -72,6 +72,21 @@
       background: darkkhaki;
     }
 
+    &__text-area {
+      outline: none;
+      width: 100%;
+      height: 87.526%;
+      padding:clamp(13.492px, 1.316vw, 21.72px);
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(8.933px, 0.871vw, 14.38px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include placeholder;
+      resize: none;
+    }
+
     &__form-input-container-two {
       width: 67.008%;
       height: 11.52%;
@@ -104,7 +119,7 @@
       background: darkkhaki;
       position: relative;
     }
-    
+
     &__form-input-container-three {
       width: 67.008%;
       height: 11.52%;
@@ -292,21 +307,21 @@
     }
 
     &__product-interest-for-you {
-      width: 32.250%;
+      width: 32.25%;
       height: 100%;
       background: darkkhaki;
       position: relative;
     }
 
     &__product-profit {
-      width: 25.080%;
+      width: 25.08%;
       height: 100%;
       background: darkkhaki;
       position: relative;
     }
 
     &__product-views-quantity {
-      width: 32.250%;
+      width: 32.25%;
       height: 100%;
       background: darkkhaki;
       position: relative;
@@ -331,6 +346,6 @@
 
     &__folder {
       width: 41.791%;
-    } 
+    }
   }
 }

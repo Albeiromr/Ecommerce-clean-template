@@ -17,7 +17,20 @@ const AdminProductForm = () => {
                 <form className="admin-product-form__form" >
 
                     <div className="admin-product-form__form-input-container-one">
-                        <div className="admin-product-form__product-description"></div>
+                        <div className="admin-product-form__product-description">
+
+                            <label className="admin-product-form__lable" htmlFor="product-description">Product Description</label>
+
+                            <textarea 
+                            className="admin-product-form__text-area"
+                            name="product-description"
+                            id="product-description" 
+                            cols={20} 
+                            rows={5}
+                            placeholder="Enter product description">
+                            </textarea>
+
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-two">
@@ -59,8 +72,8 @@ const AdminProductForm = () => {
                             type="file"
                             name="main-image-file"
                             id="main-image-file"
+                            accept="image/jpeg"
                             />
-
 
                         </div>
                         <div className="admin-product-form__product-thumbnail">
@@ -86,6 +99,7 @@ const AdminProductForm = () => {
                             type="file"
                             name="thumbnail-file"
                             id="thumbnail-file"
+                            accept="image/jpeg"
                             />
 
                         </div>
