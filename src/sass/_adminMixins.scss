@@ -85,11 +85,61 @@
 }
 
 @mixin tableTitleBarborderRadius {
-  border-radius: clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px) 0 0;
+  border-radius: clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px) 0
+    0;
 }
 
 @mixin tableBorderRadius {
-  border-radius: 0 0 clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px);
+  border-radius: 0 0 clamp(12.424px, 1.212vw, 20px)
+    clamp(12.424px, 1.212vw, 20px);
 }
 
+//inputs
 
+@mixin lableText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: clamp(12px, 0.871vw, 14.38px);
+  color: $admin-black-text;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin imageInput {
+  outline: none;
+  width: 86.294%;
+  height: 70.027%;
+  padding: 0 clamp(13.492px, 1.316vw, 21.72px);
+  background: $c1-H;
+  border: 1px $c1-D solid;
+  border-radius: clamp(8.933px, 0.871vw, 14.38px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin placeholder {
+  font-family: $secundary-font;
+  font-weight: 400;
+  font-size: clamp(10.423px, 1.016vw, 16.78);
+  color: $c1-C;
+}
+
+@mixin folderButton {
+  width: 11.336%;
+  height: 70.027%;
+  background: $c1-H;
+  border: 2px $c1-D solid;
+  border-radius: clamp(8.933px, 0.871vw, 14.38px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s solid;
+}

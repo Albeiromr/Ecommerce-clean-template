@@ -2,6 +2,7 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import folder from '../../assets/icons/folder.svg';
 
 const AdminProductForm = () => {
 
@@ -35,8 +36,40 @@ const AdminProductForm = () => {
 
                     <div className="admin-product-form__form-input-container-four">
                         <div className="admin-product-form__product-sold-quantity"></div>
-                        <div className="admin-product-form__product-main-image"></div>
-                        <div className="admin-product-form__product-thumbnail"></div>
+                        <div className="admin-product-form__product-main-image">
+
+                            <label className="admin-product-form__lable" htmlFor="main-image">Main Image</label>
+                            <input
+                            className="admin-product-form__input-image"
+                            type="text" 
+                            id="main-image"
+                            name="main-image"
+                            placeholder="Choose a local image"
+                            disabled
+                            />
+
+                            <div className="admin-product-form__folder-button">
+                                <img className="admin-product-form__folder" src={folder} alt="folder" />
+                            </div>
+
+                        </div>
+                        <div className="admin-product-form__product-thumbnail">
+
+                            <label className="admin-product-form__lable" htmlFor="thumbnail">Thumbnail</label>
+                            <input
+                            className="admin-product-form__input-image"
+                            type="text" 
+                            id="thumbnail"
+                            name="thumbnail"
+                            placeholder="Choose a local image"
+                            disabled
+                            />
+
+                            <div className="admin-product-form__folder-button">
+                                <img className="admin-product-form__folder" src={folder} alt="folder" />
+                            </div>
+
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-five">

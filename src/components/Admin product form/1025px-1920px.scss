@@ -37,6 +37,19 @@
       left: 3.575%;
     }
 
+    ::placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    :-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+
     &__form {
       width: 100%;
       height: 100%;
@@ -297,6 +310,23 @@
       height: 100%;
       background: darkkhaki;
       position: relative;
+    }
+
+    &__lable {
+      @include lableText;
+    }
+
+    &__input-image {
+      @include imageInput;
+      @include placeholder;
+    }
+
+    &__folder-button {
+      @include folderButton;
+    }
+
+    &__folder {
+      width: 41.791%;
     }
   }
 }
