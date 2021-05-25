@@ -34,21 +34,125 @@ const AdminProductForm = () => {
                     </div>
 
                     <div className="admin-product-form__form-input-container-two">
-                        <div className="admin-product-form__product-sku"></div>
-                        <div className="admin-product-form__product-type"></div>
-                        <div className="admin-product-form__product-name"></div>
+                        <div className="admin-product-form__product-sku">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-sku">Product SKU</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-sku"
+                            id="product-sku"
+                            placeholder="Enter SKU"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-type">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-type">Product Type</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="product-type" 
+                            id="product-type">
+                                <option hidden >Select product family type &#8964;</option>
+                                <option value={"Tshirts & Shirts"}>Tshirts &amp; Shirts</option>
+                                <option value="Pants">Pants</option>
+                                <option value={"Sneakers & Shoes"}>Sneakers &amp; Shoes</option>
+                                <option value="Shorts">Shorts</option>
+                                <option value="Jackets">Jackets</option>
+                                <option value="Caps">Caps</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-name">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-name">Product Name</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-name"
+                            id="product-name"
+                            placeholder="Enter product name"
+                            />
+
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-three">
-                        <div className="admin-product-form__product-stock"></div>
-                        <div className="admin-product-form__product-rate"></div>
-                        <div className="admin-product-form__product-price"></div>
-                        <div className="admin-product-form__product-old-price"></div>
-                        <div className="admin-product-form__product-review-quantity"></div>
+                        <div className="admin-product-form__product-stock">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-stock">Stock</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-stock"
+                            id="product-stock"
+                            placeholder="Enter stock"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-rate">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-rate">Rate</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-rate"
+                            id="product-rate"
+                            placeholder="Enter rate"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-price">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-price">Price</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-price"
+                            id="product-price"
+                            placeholder="Enter price"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-old-price">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-old-price">Old Price</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-old-price"
+                            id="product-old-price"
+                            placeholder="Enter old price"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-review-quantity">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-review-quantity">Review Quantity</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-review-quantity"
+                            id="product-review-quantity"
+                            placeholder="Enter review quantity"
+                            />
+
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-four">
-                        <div className="admin-product-form__product-sold-quantity"></div>
+                        <div className="admin-product-form__product-sold-quantity">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-sold-quantity">Sold Quantity</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-sold-quantity"
+                            id="product-sold-quantity"
+                            placeholder="Enter sold quantity"
+                            />
+
+                        </div>
                         <div className="admin-product-form__product-main-image">
 
                             <label className="admin-product-form__lable" htmlFor="main-image">Main Image</label>
@@ -287,9 +391,43 @@ const AdminProductForm = () => {
                     </div>
 
                     <div className="admin-product-form__form-input-container-seven">
-                        <div className="admin-product-form__product-interest-for-you"></div>
-                        <div className="admin-product-form__product-profit"></div>
-                        <div className="admin-product-form__product-views-quantity"></div>
+                        <div className="admin-product-form__product-interest-for-you">
+
+                            <label className="admin-product-form__lable" htmlFor="interest-for-you">Interest For You</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="interest-for-you" 
+                            id="interest-for-you">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-profit">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-profit">Profit</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-profit"
+                            id="product-profit"
+                            placeholder="Enter profit"
+                            />
+
+                        </div>
+                        <div className="admin-product-form__product-views-quantity">
+
+                            <label className="admin-product-form__lable" htmlFor="Product-profit">Views Quantity</label>
+                            <input 
+                            className="admin-product-form__input"
+                            type="text"
+                            name="product-views-quantity"
+                            id="product-views-quantity"
+                            placeholder="Enter views quantity"
+                            />
+
+                        </div>
                     </div>
 
                 </form>
