@@ -3,7 +3,6 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import folder from '../../assets/icons/folder.svg';
-import chevronDown from '../../assets/icons/chevronDown.svg';
 
 const AdminProductForm = () => {
 
@@ -130,6 +129,7 @@ const AdminProductForm = () => {
 
                         </div>
                         <div className="admin-product-form__product-size-two">
+
                             <label className="admin-product-form__lable" htmlFor="size-two">Size Two</label>
                             <select 
                             className="admin-product-form__select"
@@ -148,8 +148,10 @@ const AdminProductForm = () => {
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
+
                         </div>
                         <div className="admin-product-form__product-size-three">
+
                             <label className="admin-product-form__lable" htmlFor="size-one">Size Three</label>
                             <select 
                             className="admin-product-form__select"
@@ -168,8 +170,10 @@ const AdminProductForm = () => {
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
+
                         </div>
                         <div className="admin-product-form__product-size-four">
+
                             <label className="admin-product-form__lable" htmlFor="size-one">Size Four</label>
                             <select 
                             className="admin-product-form__select"
@@ -188,8 +192,10 @@ const AdminProductForm = () => {
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
+
                         </div>
                         <div className="admin-product-form__product-size-five">
+
                             <label className="admin-product-form__lable" htmlFor="size-one">Size Five</label>
                             <select 
                             className="admin-product-form__select"
@@ -208,15 +214,76 @@ const AdminProductForm = () => {
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
+
                         </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-six">
-                        <div className="admin-product-form__product-category-one"></div>
-                        <div className="admin-product-form__product-category-two"></div>
-                        <div className="admin-product-form__product-category-three"></div>
-                        <div className="admin-product-form__product-category-four"></div>
-                        <div className="admin-product-form__product-category-five"></div>
+                        <div className="admin-product-form__product-category-one">
+
+                            <label className="admin-product-form__lable" htmlFor="category-one">Category One</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="category-one" 
+                            id="category-one">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-category-two">
+
+                            <label className="admin-product-form__lable" htmlFor="category-two">Category Two</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="category-two" 
+                            id="category-two">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-category-three">
+
+                            <label className="admin-product-form__lable" htmlFor="category-three">Category Thee</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="category-three" 
+                            id="category-three">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-category-four">
+
+                            <label className="admin-product-form__lable" htmlFor="category-four">Category Four</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="category-four" 
+                            id="category-four">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-category-five">
+
+                            <label className="admin-product-form__lable" htmlFor="category-five">Category Five</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="category-five" 
+                            id="category-five">
+                                <option hidden >select option &#8964;</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-seven">
