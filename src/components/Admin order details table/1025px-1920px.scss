@@ -122,7 +122,6 @@
       width: 100%;
       height: clamp(46.59px, 4.545vw, 75px);
       position: relative;
-      position: relative;
     }
 
     &__second-bar-title-container {
@@ -168,6 +167,55 @@
 
     &__second-bar-shipping-text {
       @include poppinsRegular18;
+    }
+
+    &__third-bar {
+      width: 100%;
+      height: clamp(46.59px, 4.545vw, 75px);
+      position: relative;
+      background: $c1-E;
+    }
+
+    &__third-bar-text-one {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 4.777%;
+    }
+
+    &__third-bar-text-two {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 21.007%;
+    }
+
+    &__third-bar-text-three {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 44.829%;
+    }
+
+    &__third-bar-text-four {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 68.52%;
+    }
+
+    &__third-bar-text-five {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 84.947%;
+    }
+
+    &__product-container {
+      width: 100%;
+      height: auto;
+      min-height: clamp(121.757px, 11.878vw, 196px);
+      margin-bottom: clamp(28.575px, 2.787vw, 46px);
     }
   }
 }
