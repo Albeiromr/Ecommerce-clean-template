@@ -212,6 +212,11 @@
       justify-content: space-between;
     }
 
+    &__select {
+      @include select;
+      @include placeholder
+    }
+
     &__product-size-one {
       width: 17.711%;
       height: 100%;

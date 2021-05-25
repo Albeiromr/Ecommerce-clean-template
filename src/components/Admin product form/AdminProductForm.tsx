@@ -3,6 +3,7 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import folder from '../../assets/icons/folder.svg';
+import chevronDown from '../../assets/icons/chevronDown.svg';
 
 const AdminProductForm = () => {
 
@@ -106,11 +107,108 @@ const AdminProductForm = () => {
                     </div>
 
                     <div className="admin-product-form__form-input-container-five">
-                        <div className="admin-product-form__product-size-one"></div>
-                        <div className="admin-product-form__product-size-two"></div>
-                        <div className="admin-product-form__product-size-three"></div>
-                        <div className="admin-product-form__product-size-four"></div>
-                        <div className="admin-product-form__product-size-five"></div>
+                        <div className="admin-product-form__product-size-one">
+
+                            <label className="admin-product-form__lable" htmlFor="size-one">Size One</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="size-one" 
+                            id="size-one">
+                                <option hidden >Set size one &#8964;</option>
+                                <option value="false">false</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+
+                        </div>
+                        <div className="admin-product-form__product-size-two">
+                            <label className="admin-product-form__lable" htmlFor="size-two">Size Two</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="size-two" 
+                            id="size-two">
+                                <option hidden >Set size two &#8964;</option>
+                                <option value="false">false</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div className="admin-product-form__product-size-three">
+                            <label className="admin-product-form__lable" htmlFor="size-one">Size Three</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="size-three" 
+                            id="size-three">
+                                <option hidden >Set size three &#8964;</option>
+                                <option value="false">false</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div className="admin-product-form__product-size-four">
+                            <label className="admin-product-form__lable" htmlFor="size-one">Size Four</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="size-four" 
+                            id="size-four">
+                                <option hidden >Set size four &#8964;</option>
+                                <option value="false">false</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div className="admin-product-form__product-size-five">
+                            <label className="admin-product-form__lable" htmlFor="size-one">Size Five</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="size-five" 
+                            id="size-five">
+                                <option hidden >Set size five &#8964;</option>
+                                <option value="false">false</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div className="admin-product-form__form-input-container-six">
