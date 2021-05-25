@@ -430,6 +430,8 @@ const AdminProductForm = () => {
                         </div>
                     </div>
 
+                    <p className="admin-product-form__paragraph">All fields are required</p>
+
                 </form>
 
             </div>

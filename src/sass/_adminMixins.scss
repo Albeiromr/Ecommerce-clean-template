@@ -137,7 +137,7 @@
 @mixin placeholder {
   font-family: $secundary-font;
   font-weight: 400;
-  font-size: clamp(10.423px, 1.016vw, 16.78);
+  font-size: clamp(10.423px, 1.016vw, 16.78px);
   color: $c1-C;
 }
 
