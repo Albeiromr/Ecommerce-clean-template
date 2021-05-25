@@ -321,12 +321,16 @@
       @include placeholder;
     }
 
-    &__folder-button {
-      @include folderButton;
+    &__input-file {
+      @include inputTypeFile;
+    }
+
+    &__lable-as-button {
+      @include labelAsButton;
     }
 
     &__folder {
       width: 41.791%;
-    }
+    } 
   }
 }

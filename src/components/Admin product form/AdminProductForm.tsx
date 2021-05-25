@@ -14,7 +14,7 @@ const AdminProductForm = () => {
             </div>
             <div className="admin-product-form__table-container">
 
-                <form className="admin-product-form__form">
+                <form className="admin-product-form__form" >
 
                     <div className="admin-product-form__form-input-container-one">
                         <div className="admin-product-form__product-description"></div>
@@ -48,9 +48,19 @@ const AdminProductForm = () => {
                             disabled
                             />
 
-                            <div className="admin-product-form__folder-button">
+                            <label 
+                            className="admin-product-form__lable-as-button" 
+                            htmlFor="main-image-file">
                                 <img className="admin-product-form__folder" src={folder} alt="folder" />
-                            </div>
+                            </label>
+
+                            <input
+                            className="admin-product-form__input-file" 
+                            type="file"
+                            name="main-image-file"
+                            id="main-image-file"
+                            />
+
 
                         </div>
                         <div className="admin-product-form__product-thumbnail">
@@ -64,10 +74,19 @@ const AdminProductForm = () => {
                             placeholder="Choose a local image"
                             disabled
                             />
-
-                            <div className="admin-product-form__folder-button">
+                            
+                            <label 
+                            className="admin-product-form__lable-as-button" 
+                            htmlFor="thumbnail-file">
                                 <img className="admin-product-form__folder" src={folder} alt="folder" />
-                            </div>
+                            </label>
+
+                            <input
+                            className="admin-product-form__input-file" 
+                            type="file"
+                            name="thumbnail-file"
+                            id="thumbnail-file"
+                            />
 
                         </div>
                     </div>
