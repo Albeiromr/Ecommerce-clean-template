@@ -199,7 +199,7 @@ const AdminDashboardNav = () => {
                 </div>
                 : null}
 
-                {adminRoute === "product-form" ?
+                {adminRoute === "product-form" || adminRoute === "product-details" ?
                 <div onClick={handleAllProductsClick} className="admin-dashboard-nav__all-products-button">
                     <img className="admin-dashboard-nav__all-products-button-icon" src={chevronLeftGray} alt="back" />
                     <p className="admin-dashboard-nav__all-products-button-text">All Products</p>
