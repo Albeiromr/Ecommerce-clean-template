@@ -92,14 +92,15 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-rate">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-rate">Rate</label>
-                            <input 
-                            className="admin-product-form__input"
-                            type="text"
-                            name="product-rate"
-                            id="product-rate"
-                            placeholder="Enter rate"
-                            />
+                            <label className="admin-product-form__lable" htmlFor="rate">Rate</label>
+                            <select 
+                            className="admin-product-form__select"
+                            name="rate" 
+                            id="rate">
+                                <option hidden >select option &#8964;</option>
+                                <option value={5}>5</option>
+                                <option value={4}>4</option>
+                            </select>
 
                         </div>
                         <div className="admin-product-form__product-price">
