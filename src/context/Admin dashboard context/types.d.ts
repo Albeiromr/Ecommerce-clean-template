@@ -7,6 +7,8 @@ export interface contextValue {
   setAdminRoute: (value: adminRoute) => void;
   productFamily: string;
   setProductFamily: (value: productFamily) => void;
+  pageNumberSelected: number;
+  setPageNumberSelected: (value: pageNumberSelected) => void;
 };
 
 export interface contextProps {

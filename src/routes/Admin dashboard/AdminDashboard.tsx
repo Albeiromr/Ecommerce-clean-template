@@ -10,6 +10,7 @@ import AdminOrdersTable from '../../components/Admin orders table/AdminOrdersTab
 import AdminOrderDetailsTable from '../../components/Admin order details table/AdminOrderDetailsTable';
 import AdminProductForm from '../../components/Admin product form/AdminProductForm';
 import AdminProductDetails from '../../components/Admin product details/AdminProductDetails';
+import AdminPagination from '../../components/Admin pagination/AdminPagination';
 
 
 const AdminDashboard = () => {
@@ -26,6 +27,9 @@ const AdminDashboard = () => {
             {adminRoute === "order-details" ? <AdminOrderDetailsTable /> : null}
             {adminRoute === "product-form" ? <AdminProductForm /> : null}
             {adminRoute === "product-details" ? <AdminProductDetails /> : null}
+            {adminRoute === "products" || adminRoute === "orders" ? <AdminPagination /> : null}
+
+            
             
         </div>
     )

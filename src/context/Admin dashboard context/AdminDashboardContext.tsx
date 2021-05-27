@@ -7,7 +7,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   adminRoute: "",
   setAdminRoute: () => {},
   productFamily: "",
-  setProductFamily: () => {}
+  setProductFamily: () => {},
+  pageNumberSelected: 1,
+  setPageNumberSelected: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -16,10 +18,13 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [menuSelected, setMenuSelected] = useState<menuSelectedType>("orders");
 
   //this state tells the admindashboard what child and buttons to show
-  const [adminRoute, setAdminRoute] = useState<adminRouteType>("product-details");
+  const [adminRoute, setAdminRoute] = useState<adminRouteType>("products");
 
   // this state is for selecting what product family is selected in the admin-panel products menu
   const [productFamily, setProductFamily] = useState<productFamilyType>("sneakers");
+
+  //this state has the page number selected from the admin-pagination component
+  const [pageNumberSelected, setPageNumberSelected] = useState<number>(1);
 
   return (
     <AdminDashboardContext.Provider
@@ -29,7 +34,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         adminRoute,
         setAdminRoute,
         productFamily,
-        setProductFamily
+        setProductFamily,
+        pageNumberSelected,
+        setPageNumberSelected
       }}
     >
       {props.children}
