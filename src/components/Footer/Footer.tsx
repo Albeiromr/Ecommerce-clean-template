@@ -12,6 +12,7 @@ import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
 import logo from '../../assets/logo/brand.png';
+import dashboard from '../../assets/icons/dashboard.svg';
 import {useHistory} from 'react-router-dom';
 
 
@@ -26,6 +27,14 @@ const Footer = () => {
         left: 0,
         behavior: "smooth",
       });   
+    };
+
+    const handleAdminButtonClick = () => {
+      history.push("/admin-dashboard");
+      window.scroll({
+        top: 0,
+        left: 0
+      });
     };
 
   return (
@@ -69,7 +78,15 @@ const Footer = () => {
             <img className="footer__social-card" src={amex} alt="credit card icon"/>
             <img className="footer__social-card" src={discover} alt="credit card icon"/>
           </div>
+
         </div>
+
+        <div onClick={handleAdminButtonClick} className="footer__admin-button">
+          <img className="footer__admin-button-icon" src={dashboard} alt="dashboard" />
+          <p className="footer__admin-button-text">Admin Dashboard</p>
+        </div>
+
+
         <div className="footer__copyright">
           <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
           <p className="footer__copyright-text">© Copyright 2021.  Albeiro Marín</p>
