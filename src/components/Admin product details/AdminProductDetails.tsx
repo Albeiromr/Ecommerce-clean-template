@@ -25,6 +25,12 @@ const AdminProductDetails = () => {
                 </div>
 
                 <h1 className="admin-product-details__title">Adidas Aurora</h1>
+                <p className="admin-product-details__description-title">Description:</p>
+                <p className="admin-product-details__description-text">
+                    2020 new fashion snapback baseball cap flat-brimmed 
+                    hat visor hat wild personality hip hop hats for men 
+                    women caps
+                </p>
             </div>
 
         </div>
