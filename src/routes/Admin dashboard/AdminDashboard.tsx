@@ -11,6 +11,7 @@ import AdminOrderDetailsTable from '../../components/Admin order details table/A
 import AdminProductForm from '../../components/Admin product form/AdminProductForm';
 import AdminProductDetails from '../../components/Admin product details/AdminProductDetails';
 import AdminPagination from '../../components/Admin pagination/AdminPagination';
+import AdminLogoutButton from '../../components/Admin logout button/AdminLogoutButton';
 
 
 const AdminDashboard = () => {
@@ -19,6 +20,7 @@ const AdminDashboard = () => {
 
     return(
         <div className="admin-dashboard">
+            
             <AdminDashboardHeader />
             <AdminDashboardNav />
 
@@ -29,8 +31,8 @@ const AdminDashboard = () => {
             {adminRoute === "product-details" ? <AdminProductDetails /> : null}
             {adminRoute === "products" || adminRoute === "orders" ? <AdminPagination /> : null}
 
-            
-            
+            <AdminLogoutButton />
+
         </div>
     )
 };
