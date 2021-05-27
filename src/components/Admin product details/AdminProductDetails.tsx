@@ -31,6 +31,27 @@ const AdminProductDetails = () => {
                     hat visor hat wild personality hip hop hats for men 
                     women caps
                 </p>
+                <p className="admin-product-details__product-type-title">Product Type:</p>
+                <p className="admin-product-details__product-type-text">Snaekers &amp; Shoes</p>
+                <p className="admin-product-details__sku-title">Sku:</p>
+                <p className="admin-product-details__sku-text">4567SNE89076</p>
+                <p className="admin-product-details__price-title">Price:</p>
+                <p className="admin-product-details__price-text">$120.45</p>
+                <p className="admin-product-details__stock-title">Stock:</p>
+                <p className="admin-product-details__stock-text">143</p>
+                <p className="admin-product-details__reviews-title">Reviews:</p>
+                <p className="admin-product-details__reviews-text">2345</p>
+                <p className="admin-product-details__sizes-title">Sizes:</p>
+                <p className="admin-product-details__sizes-text">XS, S, M, XL</p>
+                <p className="admin-product-details__old-price-title">Old price:</p>
+                <p className="admin-product-details__old-price-text">$145.99</p>
+                <p className="admin-product-details__rate-title">Rate:</p>
+                <p className="admin-product-details__rate-text">5 Stars</p>
+                <p className="admin-product-details__sold-title">Sold:</p>
+                <p className="admin-product-details__sold-text">876</p>
+                <p className="admin-product-details__profit-title">Profit:</p>
+                <p className="admin-product-details__profit-text">$123.45</p>
+
             </div>
 
         </div>

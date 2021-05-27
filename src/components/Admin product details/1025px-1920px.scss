@@ -90,7 +90,7 @@
       padding: 0;
       font-family: $primary-font;
       font-weight: 400;
-      font-size: clamp(15px, calc(.1em + 1.212vw), 20px);
+      font-size: clamp(15px, calc(0.1em + 1.212vw), 20px);
       color: $c1-C;
       width: 36.705%;
       position: absolute;
@@ -104,6 +104,126 @@
       position: absolute;
       top: 16.12%;
       left: 50.509%;
+    }
+
+    &__product-type-title {
+      @include productTextTitle;
+      top: 45.28%;
+      left: 50.509%;
+    }
+
+    &__product-type-text {
+      @include productText;
+      top: 45.28%;
+      left: 63.901%;
+    }
+
+    &__sku-title {
+      @include productTextTitle;
+      top: 53.92%;
+      left: 50.509%;
+    }
+
+    &__sku-text {
+      @include productText;
+      top: 53.92%;
+      left: 55.137%;
+    }
+
+    &__price-title {
+      @include productTextTitle;
+      top: 62.72%;
+      left: 50.509%;
+    }
+
+    &__price-text {
+      @include productText;
+      top: 62.72%;
+      left: 56.078%;
+    }
+
+    &__stock-title {
+      @include productTextTitle;
+      top: 71.36%;
+      left: 50.509%;
+    }
+
+    &__stock-text {
+      @include productText;
+      top: 71.36%;
+      left: 56.549%;
+    }
+
+    &__reviews-title {
+      @include productTextTitle;
+      top: 80%;
+      left: 50.509%;
+    }
+
+    &__reviews-text {
+      @include productText;
+      top: 80%;
+      left: 58.731%;
+    }
+
+    &__sizes-title {
+      @include productTextTitle;
+      top: 88.64%;
+      left: 50.509%;
+    }
+
+    &__sizes-text {
+      @include productText;
+      top: 88.64%;
+      left: 56.078%;
+    }
+
+    &__old-price-title {
+      @include productTextTitle;
+      top: 62.72%;
+      left: 72.392%;
+    }
+
+    &__old-price-text {
+      @include productText;
+      top: 62.72%;
+      left: 81.576%;
+    }
+
+    &__rate-title {
+      @include productTextTitle;
+      top: 71.36%;
+      left: 72.392%;
+    }
+
+    &__rate-text {
+      @include productText;
+      top: 71.36%;
+      left: 77.725%;
+    }
+
+    &__sold-title {
+      @include productTextTitle;
+      top: 80%;
+      left: 72.392%;
+    }
+
+    &__sold-text {
+      @include productText;
+      top: 80%;
+      left: 77.275%;
+    }
+
+    &__profit-title {
+      @include productTextTitle;
+      top: 88.64%;
+      left: 72.392%;
+    }
+
+    &__profit-text {
+      @include productText;
+      top: 88.64%;
+      left: 78.117%;
     }
   }
 }
