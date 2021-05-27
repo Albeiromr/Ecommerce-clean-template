@@ -1,4 +1,5 @@
 @import "../../sass/variables";
+@import "../../sass/adminMixins";
 
 @media only screen and (min-width: 1025px) {
   .payment {
@@ -177,81 +178,49 @@
       left: 0;
     }
 
-    &__confirmation-text {
-      margin: 0;
-      padding: 0;
-      font-family: $secundary-font;
-      font-weight: 400;
-      font-size: clamp(14px, calc(0.1em + 0.852vw), 15.71px);
-      color: $c1-C;
+    &__confirmation-name-container {
+      width: 72.374%;
+      height: clamp(48.883px, 4.769vw, 78.69px);
       position: absolute;
-      left: 0;
-      top: 55.059%;
-    }
-
-    &__check-container-above {
-      width: auto;
-      padding: 0 clamp(10px, 1.269vw, 20.95px);
-      height: 4.952%;
-      background: $c1-H;
-      border: 1px $c1-D solid;
-      border-radius: clamp(14px, 0.952vw, 15.71px);
-      display: inline-flex;
-      align-items: center;
-      position: absolute;
-      top: 60.72%;
+      top: 56.692%;
       left: 0;
     }
 
-    &__check-container-text {
+    &__confirmation-lable {
       margin: 0;
       padding: 0;
-      font-family: $secundary-font;
-      font-weight: 400;
-      font-size: clamp(15px, 1.11vw, 18.33px);
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(12px, 0.871vw, 14.38px);
       color: $c1-A;
-    }
-
-    &__check-container-below {
-      width: auto;
-      padding: 0 clamp(10px, 1.269vw, 20.95px);
-      height: 4.952%;
-      background: $c1-H;
-      border: 1px $c1-D solid;
-      border-radius: clamp(14px, 0.952vw, 15.71px);
-      display: inline-flex;
-      align-items: center;
       position: absolute;
-      top: 67.22%;
+      top: 0;
       left: 0;
     }
 
-    &__check {
-      width: clamp(10px, 1.687vw, 29.19px);
-      height: clamp(10px, 1.687vw, 29.19px);
-      border: 2px $c1-D solid;
-      background: #ffffff;
-      margin-right: clamp(5px, 0.63vw, 10.4px);
-      border-radius: 4px;
-      cursor: pointer;
+    &__confirmation-input {
+      margin: 0;
+      outline: none;
+      width: 100%;
+      height: 70.368%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(10px, 0.952vw, 15.71px);
+      padding: 0 clamp(10px, 1.515vw, 25px);
+      font-family: $secundary-font;
+      font-weight: 400;
+      color: $c1-C;
     }
 
-    &__check--selected {
-      width: clamp(10px, 1.687vw, 29.19px);
-      height: clamp(10px, 1.687vw, 29.19px);
-      border: 2px $c2-B solid;
-      background: $c2-A;
-      margin-right: clamp(5px, 0.63vw, 10.4px);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__check-icon {
-      width: 75%;
+    &__confirmation-address-container {
+      width: 72.374%;
+      height: clamp(48.883px, 4.769vw, 78.69px);
+      position: absolute;
+      top: 65.692%;
+      left: 0;
     }
 
     &__complete-order-button {

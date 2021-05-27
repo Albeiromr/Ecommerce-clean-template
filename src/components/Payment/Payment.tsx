@@ -1,10 +1,9 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import cardCircle from '../../assets/images/cardCircle.png';
 import colorCards from '../../assets/images/colorCards.png';
-import checked from '../../assets/icons/checked.svg';
 import shield from '../../assets/icons/shield.svg';
 import chevronHideCategories from '../../assets/icons/chevronHideCategories.svg';
 import {ShoppingCartContext} from '../../context/Shopping cart context/ShoppingCartContext';
@@ -17,26 +16,10 @@ const Payment = () => {
     //with this costum hook we can get the window width
     const windowWidth = useWindowWidth();
     
-
-    // checkOne and checkTwo state are needed for changing the check class when it is clicked
-    const [checkOne, setCheckOne] = useState(false);
-    const [checkTwo, setCheckTwo] = useState(false);
-    
     const TabletVwToScrollUp: number = (windowWidth / 100) * 25;
     const smarthphoneVwToScrollUp: number = (windowWidth / 100) * 58;
 
-
-    const handleCheckOneClick = () => {
-        if(!checkOne) setCheckOne(true);
-        else setCheckOne(false);
-    };
-
-    const handleCheckTwoClick = () => {
-        if(!checkTwo) setCheckTwo(true);
-        else setCheckTwo(false);
-    };
-
-    const handleRetunClick = () => {
+    const handleReturnClick = () => {
       setShowPayment(false);
       if (windowWidth <= 599) {
         window.scrollTo(0, smarthphoneVwToScrollUp);
@@ -101,23 +84,30 @@ const Payment = () => {
                 <p className="payment__demo-card-button-text">Use Demo Card</p>
             </div>
 
-            <h2 className="payment__confirmation-title">Confirmation</h2>
-            <p className="payment__confirmation-text">We are getting to the end. Just a few clicks and your order si ready!</p>
+            <h2 className="payment__confirmation-title">Shipping Information</h2>
 
-            <div className="payment__check-container-above">
-                <div className={!checkOne ? "payment__check" : "payment__check--selected"} onClick={handleCheckOneClick}>
-                    {checkOne ? <img className="payment__check-icon" src={checked} alt="check" />: null}
-                </div>
-                <p className="payment__check-container-text">I agree with sending me Marketing emails</p>
+            <div className="payment__confirmation-name-container">
+                <label className="payment__confirmation-lable" htmlFor="name">Name and Lastname</label>
+                <input 
+                className="payment__confirmation-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name and lastname"
+                />
             </div>
 
-            <div className="payment__check-container-below">
-                <div className={!checkTwo ? "payment__check" : "payment__check--selected"} onClick={handleCheckTwoClick}>
-                    {checkTwo ? <img className="payment__check-icon" src={checked} alt="check" />: null}
-                </div>
-                <p className="payment__check-container-text">I agree with  the <u>terms and conditions</u></p>
+            <div className="payment__confirmation-address-container">
+                <label className="payment__confirmation-lable" htmlFor="address">Shipping Adress</label>
+                <input 
+                className="payment__confirmation-input"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Enter your shipping Adress"
+                />
             </div>
-
+            
             <div className="payment__complete-order-button">
                 <p className="payment__demo-card-button-text"> Complete Order</p>
             </div>
@@ -129,7 +119,7 @@ const Payment = () => {
             </p>
 
             <div className="payment__return-button">
-                <img onClick={handleRetunClick} className="payment__return-button-icon" src={chevronHideCategories} alt="arrow" />
+                <img onClick={handleReturnClick} className="payment__return-button-icon" src={chevronHideCategories} alt="arrow" />
             </div>
         </div>
     )
