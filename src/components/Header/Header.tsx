@@ -73,9 +73,8 @@ const Header = () => {
             <img className="header__icon" src={basket} alt="basket icon" />
           </div>
 
-          <div className="header__basket-counter">
-            <p className="header__basket-text">8</p>
-          </div>
+          <div className="header__basket-counter" />
+          
 
         </div>
       </div>
