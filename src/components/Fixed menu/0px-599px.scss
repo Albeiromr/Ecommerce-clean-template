@@ -2,90 +2,28 @@
 
 @media only screen and (max-width: 599px) {
   .fixed-menu {
-    width: 100%;
-    min-width: 320px;
-    height: 18.599vw;
-    min-height: 59.516px;
-    background: $c1-F;
-    position: fixed;
-    bottom: 0%;
+    width: clamp(51.787px, 16.783vw, 100px);
+    height: clamp(51.787px, 16.783vw, 100px);
+    border-radius: 200px;
+    border: 2px $c1-D solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 20;
-
-    &__subcontainer {
-      width: 90.338%;
-      height: 79.22%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    &__left-block {
-      width: 36.096%;
-      height: 100%;
-      border-radius: clamp(9.275px, 2.898vw, 40px);
-      border: 1px $c1-D solid;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: $c1-H;
-    }
-
-    &__middle-block {
-      width: 19.786%;
-      height: 100%;
-      border-radius: clamp(9.275px, 2.898vw, 40px);
-      border: 1px $c1-D solid;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: $c1-H;
-    }
-
-    &__right-block {
-      width: 36.096%;
-      height: 100%;
-      border-radius: clamp(9.275px, 2.898vw, 40px);
-      border: 1px $c1-D solid;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: $c1-H;
-    }
-
-    &__line {
-      width: 2.222%;
-      height: 59.016%;
-      background: $c1-E;
-    }
-
-    &__icon-container {
-      width: 24.222%;
-      height: 51.18%;
-      margin: 0 4vw;
-      cursor: pointer;
-    }
+    background: $c1-H;
+    cursor: pointer;
+    position: fixed;
+    bottom: clamp(15px, 4vw, 17px);
+    right : clamp(15px, 4vw, 17px);
+    z-index: 30;
 
     &__icon-container-basket {
-      width: 26.503%;
+      width: 100%;
       height: 63.573%;
       margin: 0 4vw;
       position: relative;
       cursor: pointer;
     }
 
-    &__icon-middle-container {
-      width: 58.054%;
-      height: 69.573%;
-      cursor: pointer;
-    }
-
-    &__icon {
-      width: 100%;
-      height: 100%;
-    }
 
     &__icon-basket {
       width: 80.015;
@@ -104,7 +42,7 @@
       position: absolute;
       top: 43.998%;
       right: 35.905%;
-      border-radius: 2vw;
+      border-radius: clamp(5px, 2vw, 20px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -115,7 +53,7 @@
       margin: 0;
       font-family: $primary-font;
       font-weight: 600;
-      font-size: clamp(1px, 3.5vw, 15.71px);
+      font-size: clamp(10px, 3.5vw, 15.71px);
       color: $c1-J;
     }
   }
