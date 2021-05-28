@@ -13,7 +13,7 @@
     cursor: pointer;
     position: fixed;
     bottom: clamp(15px, 4vw, 17px);
-    right : clamp(15px, 4vw, 17px);
+    right: clamp(15px, 4vw, 17px);
     z-index: 30;
 
     &__icon-container-basket {
@@ -23,7 +23,6 @@
       position: relative;
       cursor: pointer;
     }
-
 
     &__icon-basket {
       width: 80.015;
