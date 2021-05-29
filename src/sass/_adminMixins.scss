@@ -108,19 +108,6 @@
   left: 0;
 }
 
-@mixin imageInput {
-  outline: none;
-  width: 86.294%;
-  height: 70.027%;
-  padding: 0 clamp(13.492px, 1.316vw, 21.72px);
-  background: $c1-H;
-  border: 1px $c1-D solid;
-  border-radius: clamp(8.933px, 0.871vw, 14.38px);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 @mixin input {
   outline: none;
   width: 100%;
@@ -139,32 +126,6 @@
   font-weight: 400;
   font-size: clamp(10.423px, 1.016vw, 16.78px);
   color: $c1-C;
-}
-
-@mixin inputTypeFile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-@mixin labelAsButton {
-  display: block;
-  width: 11.336%;
-  height: 70.027%;
-  background: $c1-H;
-  border: 2px $c1-D solid;
-  border-radius: clamp(8.933px, 0.871vw, 14.38px);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s solid;
 }
 
 @mixin select {

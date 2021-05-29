@@ -308,23 +308,6 @@
       @include lableText;
     }
 
-    &__input-image {
-      @include imageInput;
-      @include placeholder;
-    }
-
-    &__input-file {
-      @include inputTypeFile;
-    }
-
-    &__lable-as-button {
-      @include labelAsButton;
-    }
-
-    &__folder {
-      width: 41.791%;
-    }
-
     &__paragraph {
       margin: 0;
       padding: 0;

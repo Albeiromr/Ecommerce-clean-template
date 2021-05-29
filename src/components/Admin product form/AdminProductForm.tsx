@@ -2,12 +2,11 @@ import React from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import folder from '../../assets/icons/folder.svg';
 
 const AdminProductForm = () => {
 
     return (
-        <div className="admin-product-form">
+        <div className="admin-product-form" >
 
             <div className="admin-product-form__table-title-bar">
                 <p className="admin-product-form__table-title"> Enter The Product Information</p>
@@ -158,26 +157,11 @@ const AdminProductForm = () => {
 
                             <label className="admin-product-form__lable" htmlFor="main-image">Main Image</label>
                             <input
-                            className="admin-product-form__input-image"
+                            className="admin-product-form__input"
                             type="text" 
                             id="main-image"
                             name="main-image"
-                            placeholder="Choose a local image"
-                            disabled
-                            />
-
-                            <label 
-                            className="admin-product-form__lable-as-button" 
-                            htmlFor="main-image-file">
-                                <img className="admin-product-form__folder" src={folder} alt="folder" />
-                            </label>
-
-                            <input
-                            className="admin-product-form__input-file" 
-                            type="file"
-                            name="main-image-file"
-                            id="main-image-file"
-                            accept="image/jpeg"
+                            placeholder="Main image file name"
                             />
 
                         </div>
@@ -185,26 +169,11 @@ const AdminProductForm = () => {
 
                             <label className="admin-product-form__lable" htmlFor="thumbnail">Thumbnail</label>
                             <input
-                            className="admin-product-form__input-image"
+                            className="admin-product-form__input"
                             type="text" 
                             id="thumbnail"
                             name="thumbnail"
-                            placeholder="Choose a local image"
-                            disabled
-                            />
-                            
-                            <label 
-                            className="admin-product-form__lable-as-button" 
-                            htmlFor="thumbnail-file">
-                                <img className="admin-product-form__folder" src={folder} alt="folder" />
-                            </label>
-
-                            <input
-                            className="admin-product-form__input-file" 
-                            type="file"
-                            name="thumbnail-file"
-                            id="thumbnail-file"
-                            accept="image/jpeg"
+                            placeholder="Thumbnail image file name"
                             />
 
                         </div>
