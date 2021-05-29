@@ -18,12 +18,12 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-one">
                         <div className="admin-product-form__product-description">
 
-                            <label className="admin-product-form__lable" htmlFor="product-description">Product Description</label>
+                            <label className="admin-product-form__lable" htmlFor="productDescription">Product Description</label>
 
                             <textarea 
                             className="admin-product-form__text-area"
-                            name="product-description"
-                            id="product-description" 
+                            name="productDescription"
+                            id="productDescription"
                             cols={20} 
                             rows={5}
                             placeholder="Enter product description">
@@ -35,23 +35,23 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-two">
                         <div className="admin-product-form__product-sku">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-sku">Product SKU</label>
+                            <label className="admin-product-form__lable" htmlFor="sku">Product SKU</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-sku"
-                            id="product-sku"
+                            name="sku"
+                            id="sku"
                             placeholder="Enter SKU"
                             />
 
                         </div>
                         <div className="admin-product-form__product-type">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-type">Product Type</label>
+                            <label className="admin-product-form__lable" htmlFor="productType">Product Type</label>
                             <select 
                             className="admin-product-form__select"
-                            name="product-type" 
-                            id="product-type">
+                            name="productType" 
+                            id="productType">
                                 <option hidden >Select product family type &#8964;</option>
                                 <option value={"Tshirts & Shirts"}>Tshirts &amp; Shirts</option>
                                 <option value="Pants">Pants</option>
@@ -64,12 +64,12 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-name">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-name">Product Name</label>
+                            <label className="admin-product-form__lable" htmlFor="productName">Product Name</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-name"
-                            id="product-name"
+                            name="productName"
+                            id="productName"
                             placeholder="Enter product name"
                             />
 
@@ -79,23 +79,23 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-three">
                         <div className="admin-product-form__product-stock">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-stock">Stock</label>
+                            <label className="admin-product-form__lable" htmlFor="productStock">Stock</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-stock"
-                            id="product-stock"
+                            name="productStock"
+                            id="productStock"
                             placeholder="Enter stock"
                             />
 
                         </div>
                         <div className="admin-product-form__product-rate">
 
-                            <label className="admin-product-form__lable" htmlFor="rate">Rate</label>
+                            <label className="admin-product-form__lable" htmlFor="productRate">Rate</label>
                             <select 
                             className="admin-product-form__select"
-                            name="rate" 
-                            id="rate">
+                            name="productRate" 
+                            id="productRate">
                                 <option hidden >select option &#8964;</option>
                                 <option value={5}>5</option>
                                 <option value={4}>4</option>
@@ -104,36 +104,36 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-price">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-price">Price</label>
+                            <label className="admin-product-form__lable" htmlFor="productPrice">Price</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-price"
-                            id="product-price"
+                            name="productPrice"
+                            id="productPrice"
                             placeholder="Enter price"
                             />
 
                         </div>
                         <div className="admin-product-form__product-old-price">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-old-price">Old Price</label>
+                            <label className="admin-product-form__lable" htmlFor="productOldPrice">Old Price</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-old-price"
-                            id="product-old-price"
+                            name="productOldPrice"
+                            id="productOldPrice"
                             placeholder="Enter old price"
                             />
 
                         </div>
                         <div className="admin-product-form__product-review-quantity">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-review-quantity">Review Quantity</label>
+                            <label className="admin-product-form__lable" htmlFor="reviewQuantity">Review Quantity</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-review-quantity"
-                            id="product-review-quantity"
+                            name="reviewQuantity"
+                            id="reviewQuantity"
                             placeholder="Enter review quantity"
                             />
 
@@ -143,36 +143,36 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-four">
                         <div className="admin-product-form__product-sold-quantity">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-sold-quantity">Sold Quantity</label>
+                            <label className="admin-product-form__lable" htmlFor="soldQuantity">Sold Quantity</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-sold-quantity"
-                            id="product-sold-quantity"
+                            name="soldQuantity"
+                            id="soldQuantity"
                             placeholder="Enter sold quantity"
                             />
 
                         </div>
                         <div className="admin-product-form__product-main-image">
 
-                            <label className="admin-product-form__lable" htmlFor="main-image">Main Image</label>
+                            <label className="admin-product-form__lable" htmlFor="productImage">Main Image</label>
                             <input
                             className="admin-product-form__input"
                             type="text" 
-                            id="main-image"
-                            name="main-image"
+                            id="productImage"
+                            name="productImage"
                             placeholder="Main image file name"
                             />
 
                         </div>
                         <div className="admin-product-form__product-thumbnail">
 
-                            <label className="admin-product-form__lable" htmlFor="thumbnail">Thumbnail</label>
+                            <label className="admin-product-form__lable" htmlFor="productThumbnail">Thumbnail</label>
                             <input
                             className="admin-product-form__input"
                             type="text" 
-                            id="thumbnail"
-                            name="thumbnail"
+                            id="productThumbnail"
+                            name="productThumbnail"
                             placeholder="Thumbnail image file name"
                             />
 
@@ -182,11 +182,11 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-five">
                         <div className="admin-product-form__product-size-one">
 
-                            <label className="admin-product-form__lable" htmlFor="size-one">Size One</label>
+                            <label className="admin-product-form__lable" htmlFor="sizeOne">Size One</label>
                             <select 
                             className="admin-product-form__select"
-                            name="size-one" 
-                            id="size-one">
+                            name="sizeOne" 
+                            id="sizeOne">
                                 <option hidden >Set size one &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -204,11 +204,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-size-two">
 
-                            <label className="admin-product-form__lable" htmlFor="size-two">Size Two</label>
+                            <label className="admin-product-form__lable" htmlFor="sizeTwo">Size Two</label>
                             <select 
                             className="admin-product-form__select"
-                            name="size-two" 
-                            id="size-two">
+                            name="sizeTwo" 
+                            id="sizeTwo">
                                 <option hidden >Set size two &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -226,11 +226,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-size-three">
 
-                            <label className="admin-product-form__lable" htmlFor="size-one">Size Three</label>
+                            <label className="admin-product-form__lable" htmlFor="sizeThree">Size Three</label>
                             <select 
                             className="admin-product-form__select"
-                            name="size-three" 
-                            id="size-three">
+                            name="sizeThree"
+                            id="sizeThree">
                                 <option hidden >Set size three &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -248,11 +248,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-size-four">
 
-                            <label className="admin-product-form__lable" htmlFor="size-one">Size Four</label>
+                            <label className="admin-product-form__lable" htmlFor="sizeFour">Size Four</label>
                             <select 
                             className="admin-product-form__select"
-                            name="size-four" 
-                            id="size-four">
+                            name="sizeFour" 
+                            id="sizeFour">
                                 <option hidden >Set size four &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -270,11 +270,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-size-five">
 
-                            <label className="admin-product-form__lable" htmlFor="size-one">Size Five</label>
+                            <label className="admin-product-form__lable" htmlFor="sizeFive">Size Five</label>
                             <select 
                             className="admin-product-form__select"
-                            name="size-five" 
-                            id="size-five">
+                            name="sizeFive" 
+                            id="sizeFive">
                                 <option hidden >Set size five &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -295,11 +295,11 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-six">
                         <div className="admin-product-form__product-category-one">
 
-                            <label className="admin-product-form__lable" htmlFor="category-one">Category One</label>
+                            <label className="admin-product-form__lable" htmlFor="categoryOne">Category One</label>
                             <select 
                             className="admin-product-form__select"
-                            name="category-one" 
-                            id="category-one">
+                            name="categoryOne" 
+                            id="categoryOne">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -308,11 +308,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-category-two">
 
-                            <label className="admin-product-form__lable" htmlFor="category-two">Category Two</label>
+                            <label className="admin-product-form__lable" htmlFor="categoryTwo">Category Two</label>
                             <select 
                             className="admin-product-form__select"
-                            name="category-two" 
-                            id="category-two">
+                            name="categoryTwo" 
+                            id="categoryTwo">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -321,11 +321,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-category-three">
 
-                            <label className="admin-product-form__lable" htmlFor="category-three">Category Thee</label>
+                            <label className="admin-product-form__lable" htmlFor="categoryThree">Category Thee</label>
                             <select 
                             className="admin-product-form__select"
-                            name="category-three" 
-                            id="category-three">
+                            name="categoryThree" 
+                            id="categoryThree">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -334,11 +334,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-category-four">
 
-                            <label className="admin-product-form__lable" htmlFor="category-four">Category Four</label>
+                            <label className="admin-product-form__lable" htmlFor="categoryFour">Category Four</label>
                             <select 
                             className="admin-product-form__select"
-                            name="category-four" 
-                            id="category-four">
+                            name="categoryFour" 
+                            id="categoryFour">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -347,11 +347,11 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-category-five">
 
-                            <label className="admin-product-form__lable" htmlFor="category-five">Category Five</label>
+                            <label className="admin-product-form__lable" htmlFor="categoryFive">Category Five</label>
                             <select 
                             className="admin-product-form__select"
-                            name="category-five" 
-                            id="category-five">
+                            name="categoryFive" 
+                            id="categoryFive">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -363,11 +363,11 @@ const AdminProductForm = () => {
                     <div className="admin-product-form__form-input-container-seven">
                         <div className="admin-product-form__product-interest-for-you">
 
-                            <label className="admin-product-form__lable" htmlFor="interest-for-you">Interest For You</label>
+                            <label className="admin-product-form__lable" htmlFor="interestForYou">Interest For You</label>
                             <select 
                             className="admin-product-form__select"
-                            name="interest-for-you" 
-                            id="interest-for-you">
+                            name="interestForYou" 
+                            id="interestForYou">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -376,24 +376,24 @@ const AdminProductForm = () => {
                         </div>
                         <div className="admin-product-form__product-profit">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-profit">Profit</label>
+                            <label className="admin-product-form__lable" htmlFor="productProfit">Profit</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-profit"
-                            id="product-profit"
+                            name="productProfit"
+                            id="productProfit"
                             placeholder="Enter profit"
                             />
 
                         </div>
                         <div className="admin-product-form__product-views-quantity">
 
-                            <label className="admin-product-form__lable" htmlFor="Product-profit">Views Quantity</label>
+                            <label className="admin-product-form__lable" htmlFor="productViews">Views Quantity</label>
                             <input 
                             className="admin-product-form__input"
                             type="text"
-                            name="product-views-quantity"
-                            id="product-views-quantity"
+                            name="productViews"
+                            id="productViews"
                             placeholder="Enter views quantity"
                             />
 
