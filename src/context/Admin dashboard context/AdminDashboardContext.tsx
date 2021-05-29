@@ -1,5 +1,13 @@
 import React, { createContext, FC, useState } from "react";
-import { contextProps, contextValue, menuSelectedType, adminRouteType, productFamilyType } from "./types";
+import {
+  contextProps,
+  contextValue,
+  menuSelectedType,
+  adminRouteType,
+  productFamilyType,
+  productPostInterface,
+  productPostInitial
+ } from "./types";
 
 export const AdminDashboardContext = createContext<contextValue>({
   menuSelected: "",
@@ -9,7 +17,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productFamily: "",
   setProductFamily: () => {},
   pageNumberSelected: 1,
-  setPageNumberSelected: () => {}
+  setPageNumberSelected: () => {},
+  productPost: productPostInitial,
+  setProductPost: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -26,6 +36,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state has the page number selected from the admin-pagination component
   const [pageNumberSelected, setPageNumberSelected] = useState<number>(1);
 
+  //this state collects all values from Admin-product-form component
+  const [productPost, setProductPost] = useState<productPostInterface>(productPostInitial);
+
   return (
     <AdminDashboardContext.Provider
       value={{
@@ -36,7 +49,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productFamily,
         setProductFamily,
         pageNumberSelected,
-        setPageNumberSelected
+        setPageNumberSelected,
+        productPost,
+        setProductPost
       }}
     >
       {props.children}

@@ -73,7 +73,7 @@
       outline: none;
       width: 100%;
       height: 87.526%;
-      padding:clamp(13.492px, 1.316vw, 21.72px);
+      padding: clamp(13.492px, 1.316vw, 21.72px);
       background: $c1-H;
       border: 1px $c1-D solid;
       border-radius: clamp(8.933px, 0.871vw, 14.38px);
@@ -201,7 +201,7 @@
 
     &__select {
       @include select;
-      @include placeholder
+      @include placeholder;
     }
 
     &__product-size-one {
@@ -313,7 +313,7 @@
       padding: 0;
       font-family: $secundary-font;
       font-weight: 600;
-      font-size: clamp(16px, 1.090vw, 18px);
+      font-size: clamp(16px, 1.09vw, 18px);
       color: $c4-A;
       position: absolute;
       bottom: 4.96%;
