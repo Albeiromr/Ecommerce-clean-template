@@ -1,4 +1,5 @@
 import React, { createContext, FC, useState } from "react";
+import {productPostInitial} from './initialValues';
 import {
   contextProps,
   contextValue,
@@ -6,7 +7,6 @@ import {
   adminRouteType,
   productFamilyType,
   productPostInterface,
-  productPostInitial
  } from "./types";
 
 export const AdminDashboardContext = createContext<contextValue>({
