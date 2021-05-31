@@ -54,7 +54,7 @@
     }
 
     &__product-icon-container {
-      width: 39.150%;
+      width: 39.15%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -64,7 +64,7 @@
     &__product-icon {
       height: 100%;
       cursor: pointer;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
 
     &__status-filter-button {
@@ -135,14 +135,6 @@
 
     &__all-products-button-text {
       @include whiteButtonText;
-    }
-
-    &__save-product-button {
-      @include greenButton;
-    }
-
-    &__save-product-button-text {
-      @include grayButtonText;
     }
   }
 }
