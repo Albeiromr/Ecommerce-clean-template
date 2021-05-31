@@ -1,16 +1,21 @@
 import React, {useContext} from 'react';
-import validator from 'validator';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import validator from 'validator';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminProductForm = () => {
 
     const {productPost, setProductPost} = useContext(AdminDashboardContext);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setProductPost({...productPost, [e.target.name]: e.target.value});
+    //validating product desciption textarea value
+    const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      if (validator.isLength(e.target.value, { min: 115, max: 130 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+      }
     };
 
     return (
@@ -35,7 +40,7 @@ const AdminProductForm = () => {
                             cols={20} 
                             rows={5}
                             placeholder="Enter product description"
-                            onChange={handleChange}
+                            onChange={handleDescriptionChange}
                             >
                                 
                             </textarea>
@@ -53,7 +58,6 @@ const AdminProductForm = () => {
                             name="sku"
                             id="sku"
                             placeholder="Enter SKU"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -63,8 +67,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="productType" 
-                            id="productType"
-                            onChange={handleChange}>
+                            id="productType">
                                 <option hidden >Select product family type &#8964;</option>
                                 <option value={"Tshirts & Shirts"}>Tshirts &amp; Shirts</option>
                                 <option value="Pants">Pants</option>
@@ -84,7 +87,6 @@ const AdminProductForm = () => {
                             name="productName"
                             id="productName"
                             placeholder="Enter product name"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -100,7 +102,6 @@ const AdminProductForm = () => {
                             name="productStock"
                             id="productStock"
                             placeholder="Enter stock"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -110,11 +111,10 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="productRate" 
-                            id="productRate"
-                            onChange={handleChange}>
+                            id="productRate">
                                 <option hidden >select option &#8964;</option>
-                                <option value={5}>5</option>
-                                <option value={4}>4</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
                             </select>
 
                         </div>
@@ -127,7 +127,6 @@ const AdminProductForm = () => {
                             name="productPrice"
                             id="productPrice"
                             placeholder="Enter price"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -140,7 +139,6 @@ const AdminProductForm = () => {
                             name="productOldPrice"
                             id="productOldPrice"
                             placeholder="Enter old price"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -153,7 +151,6 @@ const AdminProductForm = () => {
                             name="reviewQuantity"
                             id="reviewQuantity"
                             placeholder="Enter review quantity"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -169,7 +166,6 @@ const AdminProductForm = () => {
                             name="soldQuantity"
                             id="soldQuantity"
                             placeholder="Enter sold quantity"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -182,7 +178,6 @@ const AdminProductForm = () => {
                             id="productImage"
                             name="productImage"
                             placeholder="Main image file name"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -195,7 +190,6 @@ const AdminProductForm = () => {
                             id="productThumbnail"
                             name="productThumbnail"
                             placeholder="Thumbnail image file name"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -208,8 +202,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="sizeOne" 
-                            id="sizeOne"
-                            onChange={handleChange}>
+                            id="sizeOne">
                                 <option hidden >Set size one &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -231,8 +224,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="sizeTwo" 
-                            id="sizeTwo"
-                            onChange={handleChange}>
+                            id="sizeTwo">
                                 <option hidden >Set size two &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -254,8 +246,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="sizeThree"
-                            id="sizeThree"
-                            onChange={handleChange}>
+                            id="sizeThree">
                                 <option hidden >Set size three &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -277,8 +268,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="sizeFour" 
-                            id="sizeFour"
-                            onChange={handleChange}>
+                            id="sizeFour">
                                 <option hidden >Set size four &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -300,8 +290,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="sizeFive" 
-                            id="sizeFive"
-                            onChange={handleChange}>
+                            id="sizeFive">
                                 <option hidden >Set size five &#8964;</option>
                                 <option value="false">false</option>
                                 <option value="6.5">6.5</option>
@@ -326,8 +315,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="categoryOne" 
-                            id="categoryOne"
-                            onChange={handleChange}>
+                            id="categoryOne">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -340,8 +328,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="categoryTwo" 
-                            id="categoryTwo"
-                            onChange={handleChange}>
+                            id="categoryTwo">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -354,8 +341,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="categoryThree" 
-                            id="categoryThree"
-                            onChange={handleChange}>
+                            id="categoryThree">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -368,8 +354,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="categoryFour" 
-                            id="categoryFour"
-                            onChange={handleChange}>
+                            id="categoryFour">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -382,8 +367,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="categoryFive" 
-                            id="categoryFive"
-                            onChange={handleChange}>
+                            id="categoryFive">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -399,8 +383,7 @@ const AdminProductForm = () => {
                             <select 
                             className="admin-product-form__select"
                             name="interestForYou" 
-                            id="interestForYou"
-                            onChange={handleChange}>
+                            id="interestForYou">
                                 <option hidden >select option &#8964;</option>
                                 <option value="true">True</option>
                                 <option value="false">False</option>
@@ -416,7 +399,6 @@ const AdminProductForm = () => {
                             name="productProfit"
                             id="productProfit"
                             placeholder="Enter profit"
-                            onChange={handleChange}
                             />
 
                         </div>
@@ -429,7 +411,6 @@ const AdminProductForm = () => {
                             name="productViews"
                             id="productViews"
                             placeholder="Enter views quantity"
-                            onChange={handleChange}
                             />
 
                         </div>
