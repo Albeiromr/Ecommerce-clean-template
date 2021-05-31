@@ -126,7 +126,6 @@
 
     &__all-products-button {
       @include whiteButton;
-      margin-right: clamp(9.318px, 0.909vw, 15px);
     }
 
     &__all-products-button-icon {
@@ -140,7 +139,6 @@
 
     &__save-product-button {
       @include greenButton;
-      margin-left: clamp(9.318px, 0.909vw, 15px);
     }
 
     &__save-product-button-text {

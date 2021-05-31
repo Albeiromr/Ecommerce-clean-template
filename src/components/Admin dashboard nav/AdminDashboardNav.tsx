@@ -206,11 +206,7 @@ const AdminDashboardNav = () => {
                 </div>
                 : null}
 
-                {adminRoute === "product-form" ?
-                <div className="admin-dashboard-nav__save-product-button">
-                    <p className="admin-dashboard-nav__save-product-button-text">Save Product</p>
-                </div>
-                : null}
+                
 
             </div>
             
