@@ -8,7 +8,7 @@ export const productPostInitial:productPostInterface = {
     productPrice: "",
     productOldPrice: "",
     productStock: "",
-    ProductRate: "",
+    productRate: "",
     reviewQuantity: "",
     soldQuantity: "",
     productViews: "",

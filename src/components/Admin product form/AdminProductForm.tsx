@@ -9,9 +9,7 @@ const AdminProductForm = () => {
     const {productPost, setProductPost} = useContext(AdminDashboardContext);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setProductPost({
-            //[e.target.name]: e.target.value
-        })
+        setProductPost({...productPost, [e.target.name]: e.target.value});
     };
 
     return (

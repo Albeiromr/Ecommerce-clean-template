@@ -31,7 +31,7 @@ export interface productPostInterface {
   productPrice:string;
   productOldPrice: string;
   productStock:string;
-  ProductRate: string;
+  productRate: string;
   reviewQuantity: string;
   soldQuantity: string;
   productViews: string;
