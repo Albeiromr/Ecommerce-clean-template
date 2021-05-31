@@ -52,6 +52,87 @@ const AdminProductForm = () => {
       }
     };
 
+    //validating product stock
+    const handleStockChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isInt(e.target.value, { min: 1, max: 1000 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+    //validating product rate
+    const handleRateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        if (validator.isInt(e.target.value, { min: 4, max: 5 })) {
+          setProductPost({ ...productPost, [e.target.name]: e.target.value });
+          e.target.style.border = "2px #7ec384 solid";
+        } else {
+          setProductPost({ ...productPost, [e.target.name]: "" });
+          e.target.style.border = "2px #E5704B solid";
+        }
+      };
+
+    //validating product price
+    const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isDecimal(e.target.value, {force_decimal: true, decimal_digits: '1,2'})) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value});
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+    //validating product review quantity
+    const handleReviewChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isInt(e.target.value, { min: 1, max: 10000 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+    //validating product sold quantity
+    const handleSoldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isInt(e.target.value, { min: 1 , max: 1000 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+    //validating product image names
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isLength(e.target.value, { min: 36, max: 36 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+    //validating product views quantity
+    const handleViewsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (validator.isInt(e.target.value, { min: 1, max: 10000 })) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
+      }
+    };
+
+
+
+    
+
     return (
         <div className="admin-product-form" >
 
@@ -76,7 +157,6 @@ const AdminProductForm = () => {
                             placeholder="Enter product description"
                             onChange={handleDescriptionChange}
                             >
-                                
                             </textarea>
 
                         </div>
@@ -139,6 +219,7 @@ const AdminProductForm = () => {
                             name="productStock"
                             id="productStock"
                             placeholder="Enter stock"
+                            onChange={handleStockChange}
                             />
 
                         </div>
@@ -149,7 +230,7 @@ const AdminProductForm = () => {
                             className="admin-product-form__select"
                             name="productRate" 
                             id="productRate"
-                            onChange={handleSelectChange}>
+                            onChange={handleRateChange}>
                                 <option hidden >select option &#8964;</option>
                                 <option value="5">5</option>
                                 <option value="4">4</option>
@@ -165,6 +246,7 @@ const AdminProductForm = () => {
                             name="productPrice"
                             id="productPrice"
                             placeholder="Enter price"
+                            onChange={handlePriceChange}
                             />
 
                         </div>
@@ -177,6 +259,7 @@ const AdminProductForm = () => {
                             name="productOldPrice"
                             id="productOldPrice"
                             placeholder="Enter old price"
+                            onChange={handlePriceChange}
                             />
 
                         </div>
@@ -189,6 +272,7 @@ const AdminProductForm = () => {
                             name="reviewQuantity"
                             id="reviewQuantity"
                             placeholder="Enter review quantity"
+                            onChange={handleReviewChange}
                             />
 
                         </div>
@@ -204,6 +288,7 @@ const AdminProductForm = () => {
                             name="soldQuantity"
                             id="soldQuantity"
                             placeholder="Enter sold quantity"
+                            onChange={handleSoldChange}
                             />
 
                         </div>
@@ -216,6 +301,7 @@ const AdminProductForm = () => {
                             id="productImage"
                             name="productImage"
                             placeholder="Main image file name"
+                            onChange={handleImageChange}
                             />
 
                         </div>
@@ -228,6 +314,7 @@ const AdminProductForm = () => {
                             id="productThumbnail"
                             name="productThumbnail"
                             placeholder="Thumbnail image file name"
+                            onChange={handleImageChange}
                             />
 
                         </div>
@@ -448,6 +535,7 @@ const AdminProductForm = () => {
                             name="productProfit"
                             id="productProfit"
                             placeholder="Enter profit"
+                            onChange={handlePriceChange}
                             />
 
                         </div>
@@ -460,6 +548,7 @@ const AdminProductForm = () => {
                             name="productViews"
                             id="productViews"
                             placeholder="Enter views quantity"
+                            onChange={handleViewsChange}
                             />
 
                         </div>
