@@ -13,8 +13,25 @@ const AdminProductForm = () => {
     const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       if (validator.isLength(e.target.value, { min: 115, max: 130 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid"
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid"
+      }
+    };
+
+    //validating product SKU
+    const handleSkuChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (
+        !validator.isNumeric(e.target.value) &&
+        validator.isLength(e.target.value, { min: 11, max: 11 }) &&
+        !validator.isAlpha(e.target.value)
+      ) {
+        setProductPost({ ...productPost, [e.target.name]: e.target.value });
+        e.target.style.border = "2px #7ec384 solid";
+      } else {
+        setProductPost({ ...productPost, [e.target.name]: "" });
+        e.target.style.border = "2px #E5704B solid";
       }
     };
 
@@ -58,6 +75,7 @@ const AdminProductForm = () => {
                             name="sku"
                             id="sku"
                             placeholder="Enter SKU"
+                            onChange={handleSkuChange}
                             />
 
                         </div>
