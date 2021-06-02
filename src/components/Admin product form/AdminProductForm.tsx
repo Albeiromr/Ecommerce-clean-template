@@ -9,6 +9,51 @@ const AdminProductForm = () => {
 
     const {productPost, setProductPost} = useContext(AdminDashboardContext);
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+      if (
+        productPost.sku !== "" &&
+        productPost.productType !== "" &&
+        productPost.productName !== "" &&
+        productPost.productDescription !== "" &&
+        productPost.productPrice !== "" &&
+        productPost.productOldPrice !== "" &&
+        productPost.productStock !== "" &&
+        productPost.productRate !== "" &&
+        productPost.reviewQuantity !== "" &&
+        productPost.soldQuantity !== "" &&
+        productPost.productViews !== "" &&
+        productPost.sizeOne !== "" &&
+        productPost.sizeTwo !== "" &&
+        productPost.sizeThree !== "" &&
+        productPost.sizeFour !== "" &&
+        productPost.sizeFive !== "" &&
+        productPost.productImage !== "" &&
+        productPost.productThumbnail !== "" &&
+        productPost.categoryOne !== "" &&
+        productPost.categoryTwo !== "" &&
+        productPost.categoryThree !== "" &&
+        productPost.categoryFour !== "" &&
+        productPost.categoryFive !== "" &&
+        productPost.interestForYou !== "" &&
+        productPost.productProfit !== "" 
+      ){
+        fetch("localhost:5000/api/products", {
+          method: "POST",
+          body: JSON.stringify(productPost),
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(response => console.log('Success:', response))
+        .catch(error => console.error('Error:', error))
+        //console.log("ok")
+      }else {
+        console.log('faltan espacios')
+      }
+    }
+
     //validating product desciption textarea value
     const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       if (validator.isLength(e.target.value, { min: 115, max: 130 })) {
@@ -141,7 +186,7 @@ const AdminProductForm = () => {
             </div>
             <div className="admin-product-form__table-container">
 
-                <form className="admin-product-form__form" >
+                <form className="admin-product-form__form" onSubmit={handleSubmit} >
 
                     <div className="admin-product-form__form-input-container-one">
                         <div className="admin-product-form__product-description">
