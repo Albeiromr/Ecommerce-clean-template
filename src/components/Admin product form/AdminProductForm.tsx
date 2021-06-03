@@ -36,21 +36,20 @@ const AdminProductForm = () => {
         productPost.categoryFour !== "" &&
         productPost.categoryFive !== "" &&
         productPost.interestForYou !== "" &&
-        productPost.productProfit !== "" 
-      ){
-        fetch("localhost:5000/api/products", {
+        productPost.productProfit !== ""
+      ) {
+        fetch("http://localhost:5000/api/products/", {
           method: "POST",
           body: JSON.stringify(productPost),
-          headers:{
-            'Content-Type': 'application/json'
-          }
+          headers: {
+            "Content-Type": "application/json",
+          },
         })
-        .then(response => response.json())
-        .then(response => console.log('Success:', response))
-        .catch(error => console.error('Error:', error))
-        //console.log("ok")
-      }else {
-        console.log('faltan espacios')
+          .then((response) => response.json())
+          .then((response) => console.log("Success:", response))
+          .catch((error) => console.error("Error:", error));
+      } else {
+        console.log("faltan espacios");
       }
     }
 
