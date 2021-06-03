@@ -1,5 +1,5 @@
-import React, { createContext, FC, useState } from "react";
-import {productPostInitial} from './initialValues';
+import React, { createContext, FC, useEffect, useState } from "react";
+import {productPostInitial, productGetInitial} from './initialValues';
 import {
   contextProps,
   contextValue,
@@ -7,6 +7,7 @@ import {
   adminRouteType,
   productFamilyType,
   productPostInterface,
+  productGetInterface,
  } from "./types";
 
 export const AdminDashboardContext = createContext<contextValue>({
@@ -19,7 +20,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   pageNumberSelected: 1,
   setPageNumberSelected: () => {},
   productPost: productPostInitial,
-  setProductPost: () => {}
+  setProductPost: () => {},
+  productGet: productGetInitial,
+  setProductGet: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -28,16 +31,24 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [menuSelected, setMenuSelected] = useState<menuSelectedType>("orders");
 
   //this state tells the admindashboard what child and buttons to show
-  const [adminRoute, setAdminRoute] = useState<adminRouteType>("product-form");
+  const [adminRoute, setAdminRoute] = useState<adminRouteType>("products");
 
   // this state is for selecting what product family is selected in the admin-panel products menu
-  const [productFamily, setProductFamily] = useState<productFamilyType>("sneakers");
+  const [productFamily, setProductFamily] = useState<productFamilyType>("pants");
 
   //this state has the page number selected from the admin-pagination component
   const [pageNumberSelected, setPageNumberSelected] = useState<number>(1);
 
   //this state collects all values from Admin-product-form component
   const [productPost, setProductPost] = useState<productPostInterface>(productPostInitial);
+
+  //this state is the list of products we see in the admin dashboard
+  const [productGet, setProductGet] = useState<productGetInterface>(productGetInitial);
+
+  //this useEffect updates the productGet state every time the productFamily state change;
+  useEffect(() => {
+    
+  }, [productFamily])
 
   return (
     <AdminDashboardContext.Provider
@@ -51,7 +62,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         pageNumberSelected,
         setPageNumberSelected,
         productPost,
-        setProductPost
+        setProductPost,
+        productGet,
+        setProductGet
       }}
     >
       {props.children}

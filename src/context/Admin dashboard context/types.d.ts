@@ -11,6 +11,8 @@ export interface contextValue {
   setPageNumberSelected: (value: pageNumberSelected) => void;
   productPost: productPostInterface;
   setProductPost: (value: productPost) => void;
+  productGet: productGetInterface;
+  setProductGet: (value: productGet) => void;
 };
 
 export interface contextProps {
@@ -49,6 +51,34 @@ export interface productPostInterface {
   categoryFive: string;
   interestForYou: string;
   productProfit: string;
+}
+
+export interface productGetInterface {
+  sku: string;
+  productType: string;
+  productName: string;
+  productDescription: string;
+  productPrice: number;
+  productOldPrice: number;
+  productStock: number;
+  productRate: number;
+  reviewQuantity: number;
+  soldQuantity: number;
+  productViews: number;
+  sizeOne: string;
+  sizeTwo: string;
+  sizeThree: string;
+  sizeFour: string;
+  sizeFive: string;
+  productImage: string;
+  productThumbnail: string;
+  categoryOne: string;
+  categoryTwo: string;
+  categoryThree: string;
+  categoryFour: string;
+  categoryFive: string;
+  interestForYou: string;
+  productProfit: number;
 }
 
 
