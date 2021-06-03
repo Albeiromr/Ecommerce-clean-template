@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -8,6 +8,8 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 const AdminProductForm = () => {
 
     const {productPost, setProductPost} = useContext(AdminDashboardContext);
+
+    const formElement = useRef<HTMLFormElement>(null); 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault()
@@ -51,6 +53,8 @@ const AdminProductForm = () => {
       } else {
         console.log("faltan espacios");
       }
+
+      formElement.current?.reset()
     }
 
     //validating product desciption textarea value
@@ -185,7 +189,7 @@ const AdminProductForm = () => {
             </div>
             <div className="admin-product-form__table-container">
 
-                <form className="admin-product-form__form" onSubmit={handleSubmit} >
+                <form ref={formElement} className="admin-product-form__form" onSubmit={handleSubmit} >
 
                     <div className="admin-product-form__form-input-container-one">
                         <div className="admin-product-form__product-description">
