@@ -21,7 +21,7 @@ export const AdminDashboardContext = createContext<contextValue>({
   setPageNumberSelected: () => {},
   productPost: productPostInitial,
   setProductPost: () => {},
-  productGet: productGetInitial,
+  productGet: [productGetInitial],
   setProductGet: () => {}
 });
 
@@ -43,12 +43,15 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [productPost, setProductPost] = useState<productPostInterface>(productPostInitial);
 
   //this state is the list of products we see in the admin dashboard
-  const [productGet, setProductGet] = useState<productGetInterface>(productGetInitial);
+  const [productGet, setProductGet] = useState<productGetInterface[] | any>([productGetInitial]);
 
   //this useEffect updates the productGet state every time the productFamily state change;
   useEffect(() => {
-    
-  }, [productFamily])
+    fetch(`http://localhost:5000/api/products/productFamily/${productFamily}`)
+    .then(response => response.json())
+    .then(response => setProductGet(response))
+    .catch(error => console.log(error)); 
+  }, [productFamily]);
 
   return (
     <AdminDashboardContext.Provider

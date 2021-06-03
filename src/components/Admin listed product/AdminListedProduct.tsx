@@ -1,12 +1,13 @@
-import React, {useContext} from 'react';
+import React, {FC, useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 import deleteIcon from '../../assets/icons/deleteIcon.svg';
 import pencil from '../../assets/icons/pencil.svg';
+import {componentProps} from './types';
 
-const AdminListedProduct = () => {
+const AdminListedProduct:FC<componentProps> = (props) => {
 
     const {setAdminRoute} = useContext(AdminDashboardContext);
 
@@ -24,11 +25,11 @@ const AdminListedProduct = () => {
                 {/* <img className="admin-listed-product__image" src={test} alt="product" /> */}
             </div>
 
-            <p className="admin-listed-product__textOne">8907SNE78976</p>
-            <p className="admin-listed-product__textTwo">Adidas AH80</p>
-            <p className="admin-listed-product__textThree">$89.89</p>
-            <p className="admin-listed-product__textFour">$25.78</p>
-            <p className="admin-listed-product__textFive">18</p>
+            <p className="admin-listed-product__textOne">{props.productSku}</p>
+            <p className="admin-listed-product__textTwo">{props.productName}</p>
+            <p className="admin-listed-product__textThree">{`$${props.productPrice}`}</p>
+            <p className="admin-listed-product__textFour">{`$${props.productProfit}`}</p>
+            <p className="admin-listed-product__textFive">{props.productStock}</p>
 
             <div className="admin-listed-product__icon-container">
 

@@ -11,8 +11,8 @@ export interface contextValue {
   setPageNumberSelected: (value: pageNumberSelected) => void;
   productPost: productPostInterface;
   setProductPost: (value: productPost) => void;
-  productGet: productGetInterface;
-  setProductGet: (value: productGet) => void;
+  productGet: productGetInterface[];
+  setProductGet: (value: productGetInterface) => void;
 };
 
 export interface contextProps {
