@@ -60,32 +60,32 @@ const AdminDashboardNav = () => {
     
     
     const handleSneakersClick = () => {
-      if (productFamily !== "sneakers") setProductFamily("sneakers");
+      if (productFamily !== "Sneakers & Shoes") setProductFamily("Sneakers & Shoes");
       else return;
     };
 
     const handlePantsClick = () => {
-      if (productFamily !== "pants") setProductFamily("pants");
+      if (productFamily !== "Pants") setProductFamily("Pants");
       else return;
     };
 
     const handleCapsClick = () => {
-      if (productFamily !== "caps") setProductFamily("caps");
+      if (productFamily !== "Caps") setProductFamily("Caps");
       else return;
     };
 
     const handleJacketsClick = () => {
-      if (productFamily !== "jackets") setProductFamily("jackets");
+      if (productFamily !== "Jackets") setProductFamily("Jackets");
       else return;
     };
 
     const handleShortsClick = () => {
-      if (productFamily !== "shorts") setProductFamily("shorts");
+      if (productFamily !== "Shorts") setProductFamily("Shorts");
       else return;
     };
 
     const handleShirtClick = () => {
-      if (productFamily !== "shirts") setProductFamily("shirts");
+      if (productFamily !== "Tshirts & Shirts") setProductFamily("Tshirts & Shirts");
       else return;
     };
 
@@ -134,37 +134,37 @@ const AdminDashboardNav = () => {
                 <img 
                 onClick={handleSneakersClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "sneakers" ? shoesGreen : shoesGray}
+                src={productFamily === "Sneakers & Shoes" ? shoesGreen : shoesGray}
                 alt="product type" />
 
                 <img 
                 onClick={handlePantsClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "pants" ? pantsGreen : pantsGray}
+                src={productFamily === "Pants" ? pantsGreen : pantsGray}
                 alt="product type" />
 
                 <img 
                 onClick={handleCapsClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "caps" ? capGreen : capGray}
+                src={productFamily === "Caps" ? capGreen : capGray}
                 alt="product type" />
 
                 <img 
                 onClick={handleJacketsClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "jackets" ? jacketGreen : jacketGray}
+                src={productFamily === "Jackets" ? jacketGreen : jacketGray}
                 alt="product type" />
 
                 <img 
                 onClick={handleShortsClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "shorts" ? shortsGreen : shortsGray}
+                src={productFamily === "Shorts" ? shortsGreen : shortsGray}
                 alt="product type" />
 
                 <img 
                 onClick={handleShirtClick}
                 className="admin-dashboard-nav__product-icon"
-                src={productFamily === "shirts" ? shirtGreen : shirtGray}
+                src={productFamily === "Tshirts & Shirts" ? shirtGreen : shirtGray}
                 alt="product type" />
 
             </div>

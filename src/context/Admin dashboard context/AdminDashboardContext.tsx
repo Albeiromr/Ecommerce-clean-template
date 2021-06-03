@@ -34,7 +34,7 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [adminRoute, setAdminRoute] = useState<adminRouteType>("products");
 
   // this state is for selecting what product family is selected in the admin-panel products menu
-  const [productFamily, setProductFamily] = useState<productFamilyType>("pants");
+  const [productFamily, setProductFamily] = useState<productFamilyType>("Sneakers & Shoes");
 
   //this state has the page number selected from the admin-pagination component
   const [pageNumberSelected, setPageNumberSelected] = useState<number>(1);

@@ -23,7 +23,7 @@ export type menuSelectedType = "orders" | "products";
 
 export type adminRouteType = "orders" | "order-details" | "products" | "product-details" | "product-form";
 
-export type productFamilyType = "sneakers" | "pants" | "caps" | "jackets" | "shorts" | "shirts";
+export type productFamilyType = "Sneakers & Shoes" | "Pants" | "Caps" | "Jackets" | "Shorts" | "Tshirts & Shirts";
 
 export interface productPostInterface {
   sku: string;
