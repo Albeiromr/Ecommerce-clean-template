@@ -38,7 +38,7 @@ const AdminProductForm = () => {
         productPost.interestForYou !== "" &&
         productPost.productProfit !== ""
       ) {
-        fetch("http://localhost:5000/api/products/", {
+        fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
           method: "POST",
           body: JSON.stringify(productPost),
           headers: {
