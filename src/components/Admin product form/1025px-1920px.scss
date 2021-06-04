@@ -320,6 +320,18 @@
       right: 2.349%;
     }
 
+    &__paragraph--success {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(16px, 1.818vw, 30px);
+      color: #688f4e;
+      position: absolute;
+      bottom: 4.96%;
+      right: 2.349%;
+    }
+
     &__submit-button {
       width: clamp(126.211px, 12.313vw, 203.17px);
       height: clamp(35.185px, 3.432vw, 56.64px);

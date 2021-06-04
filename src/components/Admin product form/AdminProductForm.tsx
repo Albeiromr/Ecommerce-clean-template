@@ -12,6 +12,8 @@ const AdminProductForm = () => {
 
     const formElement = useRef<HTMLFormElement>(null); 
 
+    const [formMessage, setFormMessage] = useState<string>("All fields are required");
+
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -26,7 +28,10 @@ const AdminProductForm = () => {
           },
         })
           .then((response) => response.json())
-          .then((response) => console.log("Success:", response))
+          .then((response) => {
+            console.log("Success:", response)
+            setFormMessage("Success!!");
+          })
           .catch((error) => console.error("Error:", error));
 
           formElement.current?.reset();
@@ -49,6 +54,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid"
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product SKU
@@ -64,12 +70,14 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //focus select inputs when those have an option already selected
     const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       setProductPost({ ...productPost, [e.target.name]: e.target.value });
       e.target.style.border = "1px #D1D1D1 solid";
+      setFormMessage("All fields are required");
     };
 
     //validating product name
@@ -81,6 +89,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product stock
@@ -92,6 +101,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product rate
@@ -103,6 +113,7 @@ const AdminProductForm = () => {
           setProductPost({ ...productPost, [e.target.name]: "" });
           e.target.style.border = "2px #E5704B solid";
         }
+        setFormMessage("All fields are required");
       };
 
     //validating product price
@@ -114,6 +125,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product review quantity
@@ -125,6 +137,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product sold quantity
@@ -136,6 +149,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product image names
@@ -147,6 +161,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
     //validating product views quantity
@@ -158,6 +173,7 @@ const AdminProductForm = () => {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
       }
+      setFormMessage("All fields are required");
     };
 
 
@@ -587,7 +603,7 @@ const AdminProductForm = () => {
 
                     {!Object.values(productPost).includes("")?
                     <button className="admin-product-form__submit-button" type="submit">Save Product</button>
-                    : <p className="admin-product-form__paragraph">All fields are required</p> }
+                    : <p className={formMessage !== "Success!!" ? "admin-product-form__paragraph" : "admin-product-form__paragraph--success"}>{formMessage}</p> }
                     
 
                     
