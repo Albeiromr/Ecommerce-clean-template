@@ -1,5 +1,5 @@
 import React, { createContext, FC, useEffect, useState } from "react";
-import {productPostInitial, productGetInitial} from './initialValues';
+import {productPostInitial, productGetInitial, productToEditInitial} from './initialValues';
 import {
   contextProps,
   contextValue,
@@ -8,6 +8,7 @@ import {
   productFamilyType,
   productPostInterface,
   productGetInterface,
+  productToEditInterface
  } from "./types";
 
 export const AdminDashboardContext = createContext<contextValue>({
@@ -22,7 +23,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productPost: productPostInitial,
   setProductPost: () => {},
   productGet: [productGetInitial],
-  setProductGet: () => {}
+  setProductGet: () => {},
+  productToEdit: productToEditInitial,
+  setProductToEdit:() => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -54,6 +57,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
     console.log(process.env.REACT_APP_BACKEND_DOMAIN)
   }, [productFamily]);
 
+  //this state stores the product estracted from the database for editing
+  const [productToEdit, setProductToEdit] = useState<productToEditInterface>(productToEditInitial);
+
   return (
     <AdminDashboardContext.Provider
       value={{
@@ -68,7 +74,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productPost,
         setProductPost,
         productGet,
-        setProductGet
+        setProductGet,
+        productToEdit,
+        setProductToEdit
       }}
     >
       {props.children}

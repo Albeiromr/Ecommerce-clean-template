@@ -13,6 +13,8 @@ export interface contextValue {
   setProductPost: (value: productPost) => void;
   productGet: productGetInterface[];
   setProductGet: (value: productGetInterface) => void;
+  productToEdit: productToEditInterface;
+  setProductToEdit: (value:productToEditInterface) => void;
 };
 
 export interface contextProps {
@@ -80,6 +82,37 @@ export interface productGetInterface {
   interestForYou: string;
   productProfit: number;
 }
+
+
+export interface productToEditInterface {
+  sku: string;
+  productType: string;
+  productName: string;
+  productDescription: string;
+  productPrice: number;
+  productOldPrice: number;
+  productStock: number;
+  productRate: number;
+  reviewQuantity: number;
+  soldQuantity: number;
+  productViews: number;
+  sizeOne: string;
+  sizeTwo: string;
+  sizeThree: string;
+  sizeFour: string;
+  sizeFive: string;
+  productImage: string;
+  productThumbnail: string;
+  categoryOne: string;
+  categoryTwo: string;
+  categoryThree: string;
+  categoryFour: string;
+  categoryFive: string;
+  interestForYou: string;
+  productProfit: number;
+}
+
+
 
 
 
