@@ -107,7 +107,7 @@ export interface productToEditInterface {
   categoryTwo: string;
   categoryThree: string;
   categoryFour: string;
-  CategoryFive: string;
+  categoryFive: string;
   interestForYou: string;
   productProfit: number;
 }

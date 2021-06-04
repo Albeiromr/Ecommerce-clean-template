@@ -599,7 +599,7 @@ const AdminProductForm = () => {
                             onChange={handleSelectChange}>
 
                               {productToEdit !== productToEditInitial ?
-                              <option selected>{productToEdit.CategoryFive} &#8964;</option>:
+                              <option selected>{productToEdit.categoryFive} &#8964;</option>:
                               <option hidden >Select option &#8964;</option>}
 
                                 <option value="true">True</option>

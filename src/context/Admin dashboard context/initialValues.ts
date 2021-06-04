@@ -79,7 +79,7 @@ export const productPostInitial:productPostInterface = {
     categoryTwo: "",
     categoryThree: "",
     categoryFour: "",
-    CategoryFive: "",
+    categoryFive: "",
     interestForYou: "",
     productProfit: 0
   }
