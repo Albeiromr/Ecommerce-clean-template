@@ -43,7 +43,7 @@ const AdminProductForm = () => {
     const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       if (validator.isLength(e.target.value, { min: 115, max: 130 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid"
+        e.target.style.border = "1px #D1D1D1 solid"
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid"
@@ -58,7 +58,7 @@ const AdminProductForm = () => {
         !validator.isAlpha(e.target.value)
       ) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -68,14 +68,14 @@ const AdminProductForm = () => {
     //focus select inputs when those have an option already selected
     const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       setProductPost({ ...productPost, [e.target.name]: e.target.value });
-      e.target.style.border = "2px #7ec384 solid";
+      e.target.style.border = "1px #D1D1D1 solid";
     };
 
     //validating product name
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isLength(e.target.value, { min: 9, max: 13 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -86,7 +86,7 @@ const AdminProductForm = () => {
     const handleStockChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isInt(e.target.value, { min: 1, max: 1000 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -97,7 +97,7 @@ const AdminProductForm = () => {
     const handleRateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         if (validator.isInt(e.target.value, { min: 4, max: 5 })) {
           setProductPost({ ...productPost, [e.target.name]: e.target.value });
-          e.target.style.border = "2px #7ec384 solid";
+          e.target.style.border = "1px #D1D1D1 solid";
         } else {
           setProductPost({ ...productPost, [e.target.name]: "" });
           e.target.style.border = "2px #E5704B solid";
@@ -108,7 +108,7 @@ const AdminProductForm = () => {
     const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isDecimal(e.target.value, {force_decimal: true, decimal_digits: '1,2'})) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value});
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -119,7 +119,7 @@ const AdminProductForm = () => {
     const handleReviewChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isInt(e.target.value, { min: 1, max: 10000 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -130,7 +130,7 @@ const AdminProductForm = () => {
     const handleSoldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isInt(e.target.value, { min: 1 , max: 1000 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -141,7 +141,7 @@ const AdminProductForm = () => {
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isLength(e.target.value, { min: 36, max: 36 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
@@ -152,7 +152,7 @@ const AdminProductForm = () => {
     const handleViewsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       if (validator.isInt(e.target.value, { min: 1, max: 10000 })) {
         setProductPost({ ...productPost, [e.target.name]: e.target.value });
-        e.target.style.border = "2px #7ec384 solid";
+        e.target.style.border = "1px #D1D1D1 solid";
       } else {
         setProductPost({ ...productPost, [e.target.name]: "" });
         e.target.style.border = "2px #E5704B solid";
