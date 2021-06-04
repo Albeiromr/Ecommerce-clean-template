@@ -9,7 +9,7 @@ import {componentProps} from './types';
 
 const AdminListedProduct:FC<componentProps> = (props) => {
 
-    const {setAdminRoute, setProductToEdit} = useContext(AdminDashboardContext);
+    const {setAdminRoute, setProductToEdit, setProductPost} = useContext(AdminDashboardContext);
 
     const handleDeleteClick = () => {
 
@@ -21,6 +21,7 @@ const AdminListedProduct:FC<componentProps> = (props) => {
         .then(response => response.json())
         .then(response => {
             setProductToEdit(response[0]);
+            setProductPost(response[0]);
             setAdminRoute("product-form");
         });
 
