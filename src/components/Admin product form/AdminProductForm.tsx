@@ -18,26 +18,25 @@ const AdminProductForm = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
-      if (!Object.values(productPost).includes("")) {
-
-        fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
-          method: "POST",
-          body: JSON.stringify(productPost),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
+      fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
+        method: "POST",
+        body: JSON.stringify(productPost),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
         .then(() => {
-          setFormMessage("Success!!")
+          setFormMessage("Success!!");
           formElement.current?.reset();
           setProductPost(productPostInitial);
         })
-        .catch(() => {});
-
-          
-
-      } else return;
-    }
+        .catch(() => {
+          setFormMessage("Connection error, try again");
+          formElement.current?.reset();
+          setProductPost(productPostInitial);
+        });
+    };
+    
 
     //validating product desciption textarea value
     const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
