@@ -10,6 +10,7 @@ import {
   productGetInterface,
   productToEditInterface
  } from "./types";
+ import {useLocation} from 'react-router-dom';
 
 export const AdminDashboardContext = createContext<contextValue>({
   menuSelected: "",
@@ -59,6 +60,16 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
 
   //this state stores the product estracted from the database for editing
   const [productToEdit, setProductToEdit] = useState<productToEditInterface>(productToEditInitial);
+
+  //this useState reset the productToEdit state to its initial value if the router location is not equal to admin-dashboard
+  const location = useLocation();
+  useEffect(() => {
+    if(location.pathname !== "admin-dashboard"){
+      setProductToEdit(productToEditInitial);
+    }
+  }, [location]);
+
+
 
   return (
     <AdminDashboardContext.Provider

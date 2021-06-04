@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import adminLogout from '../../assets/icons/adminLogout.svg';
 import {useHistory} from 'react-router-dom';
+import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
+import {productToEditInitial} from '../../context/Admin dashboard context/initialValues';
 
 const AdminLogoutButton = () => {
+
+    const {setProductToEdit} = useContext(AdminDashboardContext);
 
     const history = useHistory();
 
     const handleClick = () => {
+        setProductToEdit(productToEditInitial);
         history.push("/");
         window.scroll({
             top: 0,

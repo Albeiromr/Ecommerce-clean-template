@@ -21,6 +21,7 @@ import shortsGray from '../../assets/icons/shortsGray.svg';
 import shortsGreen from '../../assets/icons/shortsGreen.svg';
 import shirtGray from '../../assets/icons/shirtGray.svg';
 import shirtGreen from '../../assets/icons/shirtGreen.svg';
+import {productToEditInitial} from '../../context/Admin dashboard context/initialValues';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminDashboardNav = () => {
@@ -31,62 +32,74 @@ const AdminDashboardNav = () => {
         adminRoute,
         setAdminRoute,
         productFamily,
-        setProductFamily
+        setProductFamily,
+        setProductToEdit
     } = useContext(AdminDashboardContext);
 
     const handleOrderButtonClick = () => {
       if (menuSelected !== "orders") setMenuSelected("orders");
       else return;
       setAdminRoute("orders");
+      setProductToEdit(productToEditInitial);
     };
 
     const handleProductsButtonClick = () => {
       if (menuSelected !== "products") setMenuSelected("products");
       else return;
       setAdminRoute("products");
+      setProductToEdit(productToEditInitial);
     };
 
     const handleAddNewClick = () => {
         setAdminRoute("product-form");
+        setProductToEdit(productToEditInitial);
     }
 
     const handleAllProductsClick = () => {
         setAdminRoute("products");
+        setProductToEdit(productToEditInitial);
     }
 
     const handleAllOrdersClick = () => {
         setAdminRoute("orders");
+        setProductToEdit(productToEditInitial);
     };
     
     
     const handleSneakersClick = () => {
       if (productFamily !== "Sneakers & Shoes") setProductFamily("Sneakers & Shoes");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     const handlePantsClick = () => {
       if (productFamily !== "Pants") setProductFamily("Pants");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     const handleCapsClick = () => {
       if (productFamily !== "Caps") setProductFamily("Caps");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     const handleJacketsClick = () => {
       if (productFamily !== "Jackets") setProductFamily("Jackets");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     const handleShortsClick = () => {
       if (productFamily !== "Shorts") setProductFamily("Shorts");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     const handleShirtClick = () => {
       if (productFamily !== "Tshirts & Shirts") setProductFamily("Tshirts & Shirts");
       else return;
+      setProductToEdit(productToEditInitial);
     };
 
     return(
