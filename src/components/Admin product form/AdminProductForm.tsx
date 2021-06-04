@@ -2,6 +2,7 @@ import React, {useContext, useRef} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import {productPostInitial} from '../../context/Admin dashboard context/initialValues';
 import validator from 'validator';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
@@ -12,34 +13,10 @@ const AdminProductForm = () => {
     const formElement = useRef<HTMLFormElement>(null); 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault()
-      if (
-        productPost.sku !== "" &&
-        productPost.productType !== "" &&
-        productPost.productName !== "" &&
-        productPost.productDescription !== "" &&
-        productPost.productPrice !== "" &&
-        productPost.productOldPrice !== "" &&
-        productPost.productStock !== "" &&
-        productPost.productRate !== "" &&
-        productPost.reviewQuantity !== "" &&
-        productPost.soldQuantity !== "" &&
-        productPost.productViews !== "" &&
-        productPost.sizeOne !== "" &&
-        productPost.sizeTwo !== "" &&
-        productPost.sizeThree !== "" &&
-        productPost.sizeFour !== "" &&
-        productPost.sizeFive !== "" &&
-        productPost.productImage !== "" &&
-        productPost.productThumbnail !== "" &&
-        productPost.categoryOne !== "" &&
-        productPost.categoryTwo !== "" &&
-        productPost.categoryThree !== "" &&
-        productPost.categoryFour !== "" &&
-        productPost.categoryFive !== "" &&
-        productPost.interestForYou !== "" &&
-        productPost.productProfit !== ""
-      ) {
+      e.preventDefault();
+
+      if (!Object.values(productPost).includes("")) {
+
         fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
           method: "POST",
           body: JSON.stringify(productPost),
@@ -50,11 +27,16 @@ const AdminProductForm = () => {
           .then((response) => response.json())
           .then((response) => console.log("Success:", response))
           .catch((error) => console.error("Error:", error));
+
+          formElement.current?.reset();
+          setProductPost(productPostInitial);
+
       } else {
+
         console.log("faltan espacios");
       }
 
-      formElement.current?.reset()
+      
     }
 
     //validating product desciption textarea value
