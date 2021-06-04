@@ -27,22 +27,16 @@ const AdminProductForm = () => {
             "Content-Type": "application/json",
           },
         })
-          .then((response) => response.json())
-          .then((response) => {
-            console.log("Success:", response)
-            setFormMessage("Success!!");
-          })
-          .catch((error) => console.error("Error:", error));
-
+        .then(() => {
+          setFormMessage("Success!!")
           formElement.current?.reset();
           setProductPost(productPostInitial);
+        })
+        .catch(() => {});
 
-      } else {
+          
 
-        console.log("faltan espacios");
-      }
-
-      
+      } else return;
     }
 
     //validating product desciption textarea value
