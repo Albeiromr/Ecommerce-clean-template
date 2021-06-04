@@ -16,12 +16,15 @@ const AdminListedProduct:FC<componentProps> = (props) => {
     };
 
     const handleEditClick = () => {
-        
+
         fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${props.productSku}`)
         .then(response => response.json())
-        .then(response => setProductToEdit(response[0]))
+        .then(response => {
+            setProductToEdit(response[0]);
+            setAdminRoute("product-form");
+        });
 
-        setAdminRoute("product-form");
+        
     };
 
     return (
