@@ -1,4 +1,4 @@
-import React, {useContext, useRef} from 'react';
+import React, {useContext, useRef, useState} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -11,6 +11,7 @@ const AdminProductForm = () => {
     const {productPost, setProductPost} = useContext(AdminDashboardContext);
 
     const formElement = useRef<HTMLFormElement>(null); 
+
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -584,9 +585,12 @@ const AdminProductForm = () => {
                         </div>
                     </div>
 
+                    {!Object.values(productPost).includes("")?
                     <button className="admin-product-form__submit-button" type="submit">Save Product</button>
+                    : <p className="admin-product-form__paragraph">All fields are required</p> }
+                    
 
-                    {/* <p className="admin-product-form__paragraph">All fields are required</p> */}
+                    
 
                 </form>
 
