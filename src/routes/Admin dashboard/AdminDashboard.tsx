@@ -10,7 +10,7 @@ import AdminOrdersTable from '../../components/Admin orders table/AdminOrdersTab
 import AdminOrderDetailsTable from '../../components/Admin order details table/AdminOrderDetailsTable';
 import AdminProductForm from '../../components/Admin product form/AdminProductForm';
 import AdminProductDetails from '../../components/Admin product details/AdminProductDetails';
-import AdminPagination from '../../components/Admin pagination/AdminPagination';
+import AdminPagination from '../../components/Admin pagination products/AdminPagination';
 import AdminLogoutButton from '../../components/Admin logout button/AdminLogoutButton';
 
 
