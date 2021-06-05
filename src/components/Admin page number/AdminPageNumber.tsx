@@ -7,11 +7,13 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminPageNumber:FC<componentProps> = (props) => {
 
-    const {pageNumberSelected, setPageNumberSelected} = useContext(AdminDashboardContext);
+    const {pageNumberSelected, setPageNumberSelected, setProductOffset} = useContext(AdminDashboardContext);
 
     const handleClick = () => {
       if (pageNumberSelected !== props.number) setPageNumberSelected(props.number);
       else return;
+
+      setProductOffset(props.number * 7 - 7);
     };
 
     return(

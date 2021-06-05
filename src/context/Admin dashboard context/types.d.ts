@@ -15,6 +15,8 @@ export interface contextValue {
   setProductGet: (value: productGetInterface[]) => void;
   productToEdit: productToEditInterface;
   setProductToEdit: (value:productToEditInterface) => void;
+  productOffset: number;
+  setProductOffset:(value:number) => void;
 };
 
 export interface contextProps {

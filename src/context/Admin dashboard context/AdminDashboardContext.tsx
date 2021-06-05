@@ -26,7 +26,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productGet: [productGetInitial],
   setProductGet: () => {},
   productToEdit: productToEditInitial,
-  setProductToEdit:() => {}
+  setProductToEdit:() => {},
+  productOffset: 0,
+  setProductOffset: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -43,19 +45,28 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state has the page number selected from the admin-pagination component
   const [pageNumberSelected, setPageNumberSelected] = useState<number>(1);
 
+  //this useState reset the pageNumberSelected and the productOffset every time the productFamily state changes
+  useEffect(() => {
+    setPageNumberSelected(1);
+    setProductOffset(0);
+  }, [productFamily]);
+
   //this state collects all values from Admin-product-form component
   const [productPost, setProductPost] = useState<productPostInterface>(productPostInitial);
+
+  //this state is the productoffset, is used for bringing products from the database depending of what page number is selected
+  const [productOffset, setProductOffset] = useState<number>(0);
 
   //this state is the list of products we see in the admin dashboard
   const [productGet, setProductGet] = useState<productGetInterface[] | any>([productGetInitial]);
 
   //this useEffect updates the productGet state every time the productFamily state change;
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/productFamily/${productFamily}/0`)
+    fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/productFamily/${productFamily}/${productOffset}`)
     .then(response => response.json())
     .then(response => setProductGet(response))
     .catch(error => console.log(error)); 
-  }, [productFamily]);
+  }, [productFamily,productOffset]);
 
   //this state stores the product estracted from the database for editing
   const [productToEdit, setProductToEdit] = useState<productToEditInterface>(productToEditInitial);
@@ -86,7 +97,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productGet,
         setProductGet,
         productToEdit,
-        setProductToEdit
+        setProductToEdit,
+        productOffset,
+        setProductOffset
       }}
     >
       {props.children}
