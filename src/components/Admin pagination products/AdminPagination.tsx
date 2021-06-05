@@ -10,10 +10,10 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminPaginationProducts = () => {
 
-    const {productFamily, productOffset, setProductOffset, pageNumberSelected,setPageNumberSelected} = useContext(AdminDashboardContext);
+    const {productFamily, productOffset, setProductOffset, pageNumberSelected,setPageNumberSelected, productGet} = useContext(AdminDashboardContext);
     type paginationNumber = {number: number};
     const [pages, setPages] = useState<paginationNumber[]>([]);
-    console.log(pages)
+    const [totalProducts, setTotalProducts] = useState<number>(0);
     
 
     //extracting how many pages must the paginator shows for every product fámily
@@ -29,6 +29,7 @@ const AdminPaginationProducts = () => {
                     temporalArray.push({number: i});
                 };
                 setPages(temporalArray);
+                setTotalProducts(extractedNumber);
             };
         };
         getTotalPages();
@@ -42,7 +43,7 @@ const AdminPaginationProducts = () => {
     };
 
     const handleNextClick = () => {
-        if(productOffset <= pages.length * 3.5 - 7 ) {
+        if(productOffset <= pages.length * 7 - 14 ) {
             setProductOffset(productOffset + 7);
             setPageNumberSelected(pageNumberSelected + 1);
         }else return;
@@ -51,7 +52,7 @@ const AdminPaginationProducts = () => {
     return (
         <div className="admin-pagination">
             <div className="admin-pagination__subcontainer">
-                <p className="admin-pagination__total-products">Showing 10 from 160 Products</p>
+                <p className="admin-pagination__total-products">Showing {productGet.length} from {totalProducts} Products</p>
                 <div className="admin-pagination__pagination-container">
                     
                     <div onClick={handleBackClick} className="admin-pagination__back-button">
