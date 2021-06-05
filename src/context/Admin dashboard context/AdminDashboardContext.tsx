@@ -51,7 +51,7 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
 
   //this useEffect updates the productGet state every time the productFamily state change;
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/productFamily/${productFamily}`)
+    fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/productFamily/${productFamily}/0`)
     .then(response => response.json())
     .then(response => setProductGet(response))
     .catch(error => console.log(error)); 

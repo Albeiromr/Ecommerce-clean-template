@@ -12,7 +12,7 @@ const AdminListedProduct:FC<componentProps> = (props) => {
     const {setAdminRoute, setProductToEdit, setProductPost, productGet, setProductGet} = useContext(AdminDashboardContext);
 
     const handleDeleteClick = () => {
-
+        
         fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${props.productSku}`, {
             method: "DELETE"
         })
@@ -20,7 +20,6 @@ const AdminListedProduct:FC<componentProps> = (props) => {
             const withoutDeletedProduct = productGet.filter(product => product.sku !== props.productSku);
             setProductGet(withoutDeletedProduct);
         });
-        
     };
 
     const handleEditClick = () => {
