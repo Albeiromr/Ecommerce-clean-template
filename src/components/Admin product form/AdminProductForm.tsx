@@ -18,6 +18,8 @@ const AdminProductForm = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
+      
+
       fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
         method: "POST",
         body: JSON.stringify(productPost),
@@ -217,6 +219,7 @@ const AdminProductForm = () => {
                         <div className="admin-product-form__product-sku">
 
                             <label className="admin-product-form__lable" htmlFor="sku">Product SKU</label>
+                            {productToEdit === productToEditInitial ?
                             <input 
                             className="admin-product-form__input"
                             type="text"
@@ -224,8 +227,18 @@ const AdminProductForm = () => {
                             id="sku"
                             placeholder="Enter SKU"
                             onChange={handleSkuChange}
-                            defaultValue={productToEdit !== productToEditInitial ? productToEdit.sku : ""}
                             />
+                            :
+                            <input 
+                            className="admin-product-form__input--disabled"
+                            type="text"
+                            name="sku"
+                            id="sku"
+                            placeholder="Enter SKU"
+                            onChange={handleSkuChange}
+                            defaultValue={productToEdit.sku}
+                            disabled
+                            />}
 
                         </div>
                         <div className="admin-product-form__product-type">
