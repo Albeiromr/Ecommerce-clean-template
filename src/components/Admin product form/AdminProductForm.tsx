@@ -14,30 +14,16 @@ const AdminProductForm = () => {
 
     const [formMessage, setFormMessage] = useState<string>("All fields are required");
 
-    //this state verify if the form data in a new product or an edit for an existing one
-    const [isNew, setIsNew] = useState<boolean>(false);
-
 
     const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
 
       e.preventDefault();
 
+      const fetchResponse = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${productPost.sku}`)
+      .then(response => response.json());
+      
 
-      await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${productPost.sku}`)
-      .then(response => response.json())
-      .then(response => {
-        if(response[0].sku === productPost.sku)setIsNew(false);
-        else setIsNew(true);
-      })
-      .catch(() => {
-        setFormMessage("Connection error, try again");
-        formElement.current?.reset();
-        setProductPost(productPostInitial);
-        return;
-      });
-
-
-      if(isNew){
+      if(fetchResponse.length === 0){
 
         fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
           method: "POST",
