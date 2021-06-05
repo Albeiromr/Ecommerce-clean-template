@@ -8,7 +8,7 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminProductForm = () => {
 
-    const {productPost, setProductPost, productToEdit} = useContext(AdminDashboardContext);
+    const {productPost, setProductPost, productToEdit, setProductToEdit} = useContext(AdminDashboardContext);
 
     const formElement = useRef<HTMLFormElement>(null); 
 
@@ -25,10 +25,20 @@ const AdminProductForm = () => {
           "Content-Type": "application/json",
         },
       })
-        .then(() => {
-          setFormMessage("Success!!");
-          formElement.current?.reset();
-          setProductPost(productPostInitial);
+        .then(response => response.json())
+        .then((response) => {
+          if (response.code === "ER_DUP_ENTRY"){
+            setFormMessage("The operation failed, the SKU already exist");
+            formElement.current?.reset();
+            setProductPost(productPostInitial);
+            setProductToEdit(productToEditInitial);
+          }else{
+            
+            setFormMessage("Success!!");
+            formElement.current?.reset();
+            setProductPost(productPostInitial);
+            setProductToEdit(productToEditInitial);
+          }
         })
         .catch(() => {
           setFormMessage("Connection error, try again");

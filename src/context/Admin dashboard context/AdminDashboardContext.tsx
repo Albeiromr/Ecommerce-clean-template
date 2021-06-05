@@ -55,7 +55,6 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
     .then(response => response.json())
     .then(response => setProductGet(response))
     .catch(error => console.log(error)); 
-    console.log(process.env.REACT_APP_BACKEND_DOMAIN)
   }, [productFamily]);
 
   //this state stores the product estracted from the database for editing
