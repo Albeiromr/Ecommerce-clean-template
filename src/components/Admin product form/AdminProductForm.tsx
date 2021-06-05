@@ -65,7 +65,6 @@ const AdminProductForm = () => {
           formElement.current?.reset();
           setProductPost(productPostInitial);
         });
-
       }
     };
     
@@ -255,10 +254,8 @@ const AdminProductForm = () => {
                             type="text"
                             name="sku"
                             id="sku"
-                            placeholder="Enter SKU"
                             onChange={handleSkuChange}
-                            defaultValue={productToEdit.sku}
-                            disabled
+                            placeholder={productToEdit.sku}
                             />}
 
                         </div>
