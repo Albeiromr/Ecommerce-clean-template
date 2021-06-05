@@ -10,7 +10,7 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminPaginationProducts = () => {
 
-    const {productFamily} = useContext(AdminDashboardContext);
+    const {productFamily, productOffset, setProductOffset, pageNumberSelected,setPageNumberSelected} = useContext(AdminDashboardContext);
     type paginationNumber = {number: number};
     const [pages, setPages] = useState<paginationNumber[]>([]);
     console.log(pages)
@@ -34,17 +34,27 @@ const AdminPaginationProducts = () => {
         getTotalPages();
     }, [productFamily]);
 
+    const handleBackClick = () => {
+        if(productOffset > 0) {
+            setProductOffset(productOffset - 7);
+            setPageNumberSelected(pageNumberSelected - 1);
+        }else return;
+    };
 
+    const handleNextClick = () => {
+        if(productOffset <= pages.length * 3.5 - 7 ) {
+            setProductOffset(productOffset + 7);
+            setPageNumberSelected(pageNumberSelected + 1);
+        }else return;
+    };
     
-
-
     return (
         <div className="admin-pagination">
             <div className="admin-pagination__subcontainer">
                 <p className="admin-pagination__total-products">Showing 10 from 160 Products</p>
                 <div className="admin-pagination__pagination-container">
                     
-                    <div className="admin-pagination__back-button">
+                    <div onClick={handleBackClick} className="admin-pagination__back-button">
                         <img className="admin-pagination__icon-left" src={doubleArrowLeft} alt="previous" />
                         <p className="admin-pagination__back-button-text">Previous</p>
                     </div>
@@ -53,7 +63,7 @@ const AdminPaginationProducts = () => {
                         {pages.map(pageNumber => <AdminPageNumber number={pageNumber.number}/>)}
                     </div>
 
-                    <div className="admin-pagination__next-button">
+                    <div onClick={handleNextClick} className="admin-pagination__next-button">
                         <p className="admin-pagination__next-button-text">Next</p>
                         <img className="admin-pagination__icon-right" src={doubleArrowRight} alt="previous" />
                     </div>
