@@ -12,7 +12,7 @@ export interface contextValue {
   productPost: productPostInterface;
   setProductPost: (value: productPost) => void;
   productGet: productGetInterface[];
-  setProductGet: (value: productGetInterface) => void;
+  setProductGet: (value: productGetInterface[]) => void;
   productToEdit: productToEditInterface;
   setProductToEdit: (value:productToEditInterface) => void;
 };

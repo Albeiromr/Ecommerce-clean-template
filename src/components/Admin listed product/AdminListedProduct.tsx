@@ -9,10 +9,18 @@ import {componentProps} from './types';
 
 const AdminListedProduct:FC<componentProps> = (props) => {
 
-    const {setAdminRoute, setProductToEdit, setProductPost} = useContext(AdminDashboardContext);
+    const {setAdminRoute, setProductToEdit, setProductPost, productGet, setProductGet} = useContext(AdminDashboardContext);
 
     const handleDeleteClick = () => {
 
+        fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${props.productSku}`, {
+            method: "DELETE"
+        })
+        .then(() => {
+            const withoutDeletedProduct = productGet.filter(product => product.sku !== props.productSku);
+            setProductGet(withoutDeletedProduct);
+        });
+        
     };
 
     const handleEditClick = () => {
@@ -23,9 +31,7 @@ const AdminListedProduct:FC<componentProps> = (props) => {
             setProductToEdit(response[0]);
             setProductPost(response[0]);
             setAdminRoute("product-form");
-        });
-
-        
+        });        
     };
 
     return (

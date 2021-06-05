@@ -256,6 +256,7 @@ const AdminProductForm = () => {
                             id="sku"
                             onChange={handleSkuChange}
                             placeholder={productToEdit.sku}
+                            disabled
                             />}
 
                         </div>
