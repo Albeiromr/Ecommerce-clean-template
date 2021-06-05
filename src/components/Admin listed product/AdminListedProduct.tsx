@@ -9,7 +9,18 @@ import {componentProps} from './types';
 
 const AdminListedProduct:FC<componentProps> = (props) => {
 
-    const {setAdminRoute, setProductToEdit, setProductPost, productGet, setProductGet} = useContext(AdminDashboardContext);
+    const {setAdminRoute, setProductToEdit, setProductPost, productGet, setProductGet, setProductToShow} = useContext(AdminDashboardContext);
+
+    const handleProductClick = () => {
+        async function getProductToShow() {
+            let fetchedData = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${props.productSku}`);
+            let responseToJson = await fetchedData.json();
+            let fetchedProduct = responseToJson[0];
+            setProductToShow(fetchedProduct);
+            setAdminRoute("product-details");
+        };
+        getProductToShow();
+    };
 
     const handleDeleteClick = () => {
         
@@ -34,7 +45,9 @@ const AdminListedProduct:FC<componentProps> = (props) => {
     };
 
     return (
-        <article className="admin-listed-product">
+        <article  className="admin-listed-product">
+
+            <div onClick={handleProductClick} className="admin-listed-product__clicked-area"></div>
 
             <div className="admin-listed-product__image-container">
                 {/* <img className="admin-listed-product__image" src={test} alt="product" /> */}

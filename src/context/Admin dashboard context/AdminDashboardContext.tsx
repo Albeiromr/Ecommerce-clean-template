@@ -1,5 +1,5 @@
 import React, { createContext, FC, useEffect, useState } from "react";
-import {productPostInitial, productGetInitial, productToEditInitial} from './initialValues';
+import {productPostInitial, productGetInitial, productToEditInitial, productToShowInitial} from './initialValues';
 import {
   contextProps,
   contextValue,
@@ -8,7 +8,8 @@ import {
   productFamilyType,
   productPostInterface,
   productGetInterface,
-  productToEditInterface
+  productToEditInterface,
+  productToShowInterface
  } from "./types";
  import {useLocation} from 'react-router-dom';
 
@@ -28,7 +29,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productToEdit: productToEditInitial,
   setProductToEdit:() => {},
   productOffset: 0,
-  setProductOffset: () => {}
+  setProductOffset: () => {},
+  productToShow:productToShowInitial,
+  setProductToShow: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -71,13 +74,16 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state stores the product estracted from the database for editing
   const [productToEdit, setProductToEdit] = useState<productToEditInterface>(productToEditInitial);
 
-  //this useState reset the productToEdit state to its initial value if the router location is not equal to admin-dashboard
+  //this useEffect reset the productToEdit state to its initial value if the router location is not equal to admin-dashboard
   const location = useLocation();
   useEffect(() => {
     if(location.pathname !== "admin-dashboard"){
       setProductToEdit(productToEditInitial);
     }
   }, [location]);
+
+  //this state stores the product to show e¿when you make click over a product in the admin dashboard
+  const [productToShow, setProductToShow] = useState<productToShowInterface>(productToShowInitial);
 
 
 
@@ -99,7 +105,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productToEdit,
         setProductToEdit,
         productOffset,
-        setProductOffset
+        setProductOffset,
+        productToShow,
+        setProductToShow
       }}
     >
       {props.children}
