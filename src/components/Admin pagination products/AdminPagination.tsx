@@ -23,7 +23,7 @@ const AdminPaginationProducts = () => {
             let responseToJson = await response.json();
             let extractedNumber = await Object.values(responseToJson[0])[0];
             if (typeof extractedNumber === "number"){
-                let numberToPages:number = await Math.ceil(extractedNumber / 7);
+                let numberToPages:number = await Math.ceil(extractedNumber / 6);
                 let temporalArray:paginationNumber[] = [];
                 for(let i = 1; i <= numberToPages; i++){
                     temporalArray.push({number: i});
@@ -37,14 +37,14 @@ const AdminPaginationProducts = () => {
 
     const handleBackClick = () => {
         if(productOffset > 0) {
-            setProductOffset(productOffset - 7);
+            setProductOffset(productOffset - 6);
             setPageNumberSelected(pageNumberSelected - 1);
         }else return;
     };
 
     const handleNextClick = () => {
-        if(productOffset <= pages.length * 7 - 14 ) {
-            setProductOffset(productOffset + 7);
+        if(productOffset <= pages.length * 6 - 12 ) {
+            setProductOffset(productOffset + 6);
             setPageNumberSelected(pageNumberSelected + 1);
         }else return;
     };
