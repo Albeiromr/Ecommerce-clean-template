@@ -14,39 +14,73 @@ const AdminProductForm = () => {
 
     const [formMessage, setFormMessage] = useState<string>("All fields are required");
 
+    //this state verify if the form data in a new product or an edit for an existing one
+    const [isNew, setIsNew] = useState<boolean>(false);
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+
       e.preventDefault();
 
-      
 
-      fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
-        method: "POST",
-        body: JSON.stringify(productPost),
-        headers: {
-          "Content-Type": "application/json",
-        },
+      await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${productPost.sku}`)
+      .then(response => response.json())
+      .then(response => {
+        if(response[0].sku === productPost.sku)setIsNew(false);
+        else setIsNew(true);
       })
-        .then(response => response.json())
-        .then((response) => {
-          if (response.code === "ER_DUP_ENTRY"){
-            setFormMessage("The operation failed, the SKU already exist");
-            formElement.current?.reset();
-            setProductPost(productPostInitial);
-            setProductToEdit(productToEditInitial);
-          }else{
-            
-            setFormMessage("Success!!");
-            formElement.current?.reset();
-            setProductPost(productPostInitial);
-            setProductToEdit(productToEditInitial);
-          }
+      .catch(() => {
+        setFormMessage("Connection error, try again");
+        formElement.current?.reset();
+        setProductPost(productPostInitial);
+        return;
+      });
+
+
+      if(isNew){
+
+        fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
+          method: "POST",
+          body: JSON.stringify(productPost),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then(() => {
+          setFormMessage("Success!!");
+          formElement.current?.reset();
+          setProductPost(productPostInitial);
+          setProductToEdit(productToEditInitial);
         })
         .catch(() => {
           setFormMessage("Connection error, try again");
           formElement.current?.reset();
           setProductPost(productPostInitial);
         });
+
+
+      }else {
+
+        fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/`, {
+          method: "PUT",
+          body: JSON.stringify(productPost),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then(() => {
+          setFormMessage("Success!!");
+          formElement.current?.reset();
+          setProductPost(productPostInitial);
+          setProductToEdit(productToEditInitial);
+        })
+        .catch(() => {
+          setFormMessage("Connection error, try again");
+          formElement.current?.reset();
+          setProductPost(productPostInitial);
+        });
+
+      }
     };
     
 
@@ -219,6 +253,7 @@ const AdminProductForm = () => {
                         <div className="admin-product-form__product-sku">
 
                             <label className="admin-product-form__lable" htmlFor="sku">Product SKU</label>
+
                             {productToEdit === productToEditInitial ?
                             <input 
                             className="admin-product-form__input"
