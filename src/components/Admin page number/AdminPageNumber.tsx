@@ -13,7 +13,7 @@ const AdminPageNumber:FC<componentProps> = (props) => {
       if (pageNumberSelected !== props.number) setPageNumberSelected(props.number);
       else return;
 
-      setProductOffset(props.number * 7 - 7);
+      setProductOffset(props.number * 6 - 6);
     };
 
     return(
