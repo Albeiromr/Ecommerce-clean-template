@@ -29,14 +29,6 @@ const Footer = () => {
       });   
     };
 
-    const handleAdminButtonClick = () => {
-      history.push("/admin-dashboard");
-      window.scroll({
-        top: 0,
-        left: 0
-      });
-    };
-
   return (
     <footer className="footer">
       <div className="footer__subcontainer">
