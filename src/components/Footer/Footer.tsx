@@ -81,12 +81,6 @@ const Footer = () => {
 
         </div>
 
-        <div onClick={handleAdminButtonClick} className="footer__admin-button">
-          <img className="footer__admin-button-icon" src={dashboard} alt="dashboard" />
-          <p className="footer__admin-button-text">Admin Dashboard</p>
-        </div>
-
-
         <div className="footer__copyright">
           <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
           <p className="footer__copyright-text">© Copyright 2021.  Albeiro Marín</p>
