@@ -6,7 +6,6 @@ import MainNavContextProvider from './context/Main nav context/MainNavContext';
 import ProductGridContextProvider from './context/Product grid context/ProductGridContext';
 import ProductDetailsContextProvider from './context/Product details context/ProductDetailsContext';
 import ShoppingCartContextProvider from './context/Shopping cart context/ShoppingCartContext';
-import AdminDashboardContextProvider from './context/Admin dashboard context/AdminDashboardContext';
 
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
     <Router >
 
     <div className="App">
-      <AdminDashboardContextProvider>
       <ShoppingCartContextProvider>
       <ProductDetailsContextProvider>
       <ProductGridContextProvider>
@@ -27,7 +25,6 @@ function App() {
       </ProductGridContextProvider>
       </ProductDetailsContextProvider>
       </ShoppingCartContextProvider>
-      </AdminDashboardContextProvider>
       
     </div>
 
