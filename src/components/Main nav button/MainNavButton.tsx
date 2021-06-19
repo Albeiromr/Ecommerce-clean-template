@@ -7,13 +7,14 @@ import { MainNavContext } from "../../context/Main nav context/MainNavContext";
 import {useHistory} from 'react-router-dom';
 
 const MainNavButton: FC<componentProps> = (props) => {
-  const { setOptionSelected, optionSelected, productOptions } = useContext(
+  const { setOptionSelected, optionSelected, productOptions, setLastFamilySelected} = useContext(
     MainNavContext
   );
 
   const history = useHistory();
 
   const handleClick = () => {
+    if(props.name !== "Home")setLastFamilySelected(props.name);
     if (optionSelected !== props.name) setOptionSelected(props.name);
     else return;
     history.push(props.path)

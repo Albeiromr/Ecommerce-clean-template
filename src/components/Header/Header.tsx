@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -8,10 +8,12 @@ import home from "../../assets/icons/home.svg";
 import SearchBar from "../Search bar/SearchBar";
 import {Link} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
+import {MainNavContext} from '../../context/Main nav context/MainNavContext';
 
 const Header = () => {
 
   const history =  useHistory();
+  const {setOptionSelected} = useContext(MainNavContext);
 
   const handleLogoContainerClick = () => {
     history.push('/')
@@ -38,6 +40,16 @@ const Header = () => {
     });
   }
 
+  const handleHomeClick = () => {
+    history.push('/')
+    setOptionSelected("Home")
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <header className="header">
       <div className="header__contact-bar">
@@ -49,7 +61,7 @@ const Header = () => {
         </div>
 
         <div className="header__contact-links">
-          <Link to="/" className="header__green-link">Home</Link>
+          <p  onClick={handleHomeClick} className="header__green-link">Home</p>
           <Link to="/shopping-cart" className="header__green-link">Shopping Cart</Link>
         </div>
       </div>
