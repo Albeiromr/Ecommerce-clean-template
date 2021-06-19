@@ -11,7 +11,3 @@ export type contextValue = {
 export type contextProps = {
   children: React.ReactNode;
 };
-
-export type optionSelectedType =  "Home" | "Tshirts & shirts" | "Pants" | "Sneakers & Shoes" | "Shorts" | "Jackets" | "Caps" | ""
-
-export type lastFamilySelectedType = "Tshirts & shirts" | "Pants" | "Sneakers & Shoes" | "Shorts" | "Jackets" | "Caps" | ""

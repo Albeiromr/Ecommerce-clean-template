@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -8,12 +8,10 @@ import home from "../../assets/icons/home.svg";
 import SearchBar from "../Search bar/SearchBar";
 import {Link} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
-import {MainNavContext} from '../../context/Main nav context/MainNavContext';
 
 const Header = () => {
 
   const history =  useHistory();
-  const {setOptionSelected} = useContext(MainNavContext);
 
   const handleLogoContainerClick = () => {
     history.push('/')

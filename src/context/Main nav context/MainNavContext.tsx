@@ -1,7 +1,7 @@
 import React, { createContext, useState, FC, useEffect } from "react";
 import {productOptions} from '../../utils/Product options/productOptions';
-import {contextValue, contextProps, optionSelectedType, lastFamilySelectedType} from './types';
-import {useLocation, useHistory} from 'react-router-dom';
+import {contextValue, contextProps} from './types';
+import {useLocation} from 'react-router-dom';
 
 export const MainNavContext = createContext<contextValue>({
   productOptions: [],
@@ -14,15 +14,20 @@ export const MainNavContext = createContext<contextValue>({
 const MainNavContextProvider:FC<contextProps> = (props) => {
 
   const location = useLocation();
-  const history = useHistory();
-
-  //this state is for highlighting the type of products selected on the main nav
-  const [optionSelected, setOptionSelected] = useState<optionSelectedType>("Home");
+  
+  //the following code reads the browser local storage to find the las product fámily selected
+  let initialFamilySelected = localStorage.getItem("lastFamilySelected");
+  if(!initialFamilySelected || initialFamilySelected === "") initialFamilySelected = ""
+  else initialFamilySelected = localStorage.getItem("lastFamilySelected");
 
   //this state is the last product family selected befor changing the page route
-  const [lastFamilySelected, setLastFamilySelected] = useState<lastFamilySelectedType>("");
+  const [lastFamilySelected, setLastFamilySelected] = useState<string | null>(initialFamilySelected);
 
-  //the following code will reset the main nav chosen  menu if the actual route is not equal to a valid main nave menu
+
+  //this state is for highlighting the type of products selected on the main nav
+  const [optionSelected, setOptionSelected] = useState<string | null>("");
+
+  //the following code will reset the main nav chosen  menu if the actual route is not equal to a valid main nav menu
   useEffect(() => {
     switch(location.pathname){
       case "/shopping-cart":
@@ -39,7 +44,12 @@ const MainNavContextProvider:FC<contextProps> = (props) => {
         break;
       default:
     }
-  }, [location.pathname]);
+  }, [location.pathname, lastFamilySelected]);
+
+  // this code saves the lastFamilySelected state in local storage every time it changes
+  useEffect(() => {
+    localStorage.setItem("lastFamilySelected", lastFamilySelected!.toString());
+  }, [lastFamilySelected])
 
   return (
     <MainNavContext.Provider

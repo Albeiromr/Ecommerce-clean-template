@@ -12,7 +12,11 @@ const MainNavButton: FC<componentProps> = (props) => {
   const history = useHistory();
 
   const handleClick = () => {
-    if(props.name !== "Home")setLastFamilySelected(props.name);
+    if(props.name !== "Home"){
+      setLastFamilySelected(props.name);
+      // here goes all the fetch logic from the database
+      //----------------------------------------------------------
+    }
     if (optionSelected !== props.name) setOptionSelected(props.name);
     else return;
     history.push(props.path)
