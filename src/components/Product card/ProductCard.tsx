@@ -7,7 +7,7 @@ import useScrollbarSize from "react-scrollbar-size";
 import fiveStars from '../../assets/images/fiveStars.png';
 import {useHistory} from 'react-router-dom';
 
-const ProductCard:FC<ProductCardProps> = () => {
+const ProductCard:FC<ProductCardProps> = (props) => {
 
   //this useScrollBarSize is a custom hook to get the browswer scroll bar width
   // this is necessary due to give the individual product card the right width to fit in its parent container
@@ -23,12 +23,12 @@ const ProductCard:FC<ProductCardProps> = () => {
   const history =  useHistory();
 
   const handleButtonClick = () => {
-    window.scroll({
-      top: 1,
+    history.push('/products/item');
+    window.scrollTo({
+      top: 0,
       left: 0,
-      behavior: 'smooth'
-    });
-   history.push('/products/item');
+      behavior: props.scrollSmooth === false ? 'auto' : 'smooth'
+    })
   };
 
   return (
