@@ -42,7 +42,6 @@ const Header = () => {
 
   const handleHomeClick = () => {
     history.push('/')
-    setOptionSelected("Home")
     window.scroll({
       top: 0,
       left: 0,
