@@ -14,21 +14,11 @@ const ActualPAth = () => {
 
   const handleHomeClick = () => {
     history.push('/');
-    window.scroll({
-      top: 0,
-      left:0,
-      behavior: 'smooth'
-    });
   };
 
   const handleCategoryClick = () => {
     if (path !== "/products") {
       history.push("/products");
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
     } else {
       return;
     };

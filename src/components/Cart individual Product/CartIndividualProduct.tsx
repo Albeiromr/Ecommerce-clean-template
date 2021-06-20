@@ -11,11 +11,6 @@ const CartIndividualProduct = () => {
 
     const handleNameClick = () => {
       history.push("/products/item");
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
     };
 
     return(

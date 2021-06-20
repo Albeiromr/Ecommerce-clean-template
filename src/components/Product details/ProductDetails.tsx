@@ -27,11 +27,6 @@ const ProductDetails = () => {
 
     const handleBuyNowClick = () => {
       history.push("/shopping-cart");
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
     };
     
 

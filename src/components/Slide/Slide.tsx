@@ -56,22 +56,12 @@ const Slide = () => {
 
     const handleButtonClick = () => {
       history.push('/products');
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
     };
 
     const history = useHistory();
 
     const handleArticleClick = () => {
-      history.push('/products')
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      })
+      history.push('/products');
     }
 
 

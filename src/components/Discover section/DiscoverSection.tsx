@@ -17,11 +17,6 @@ const DiscoverSection = () => {
 
     const handleClick = () => {
       history.push("/products");
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
     };
 
     return (

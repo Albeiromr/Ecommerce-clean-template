@@ -14,37 +14,17 @@ const Header = () => {
   const history =  useHistory();
 
   const handleLogoContainerClick = () => {
-    history.push('/')
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    history.push('/');
   }
   const handleHomeIconClick = () => {
-    history.push('/')
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    history.push('/');
   }
   const handleBasketIconClick = () => {
-    history.push('/shopping-cart')
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    history.push('/shopping-cart');
   }
 
   const handleHomeClick = () => {
-    history.push('/')
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    history.push('/');
   }
 
   return (

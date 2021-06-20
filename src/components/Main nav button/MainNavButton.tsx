@@ -19,12 +19,7 @@ const MainNavButton: FC<componentProps> = (props) => {
     }
     if (optionSelected !== props.name) setOptionSelected(props.name);
     else return;
-    history.push(props.path)
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    history.push(props.path);
   };
 
  
