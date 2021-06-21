@@ -6,14 +6,14 @@ import MainNavContextProvider from './context/Main nav context/MainNavContext';
 import ProductGridContextProvider from './context/Product grid context/ProductGridContext';
 import ProductDetailsContextProvider from './context/Product details context/ProductDetailsContext';
 import ShoppingCartContextProvider from './context/Shopping cart context/ShoppingCartContext';
-import ScrollToTop from './components/Scroll to top/ScrollToTop';
+import ScrollMemory from 'react-router-scroll-memory';
 
 
 function App() {
 
   return (
     <Router >
-      <ScrollToTop />
+      <ScrollMemory />
 
     <div className="App">
       <ShoppingCartContextProvider>

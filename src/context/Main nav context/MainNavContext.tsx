@@ -43,7 +43,7 @@ const MainNavContextProvider:FC<contextProps> = (props) => {
         setOptionSelected(lastFamilySelected);
         break;
       default:
-    }
+    };
   }, [location.pathname, lastFamilySelected]);
 
   // this code saves the lastFamilySelected state in local storage every time it changes

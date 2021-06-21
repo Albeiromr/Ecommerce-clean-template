@@ -5,7 +5,7 @@ import "./1025px-1920px.scss";
 import {cssVariables, ProductCardProps} from "./types";
 import useScrollbarSize from "react-scrollbar-size";
 import fiveStars from '../../assets/images/fiveStars.png';
-import {useHistory} from 'react-router-dom';
+import {useHistory, useLocation} from 'react-router-dom';
 
 const ProductCard:FC<ProductCardProps> = () => {
 
@@ -21,10 +21,11 @@ const ProductCard:FC<ProductCardProps> = () => {
   const smallImage:number = 39.987 * width / 100
 
   const history =  useHistory();
+  const {pathname} = useLocation();
 
   const handleButtonClick = () => {
     history.push('/products/item');
-    window.scrollTo(0, 0);
+    if(pathname === '/products/item') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
   };
 
   return (
