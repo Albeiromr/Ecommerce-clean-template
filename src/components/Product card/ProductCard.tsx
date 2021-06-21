@@ -24,11 +24,7 @@ const ProductCard:FC<ProductCardProps> = () => {
 
   const handleButtonClick = () => {
     history.push('/products/item');
-    /* window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: props.scrollSmooth === false ? 'auto' : 'smooth'
-    }) */
+    window.scrollTo(0, 0);
   };
 
   return (
