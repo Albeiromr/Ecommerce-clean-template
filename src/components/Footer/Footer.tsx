@@ -12,15 +12,17 @@ import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
 import logo from '../../assets/logo/brand.png';
-import {useHistory} from 'react-router-dom';
+import {useHistory, useLocation} from 'react-router-dom';
 
 
 const Footer = () => {
 
   const history = useHistory();
+  const {pathname} = useLocation();
 
     const handleClick = () => {
       history.push("/products");
+      if(pathname === '/products') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     };
 
   return (
