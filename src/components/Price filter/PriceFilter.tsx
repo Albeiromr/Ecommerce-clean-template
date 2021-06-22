@@ -3,12 +3,19 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import MultiRangeSlider from '../Multi range slider/MultiRangeSlider';
+import {useLocation} from 'react-router-dom';
 import { ProductGridContext } from "../../context/Product grid context/ProductGridContext";
 
 
 const PriceFilter = () => {
 
-    const {priceRange,minValue, maxValue} = useContext(ProductGridContext);
+    const {priceRange,minValue, maxValue, setShowFilters} = useContext(ProductGridContext);
+    const {pathname} = useLocation();
+
+    const handleAplayClick = () => {
+        if(pathname === '/products') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        setShowFilters(false);
+    }
 
     
 
@@ -42,7 +49,7 @@ const PriceFilter = () => {
 
             </div>
 
-            <div className="price-filter__submit" >
+            <div onClick={handleAplayClick} className="price-filter__submit" >
                 <p className="price-filter__submit-text">Apply</p>
             </div>
 
