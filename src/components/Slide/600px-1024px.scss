@@ -159,7 +159,6 @@
       border-radius: 81px;
       background: #c4c4c4;
       transition: all .5s ease;
-      cursor: pointer;
     }
 
     &__circle--selected {
@@ -168,7 +167,6 @@
       border-radius: 81px;
       background: $c2-A;
       transition: all .5s ease;
-      cursor: pointer;
     }
   }
 
