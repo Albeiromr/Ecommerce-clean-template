@@ -1,5 +1,4 @@
 @import "../../sass/variables";
-@import "../../sass/adminMixins";
 
 @media only screen and (min-width: 1025px) {
   .footer {
@@ -121,7 +120,7 @@
     }
 
     &__social {
-      width: clamp(124.242px, 12.121vw, 200px);
+      width: 58.702%;
       height: 4.754%;
       position: absolute;
       top: 90.775%;
@@ -129,7 +128,7 @@
     }
 
     &__social-network-container {
-      width: 100%;
+      width: 25.125%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -188,7 +187,13 @@
     }
 
     &__social-card-container {
-      display: none;
+      width: 24.246%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__social-card {

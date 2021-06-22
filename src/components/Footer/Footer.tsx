@@ -64,9 +64,7 @@ const Footer = () => {
             <img className="footer__social-card" src={amex} alt="credit card icon"/>
             <img className="footer__social-card" src={discover} alt="credit card icon"/>
           </div>
-
         </div>
-
         <div className="footer__copyright">
           <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
           <p className="footer__copyright-text">© Copyright 2021.  Albeiro Marín</p>
