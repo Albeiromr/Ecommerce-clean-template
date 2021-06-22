@@ -7,16 +7,18 @@ import adultMan from '../../assets/images/adultMan.png';
 import adidas from '../../assets/icons/adidas.svg';
 import puma from '../../assets/icons/puma.svg';
 import hm from '../../assets/icons/hm.svg';
-import {useHistory} from 'react-router-dom';
+import {useHistory, useLocation} from 'react-router-dom';
 
 
 
 const DiscoverSection = () => {
 
     const history = useHistory();
+    const {pathname} = useLocation();
 
     const handleClick = () => {
       history.push("/products");
+      if(pathname === '/products') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     };
 
     return (
