@@ -14,7 +14,7 @@ const IndividualSize = () => {
     const {pathname} = useLocation();
 
     //temporal state, it must be delated and replaced by a context------------------------------------
-    const [selected, setSelected] = useState(false)
+    const [selected, setSelected] = useState(false);
     //------------------------------------------------------------------------------------------------
 
     const handleClick = () => {
@@ -22,7 +22,7 @@ const IndividualSize = () => {
         else setSelected(false);
         if(pathname === '/products') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
         setShowFilters(false);
-    }
+    };
 
     return (
       <div  className="individual-size">
