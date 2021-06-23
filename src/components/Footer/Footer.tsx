@@ -11,7 +11,7 @@ import visa from '../../assets/icons/visa.svg';
 import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
-import logo from '../../assets/logo/brand.png';
+import logo from '../../assets/logo/brand.svg';
 import {useHistory, useLocation} from 'react-router-dom';
 
 
