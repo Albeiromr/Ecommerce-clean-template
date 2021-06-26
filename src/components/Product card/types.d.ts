@@ -13,8 +13,11 @@ export interface cssVariables extends React.CSSProperties{
 };
 
 export interface ProductCardProps {
-    // scrollSmooth prop let use decide if the page must scroll to top smooth or inmediately when
-    //the product card buton is clecked
-    scrollSmooth?: boolean;
+    sku: string;
+    productName: string;
+    productThumbnail: string;
+    productRate: number;
+    productPrice: number;
+    productOldPrice: number;  
 }
 
