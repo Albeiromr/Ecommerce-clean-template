@@ -18,13 +18,13 @@ function App() {
     <div className="App">
       <ShoppingCartContextProvider>
       <ProductDetailsContextProvider>
-      <ProductGridContextProvider>
       <MainNavContextProvider>
+      <ProductGridContextProvider>
 
       <MainContainer />
 
-      </MainNavContextProvider>
       </ProductGridContextProvider>
+      </MainNavContextProvider>
       </ProductDetailsContextProvider>
       </ShoppingCartContextProvider>
       

@@ -1,4 +1,4 @@
-import React, {createContext, useContext, FC, useState} from 'react';
+import React, {createContext, useContext, FC, useState, useEffect} from 'react';
 import { MainNavContext } from '../Main nav context/MainNavContext';
 import {contextValue, contextProps, fetchedProduct} from './types';
 
@@ -37,6 +37,26 @@ const ProductGridContextProvider:FC<contextProps> = (props) => {
     const [fetchedDesktopProducts, setFetchedDesktopProducts] = useState<fetchedProduct[]>([]);
     // this state is the fetched products array for the desktop-product-grid component
     const [fetchedMobileProducts, setFetchedMobileProducts] = useState<fetchedProduct[]>([]);
+
+    //this useEffect is for updating the product Desktop grid if a category, price range and other stuff change
+    useEffect(() => {
+        async function fetchDesktopProducts(){
+            const fetchedData = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products-desktop/${lastFamilySelected}/0`);
+            const dataToJson = await fetchedData.json();
+            setFetchedDesktopProducts(dataToJson);
+        };
+        fetchDesktopProducts(); 
+    },[lastFamilySelected]);
+
+    //this useEffect is for updating the product mobile grid if a category, price range and other stuff change
+    useEffect(() => {
+        async function fetchMobileProducts(){
+            const fetchedData = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products-mobile/${lastFamilySelected}/0`);
+            const dataToJson = await fetchedData.json();
+            setFetchedMobileProducts(dataToJson)
+        };
+        fetchMobileProducts();
+    },[lastFamilySelected]);
 
     return(
         <ProductGridContext.Provider

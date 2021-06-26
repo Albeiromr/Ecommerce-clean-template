@@ -15,7 +15,7 @@ const MainNav = () => {
         <MainNavButton name="Home" path="/"/>
 
         {productOptions.map((option) => (
-          <MainNavButton name={option.name} path="/products" />
+          <MainNavButton key={option.name} name={option.name} path="/products" />
         ))}
         
       </ul>
