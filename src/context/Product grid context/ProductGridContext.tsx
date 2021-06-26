@@ -1,5 +1,6 @@
-import React, {createContext, FC, useState} from 'react';
-import {contextValue, contextProps} from './types';
+import React, {createContext, useContext, FC, useState} from 'react';
+import { MainNavContext } from '../Main nav context/MainNavContext';
+import {contextValue, contextProps, fetchedProduct} from './types';
 
 export const ProductGridContext = createContext<contextValue>({
     showFilters: false,
@@ -10,10 +11,17 @@ export const ProductGridContext = createContext<contextValue>({
     setMinValue: () => {},
     maxValue: 0,
     setMaxValue: () => {},
+    fetchedDesktopProducts: [],
+    setFetchedDesktopProducts: () => {},
+    fetchedMobileProducts: [],
+    setFetchedMobileProducts: () => {}
+
 });
 
 
 const ProductGridContextProvider:FC<contextProps> = (props) => {
+
+    const {lastFamilySelected} = useContext(MainNavContext);
 
     //This state is for showing or hidding the filters in the product grid
     const [showFilters, setShowFilters] = useState(false)
@@ -24,6 +32,11 @@ const ProductGridContextProvider:FC<contextProps> = (props) => {
     //minValue and MaxValue State show the min and max price selected to the user interface
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(0);
+
+    // this state is the fetched products array for the desktop-product-grid component
+    const [fetchedDesktopProducts, setFetchedDesktopProducts] = useState<fetchedProduct[]>([]);
+    // this state is the fetched products array for the desktop-product-grid component
+    const [fetchedMobileProducts, setFetchedMobileProducts] = useState<fetchedProduct[]>([]);
 
     return(
         <ProductGridContext.Provider
@@ -36,6 +49,10 @@ const ProductGridContextProvider:FC<contextProps> = (props) => {
             setMinValue,
             maxValue,
             setMaxValue,
+            fetchedDesktopProducts,
+            setFetchedDesktopProducts,
+            fetchedMobileProducts,
+            setFetchedMobileProducts
         }}
         >
             {props.children}

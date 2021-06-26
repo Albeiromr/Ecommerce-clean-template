@@ -17,7 +17,7 @@ const MainNavContextProvider:FC<contextProps> = (props) => {
   
   //the following code reads the browser local storage to find the las product fámily selected
   let initialFamilySelected = localStorage.getItem("lastFamilySelected");
-  if(!initialFamilySelected || initialFamilySelected === "") initialFamilySelected = ""
+  if(!initialFamilySelected || initialFamilySelected === "") initialFamilySelected = "Sneakers & Shoes"
   else initialFamilySelected = localStorage.getItem("lastFamilySelected");
 
   //this state is the last product family selected befor changing the page route
