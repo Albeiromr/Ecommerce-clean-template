@@ -39,24 +39,24 @@ const ProductGridContextProvider:FC<contextProps> = (props) => {
     const [fetchedMobileProducts, setFetchedMobileProducts] = useState<fetchedProduct[]>([]);
 
     //this useEffect is for updating the product Desktop grid if a category, price range and other stuff change
-    useEffect(() => {
+    /* useEffect(() => {
         async function fetchDesktopProducts(){
             const fetchedData = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products-desktop/${lastFamilySelected}/0`);
             const dataToJson = await fetchedData.json();
             setFetchedDesktopProducts(dataToJson);
         };
         fetchDesktopProducts(); 
-    },[lastFamilySelected]);
+    },[lastFamilySelected]); */
 
     //this useEffect is for updating the product mobile grid if a category, price range and other stuff change
-    useEffect(() => {
+    /* useEffect(() => {
         async function fetchMobileProducts(){
             const fetchedData = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products-mobile/${lastFamilySelected}/0`);
             const dataToJson = await fetchedData.json();
             setFetchedMobileProducts(dataToJson)
         };
         fetchMobileProducts();
-    },[lastFamilySelected]);
+    },[lastFamilySelected]); */
 
     return(
         <ProductGridContext.Provider
