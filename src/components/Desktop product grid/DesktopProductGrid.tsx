@@ -10,9 +10,9 @@ import Filters from '../Filters/Filters';
 
 const DesktopProductGrid = () => {
 
-    const {showFilters, setShowFilters, fetchedDesktopProducts} = useContext(ProductGridContext);
+    const {showFilters, setShowFilters} = useContext(ProductGridContext);
 
-    //This state is for hidding or not the filters in  tablet screens
+    //This state is for hidding or not the filters in smartphone and tablets screens
     const [translate, setTranslate] = useState("-32.631%");
 
     const handlebuttonClick = () => {
@@ -37,16 +37,15 @@ const DesktopProductGrid = () => {
             </div>
             
             <div className="desktop-product-grid__subcontainer">
-                {fetchedDesktopProducts.map(product => <ProductCard 
-                key={product.sku}
-                sku={product.sku}
-                productName={product.productName}
-                productThumbnail={product.productThumbnail}
-                productRate={product.productRate}
-                productPrice={product.productPrice}
-                productOldPrice={product.productOldPrice}
-                />)}
-                
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
             </div>
 
         </main>

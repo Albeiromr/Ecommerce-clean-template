@@ -52,10 +52,10 @@ const HomeGrid = () => {
             </div>
 
             <div className="home-grid__product-card-container">
-                {/* <ProductCard />
+                <ProductCard />
                 <ProductCard />
                 <ProductCard /> 
-                {windowWidth < 599 ? <ProductCard /> : null}  */}
+                {windowWidth < 599 ? <ProductCard /> : null} 
             </div>
 
             <div onClick={handleButtonClick} className="home-grid__button">

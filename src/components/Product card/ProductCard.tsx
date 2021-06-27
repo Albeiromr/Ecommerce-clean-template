@@ -5,10 +5,9 @@ import "./1025px-1920px.scss";
 import {cssVariables, ProductCardProps} from "./types";
 import useScrollbarSize from "react-scrollbar-size";
 import fiveStars from '../../assets/images/fiveStars.png';
-import fourStars from '../../assets/images/fourStars.png';
 import {useHistory, useLocation} from 'react-router-dom';
 
-const ProductCard:FC<ProductCardProps> = (props) => {
+const ProductCard:FC<ProductCardProps> = () => {
 
   //this useScrollBarSize is a custom hook to get the browswer scroll bar width
   // this is necessary due to give the individual product card the right width to fit in its parent container
@@ -29,13 +28,6 @@ const ProductCard:FC<ProductCardProps> = (props) => {
     if(pathname === '/products/item') window.scrollTo({top: 0, left: 0, behavior: "smooth"});
   };
 
-  //these variables are for getting the actual product discount that is shown on the product image
-  const actualPrice:number = props.productPrice;
-  const oldPrice:number = props.productOldPrice;
-  const substract:number = actualPrice - oldPrice
-  const discountPercentage:number = substract * 100 / oldPrice
-  const totalPercentage:number = Math.abs(Math.floor(discountPercentage))
-
   return (
     <article 
     className="product-card"
@@ -50,15 +42,15 @@ const ProductCard:FC<ProductCardProps> = (props) => {
 
       <div className="product-card__subcontainer">
         <div className="product-card__image-container">
-          <img className="product-card__image" src={`${process.env.REACT_APP_BACKEND_DOMAIN}/static/${props.productThumbnail}`} alt="product"/>
+          {/* <img className="product-card__image" src={} alt="product"/> */}
           <div className="product-card__discount-container">
-            <p className="product-card__discount">{`-${totalPercentage}%`}</p>
+            <p className="product-card__discount">-14%</p>
           </div>
         </div>
-        <h2 className="product-card__title">{props.productName}</h2>
-        <img className="product-card__stars" src={props.productRate === 5 ? fiveStars : fourStars} alt="rate"/>
-        <p className="product-card__actual-price">{props.productPrice}</p>
-        <p className="product-card__old-price">{props.productOldPrice}</p>
+        <h2 className="product-card__title">Product Title</h2>
+        <img className="product-card__stars" src={fiveStars} alt="rate"/>
+        <p className="product-card__actual-price">36.99 USD</p>
+        <p className="product-card__old-price">48.56</p>
         <div onClick={handleButtonClick} className="product-card__button">
           <p className="product-card__button-text">View</p>
         </div>
