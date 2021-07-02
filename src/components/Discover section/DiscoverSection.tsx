@@ -33,7 +33,7 @@ const DiscoverSection = () => {
                                 <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
                                 <p className="discover-section__card-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler</p>
                                 <div  onClick={handleClick} className="discover-section__card-button">
-                                    <p className="discover-section__card-button-text">All Shirts</p>
+                                    <p className="discover-section__card-button-text">View More</p>
                                 </div>
                             </div>
                             <div className="discover-section__card-image-container">
@@ -47,7 +47,7 @@ const DiscoverSection = () => {
                                 <h2 className="discover-section__card-title">Lorem ipsum Dolor</h2>
                                 <p className="discover-section__card-paragraph">Lorem ipsum dolor amet lorem ipsum dolor amet aler</p>
                                 <div onClick={handleClick} className="discover-section__card-button">
-                                    <p className="discover-section__card-button-text">All Shirts</p>
+                                    <p className="discover-section__card-button-text">view More</p>
                                 </div>
                             </div>
                             <div className="discover-section__card-image-container">

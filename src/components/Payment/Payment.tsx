@@ -81,7 +81,7 @@ const Payment = () => {
             </div>
 
             <div className="payment__demo-card-button">
-                <p className="payment__demo-card-button-text">Use Demo Card</p>
+                <p className="payment__demo-card-button-text">Use Mastercard 7593</p>
             </div>
 
             <h2 className="payment__confirmation-title">Shipping Information</h2>
