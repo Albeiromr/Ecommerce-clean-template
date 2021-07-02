@@ -87,7 +87,7 @@ const Slide = () => {
 
               <div className="slide__article-text-container">
                   <p className="slide__article-title">HOT PRODUCTS</p>
-                  <h2 className="slide__article-subtitle">Fill your desk full of technology</h2>
+                  <h2 className="slide__article-subtitle">Little hot product description</h2>
                   <div onClick={handleButtonClick} className="slide__article-button">
                       <p className="slide__article-button-text">View More</p>
                   </div>
